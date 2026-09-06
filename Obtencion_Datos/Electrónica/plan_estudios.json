@@ -1,0 +1,1922 @@
+{
+  "dsc_curriculum": "Ingeniería en electrónica",
+  "id_curriculum": 809,
+  "modality": "Semestre",
+  "academic_degree": "Licenciatura",
+  "first_level": 0,
+  "levels": [
+    {
+      "id": "Semestre 0",
+      "courses": [
+        {
+          "id_course": "CI0200",
+          "name": "examen diagnóstico",
+          "truncatedName": "examen diagnóstico",
+          "credits": 0,
+          "hours": 0,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CI1230"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "CI0202",
+          "name": "inglés básico",
+          "truncatedName": "inglés básico",
+          "credits": 2,
+          "hours": 3,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CI1230"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        }
+      ]
+    },
+    {
+      "id": "Semestre 1",
+      "courses": [
+        {
+          "id_course": "CA2125",
+          "name": "elementos de computación",
+          "truncatedName": "elementos de computación",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CA3125"
+            },
+            {
+              "id": "CM3207"
+            },
+            {
+              "id": "MI2101"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "CS1502",
+          "name": "introducción a la técnica ciencia y tecnología",
+          "truncatedName": "introducción a la técnica ciencia y tecnología",
+          "credits": 1,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CS2303"
+            },
+            {
+              "id": "CS3404"
+            },
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL1100",
+          "name": "introducción a la ingeniería",
+          "truncatedName": "introducción a la ingeniería",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL1200"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "MA0101",
+          "name": "matemática general",
+          "truncatedName": "matemática general",
+          "credits": 2,
+          "hours": 5,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CA2125"
+            },
+            {
+              "id": "FI1101"
+            },
+            {
+              "id": "MA1102"
+            },
+            {
+              "id": "MI2101"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "MI2101",
+          "name": "dibujo técnico",
+          "truncatedName": "dibujo técnico",
+          "credits": 3,
+          "hours": 9,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "QU1102",
+          "name": "laboratorio de química básica i",
+          "truncatedName": "laboratorio de química básica i",
+          "credits": 1,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [
+            {
+              "id": "QU1106"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "QU1106",
+          "name": "química básica i",
+          "truncatedName": "química básica i",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [],
+          "co_requirements": [
+            {
+              "id": "QU1102"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "SE1200",
+          "name": "actividad deportiva i",
+          "truncatedName": "actividad deportiva i",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL5617"
+            },
+            {
+              "id": "SE1100"
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "SE1201"
+            },
+            {
+              "id": "SE1202"
+            },
+            {
+              "id": "SE1203"
+            },
+            {
+              "id": "SE1204"
+            },
+            {
+              "id": "SE1205"
+            },
+            {
+              "id": "SE1206"
+            },
+            {
+              "id": "SE1207"
+            },
+            {
+              "id": "SE1208"
+            },
+            {
+              "id": "SE1209"
+            },
+            {
+              "id": "SE1210"
+            },
+            {
+              "id": "SE1211"
+            },
+            {
+              "id": "SE1216"
+            },
+            {
+              "id": "SE1217"
+            },
+            {
+              "id": "SE1218"
+            },
+            {
+              "id": "SE1219"
+            },
+            {
+              "id": "SE1220"
+            },
+            {
+              "id": "SE1221"
+            },
+            {
+              "id": "SE1222"
+            },
+            {
+              "id": "SE1223"
+            },
+            {
+              "id": "SE2200"
+            },
+            {
+              "id": "SE2201"
+            },
+            {
+              "id": "SE2202"
+            },
+            {
+              "id": "SE2203"
+            },
+            {
+              "id": "SE2204"
+            },
+            {
+              "id": "SE2205"
+            },
+            {
+              "id": "SE2206"
+            },
+            {
+              "id": "SE2207"
+            },
+            {
+              "id": "SE2208"
+            },
+            {
+              "id": "SE2209"
+            },
+            {
+              "id": "SE2210"
+            },
+            {
+              "id": "SE2218"
+            },
+            {
+              "id": "SE2219"
+            }
+          ],
+          "tEquiv": "SE1201,SE1202,SE1203,SE1204,SE1205,SE1206,SE1207,SE1208,SE1209,SE1210,SE1211,SE1216,SE1217,SE1218,SE1219,SE1220,SE1221,SE1222,SE1223,SE2200,SE2201,SE2202,SE2203,SE2204,SE2205,SE2206,SE2207,SE2208,SE2209,SE2210,SE2218,SE2219"
+        },
+        {
+          "id_course": "SO4604",
+          "name": "seguridad y salud ocupacional",
+          "truncatedName": "seguridad y salud ocupacional",
+          "credits": 3,
+          "hours": 3,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "AE4208"
+            },
+            {
+              "id": "EL4607"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        }
+      ]
+    },
+    {
+      "id": "Semestre 2",
+      "courses": [
+        {
+          "id_course": "CA3125",
+          "name": "análisis y diseño de algoritmos",
+          "truncatedName": "análisis y diseño de algoritmos",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "CA2125"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CM3207"
+            },
+            {
+              "id": "EL3307"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "CI1230",
+          "name": "inglés i",
+          "truncatedName": "inglés i",
+          "credits": 2,
+          "hours": 6,
+          "requirements": [
+            {
+              "id": "CI0200"
+            },
+            {
+              "id": "CI0202"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CI1231"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "CI1407",
+          "name": "habilidades de comunicación en ingeniería",
+          "truncatedName": "habilidades de comunicación en ingeniería",
+          "credits": 2,
+          "hours": 6,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CS2303"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL1200",
+          "name": "introducción a la electrónica",
+          "truncatedName": "introducción a la electrónica",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [
+            {
+              "id": "EL1100"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL2113"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "FH1000",
+          "name": "centros de formación humanística",
+          "truncatedName": "centros de formación humanística",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL5617"
+            }
+          ],
+        "equivalent": [
+            {
+                "id": "FH0001"
+            },
+            {
+                "id": "FH0002"
+            },
+            {
+                "id": "FH0003"
+            },
+            {
+                "id": "FH0004"
+            },
+            {
+                "id": "FH0005"
+            },
+            {
+                "id": "FH0006"
+            },
+            {
+                "id": "FH0007"
+            },
+            {
+                "id": "FH0008"
+            },
+            {
+                "id": "FH0009"
+            },
+            {
+                "id": "FH0010"
+            },
+            {
+                "id": "FH0011"
+            },
+            {
+                "id": "FH0012"
+            },
+            {
+                "id": "FH0013"
+            },
+            {
+                "id": "FH0014"
+            },
+            {
+                "id": "FH0015"
+            },
+            {
+                "id": "FH0016"
+            },
+            {
+                "id": "FH0017"
+            },
+            {
+                "id": "FH0018"
+            },
+            {
+                "id": "FH0019"
+            },
+            {
+                "id": "FH0020"
+            },
+            {
+                "id": "FH0021"
+            },
+            {
+                "id": "FH0022"
+            },
+            {
+                "id": "FH0023"
+            },
+            {
+                "id": "FH0024"
+            },
+            {
+                "id": "FH0025"
+            },
+            {
+                "id": "FH0026"
+            },
+            {
+                "id": "FH0027"
+            },
+            {
+                "id": "FH0028"
+            },
+            {
+                "id": "FH0029"
+            },
+            {
+                "id": "FH0030"
+            },
+            {
+                "id": "FH0031"
+            },
+            {
+                "id": "FH0032"
+            },
+            {
+                "id": "FH0033"
+            },
+            {
+                "id": "FH0034"
+            },
+            {
+                "id": "FH0035"
+            },
+            {
+                "id": "FH0036"
+            },
+            {
+                "id": "FH0037"
+            },
+            {
+                "id": "FH0038"
+            },
+            {
+                "id": "FH0039"
+            },
+            {
+                "id": "FH0040"
+            },
+            {
+                "id": "FH0041"
+            },
+            {
+                "id": "FH0042"
+            },
+            {
+                "id": "FH0043"
+            },
+            {
+                "id": "FH0044"
+            },
+            {
+                "id": "FH0045"
+            },
+            {
+                "id": "FH0046"
+            },
+            {
+                "id": "FH0047"
+            },
+            {
+                "id": "FH0048"
+            },
+            {
+                "id": "FH0049"
+            },
+            {
+                "id": "FH0050"
+            },
+            {
+                "id": "FH0051"
+            },
+            {
+                "id": "FH0052"
+            },
+            {
+                "id": "FH0053"
+            },
+            {
+                "id": "FH0054"
+            },
+            {
+                "id": "FH0055"
+            },
+            {
+                "id": "FH0056"
+            },
+            {
+                "id": "FH0057"
+            },
+            {
+                "id": "FH0058"
+            },
+            {
+                "id": "FH0059"
+            },
+            {
+                "id": "FH0060"
+            },
+            {
+                "id": "FH0061"
+            },
+            {
+                "id": "FH0062"
+            },
+            {
+                "id": "FH0063"
+            },
+            {
+                "id": "FH0064"
+            },
+            {
+                "id": "FH0065"
+            },
+            {
+                "id": "FH0066"
+            },
+            {
+                "id": "FH0067"
+            },
+            {
+                "id": "FH0068"
+            },
+            {
+                "id": "FH0069"
+            },
+            {
+                "id": "FH0070"
+            },
+            {
+                "id": "FH0071"
+            },
+            {
+                "id": "FH0072"
+            },
+            {
+                "id": "FH0073"
+            },
+            {
+                "id": "FH0074"
+            },
+            {
+                "id": "FH0075"
+            },
+            {
+                "id": "FH0076"
+            },
+            {
+                "id": "FH0077"
+            },
+            {
+                "id": "FH0078"
+            },
+            {
+                "id": "FH0079"
+            },
+            {
+                "id": "FH0080"
+            },
+            {
+                "id": "FH0081"
+            },
+            {
+                "id": "FH0082"
+            },
+            {
+                "id": "FH0083"
+            },
+            {
+                "id": "FH0084"
+            },
+            {
+                "id": "FH0085"
+            },
+            {
+                "id": "FH0086"
+            },
+            {
+                "id": "FH0087"
+            },
+            {
+                "id": "FH0088"
+            },
+            {
+                "id": "FH0089"
+            },
+            {
+                "id": "FH0090"
+            },
+            {
+                "id": "FH0091"
+            },
+            {
+                "id": "FH0092"
+            },
+            {
+                "id": "FH0093"
+            },
+            {
+                "id": "FH0094"
+            },
+            {
+                "id": "FH0095"
+            },
+            {
+                "id": "FH0096"
+            },
+            {
+                "id": "FH0097"
+            },
+            {
+                "id": "FH0098"
+            },
+            {
+                "id": "FH0099"
+            },
+            {
+                "id": "FH0100"
+            },
+            {
+                "id": "FH0101"
+            },
+            {
+                "id": "FH0102"
+            },
+            {
+                "id": "FH0103"
+            },
+            {
+                "id": "FH0104"
+            },
+            {
+                "id": "FH0105"
+            },
+            {
+                "id": "FH0106"
+            },
+            {
+                "id": "FH0107"
+            },
+            {
+                "id": "FH0108"
+            },
+            {
+                "id": "FH0109"
+            },
+            {
+                "id": "FH0110"
+            },
+            {
+                "id": "FH0111"
+            },
+            {
+                "id": "FH0112"
+            },
+            {
+                "id": "FH0113"
+            },
+            {
+                "id": "FH0114"
+            },
+            {
+                "id": "FH0115"
+            },
+            {
+                "id": "FH0116"
+            },
+            {
+                "id": "FH0117"
+            },
+            {
+                "id": "FH0118"
+            },
+            {
+                "id": "FH0119"
+            },
+            {
+                "id": "FH0120"
+            },
+            {
+                "id": "FH0121"
+            },
+            {
+                "id": "FH0122"
+            },
+            {
+                "id": "FH0123"
+            },
+            {
+                "id": "FH0124"
+            },
+            {
+                "id": "FH0125"
+            },
+            {
+                "id": "FH0126"
+            },
+            {
+                "id": "FH0127"
+            },
+            {
+                "id": "FH0128"
+            },
+            {
+                "id": "FH0129"
+            },
+            {
+                "id": "FH0130"
+            },
+            {
+                "id": "FH0131"
+            },
+            {
+                "id": "FH0132"
+            },
+            {
+                "id": "FH0133"
+            },
+            {
+                "id": "FH0134"
+            },
+            {
+                "id": "FH0135"
+            },
+            {
+                "id": "FH0136"
+            },
+            {
+                "id": "FH0137"
+            },
+            {
+                "id": "FH0138"
+            },
+            {
+                "id": "FH0139"
+            },
+            {
+                "id": "FH0140"
+            },
+            {
+                "id": "FH0141"
+            },
+            {
+                "id": "FH0142"
+            },
+            {
+                "id": "FH0143"
+            },
+            {
+                "id": "FH0144"
+            },
+            {
+                "id": "FH0145"
+            },
+            {
+                "id": "FH0146"
+            },
+            {
+                "id": "FH0147"
+            },
+            {
+                "id": "FH0148"
+            },
+            {
+                "id": "FH0149"
+            },
+            {
+                "id": "FH0150"
+            },
+            {
+                "id": "FH0151"
+            },
+            {
+                "id": "FH0152"
+            },
+            {
+                "id": "FH0153"
+            },
+            {
+                "id": "FH0154"
+            },
+            {
+                "id": "FH0155"
+            },
+            {
+                "id": "FH0156"
+            },
+            {
+                "id": "FH0157"
+            },
+            {
+                "id": "FH0158"
+            },
+            {
+                "id": "FH0159"
+            },
+            {
+                "id": "FH0160"
+            },
+            {
+                "id": "FH0161"
+            },
+            {
+                "id": "FH0162"
+            },
+            {
+                "id": "FH0163"
+            },
+            {
+                "id": "FH0164"
+            },
+            {
+                "id": "FH0165"
+            },
+            {
+                "id": "FH0166"
+            },
+            {
+                "id": "FH0167"
+            },
+            {
+                "id": "FH0168"
+            },
+            {
+                "id": "FH0169"
+            },
+            {
+                "id": "FH0170"
+            },
+            {
+                "id": "FH0171"
+            },
+            {
+                "id": "FH0172"
+            },
+            {
+                "id": "FH0173"
+            },
+            {
+                "id": "FH0174"
+            },
+            {
+                "id": "FH0175"
+            },
+            {
+                "id": "FH0176"
+            },
+            {
+                "id": "FH0177"
+            },
+            {
+                "id": "FH0178"
+            },
+            {
+                "id": "FH0179"
+            },
+            {
+                "id": "FH0180"
+            },
+            {
+                "id": "FH0181"
+            },
+            {
+                "id": "FH0182"
+            },
+            {
+                "id": "FH0183"
+            },
+            {
+                "id": "FH0184"
+            },
+            {
+                "id": "FH0185"
+            },
+            {
+                "id": "FH0186"
+            },
+            {
+                "id": "FH0187"
+            },
+            {
+                "id": "FH0188"
+            },
+            {
+                "id": "FH0189"
+            },
+            {
+                "id": "FH0190"
+            },
+            {
+                "id": "FH0191"
+            },
+            {
+                "id": "FH0192"
+            },
+            {
+                "id": "FH0193"
+            },
+            {
+                "id": "FH0194"
+            },
+            {
+                "id": "FH0195"
+            },
+            {
+                "id": "FH0196"
+            },
+            {
+                "id": "FH0197"
+            },
+            {
+                "id": "FH0198"
+            },
+            {
+                "id": "FH0199"
+            },
+            {
+                "id": "FH0200"
+            },
+            {
+                "id": "FH0201"
+            },
+            {
+                "id": "FH0202"
+            },
+            {
+                "id": "FH0203"
+            },
+            {
+                "id": "FH0204"
+            },
+            {
+                "id": "FH0205"
+            },
+            {
+                "id": "FH0206"
+            },
+            {
+                "id": "FH0207"
+            },
+            {
+                "id": "FH0208"
+            },
+            {
+                "id": "FH0209"
+            },
+            {
+                "id": "FH0210"
+            },
+            {
+                "id": "FH0211"
+            },
+            {
+                "id": "FH0212"
+            },
+            {
+                "id": "FH0213"
+            },
+            {
+                "id": "FH0214"
+            },
+            {
+                "id": "FH0215"
+            },
+            {
+                "id": "FH0216"
+            },
+            {
+                "id": "FH0217"
+            },
+            {
+                "id": "FH0218"
+            },
+            {
+                "id": "FH0219"
+            },
+            {
+                "id": "FH0220"
+            },
+            {
+                "id": "FH0221"
+            },
+            {
+                "id": "FH0222"
+            },
+            {
+                "id": "FH0223"
+            },
+            {
+                "id": "FH0224"
+            },
+            {
+                "id": "FH0225"
+            },
+            {
+                "id": "FH0226"
+            },
+            {
+                "id": "FH0227"
+            },
+            {
+                "id": "FH0228"
+            },
+            {
+                "id": "FH0229"
+            },
+            {
+                "id": "FH0230"
+            },
+            {
+                "id": "FH0231"
+            },
+            {
+                "id": "FH0232"
+            },
+            {
+                "id": "FH0233"
+            },
+            {
+                "id": "FH0234"
+            },
+            {
+                "id": "FH0235"
+            },
+            {
+                "id": "FH0236"
+            },
+            {
+                "id": "FH0237"
+            },
+            {
+                "id": "FH0238"
+            },
+            {
+                "id": "FH0239"
+            },
+            {
+                "id": "FH0240"
+            },
+            {
+                "id": "FH0241"
+            },
+            {
+                "id": "FH0242"
+            },
+            {
+                "id": "FH0243"
+            },
+            {
+                "id": "FH0244"
+            },
+            {
+                "id": "FH0245"
+            },
+            {
+                "id": "FH0246"
+            },
+            {
+                "id": "FH0247"
+            },
+            {
+                "id": "FH0248"
+            },
+            {
+                "id": "FH0249"
+            },
+            {
+                "id": "FH0250"
+            },
+            {
+                "id": "FH0251"
+            },
+            {
+                "id": "FH0252"
+            },
+            {
+                "id": "FH0253"
+            },
+            {
+                "id": "FH0254"
+            },
+            {
+                "id": "FH0255"
+            },
+            {
+                "id": "FH0256"
+            },
+            {
+                "id": "FH0257"
+            },
+            {
+                "id": "FH0258"
+            },
+            {
+                "id": "FH0259"
+            },
+            {
+                "id": "FH0260"
+            },
+            {
+                "id": "FH0261"
+            },
+            {
+                "id": "FH0262"
+            },
+            {
+                "id": "FH0263"
+            },
+            {
+                "id": "FH0264"
+            },
+            {
+                "id": "FH0265"
+            },
+            {
+                "id": "FH0266"
+            },
+            {
+                "id": "FH0267"
+            },
+            {
+                "id": "FH0268"
+            },
+            {
+                "id": "FH0269"
+            },
+            {
+                "id": "FH0270"
+            },
+            {
+                "id": "FH0271"
+            },
+            {
+                "id": "FH0272"
+            },
+            {
+                "id": "FH0273"
+            }
+        ],
+        "tEquiv": "FH0001,FH0002,FH0003,FH0004,FH0005,FH0006,FH0007,FH0008,FH0009,FH0010,FH0011,FH0012,FH0013,FH0014,FH0015,FH0016,FH0017,FH0018,FH0019,FH0020,FH0021,FH0022,FH0023,FH0024,FH0025,FH0026,FH0027,FH0028,FH0029,FH0030,FH0031,FH0032,FH0033,FH0034,FH0035,FH0036,FH0037,FH0038,FH0039,FH0040,FH0041,FH0042,FH0043,FH0044,FH0045,FH0046,FH0047,FH0048,FH0049,FH0050,FH0051,FH0052,FH0053,FH0054,FH0055,FH0056,FH0057,FH0058,FH0059,FH0060,FH0061,FH0062,FH0063,FH0064,FH0065,FH0066,FH0067,FH0068,FH0069,FH0070,FH0071,FH0072,FH0073,FH0074,FH0075,FH0076,FH0077,FH0078,FH0079,FH0080,FH0081,FH0082,FH0083,FH0084,FH0085,FH0086,FH0087,FH0088,FH0089,FH0090,FH0091,FH0092,FH0093,FH0094,FH0095,FH0096,FH0097,FH0098,FH0099,FH0100,FH0101,FH0102,FH0103,FH0104,FH0105,FH0106,FH0107,FH0108,FH0109,FH0110,FH0111,FH0112,FH0113,FH0114,FH0115,FH0116,FH0117,FH0118,FH0119,FH0120,FH0121,FH0122,FH0123,FH0124,FH0125,FH0126,FH0127,FH0128,FH0129,FH0130,FH0131,FH0132,FH0133,FH0134,FH0135,FH0136,FH0137,FH0138,FH0139,FH0140,FH0141,FH0142,FH0143,FH0144,FH0145,FH0146,FH0147,FH0148,FH0149,FH0150,FH0151,FH0152,FH0153,FH0154,FH0155,FH0156,FH0157,FH0158,FH0159,FH0160,FH0161,FH0162,FH0163,FH0164,FH0165,FH0166,FH0167,FH0168,FH0169,FH0170,FH0171,FH0172,FH0173,FH0174,FH0175,FH0176,FH0177,FH0178,FH0179,FH0180,FH0181,FH0182,FH0183,FH0184,FH0185,FH0186,FH0187,FH0188,FH0189,FH0190,FH0191,FH0192,FH0193,FH0194,FH0195,FH0196,FH0197,FH0198,FH0199,FH0200,FH0201,FH0202,FH0203,FH0204,FH0205,FH0206,FH0207,FH0208,FH0209,FH0210,FH0211,FH0212,FH0213,FH0214,FH0215,FH0216,FH0217,FH0218,FH0219,FH0220,FH0221,FH0222,FH0223,FH0224,FH0225,FH0226,FH0227,FH0228,FH0229,FH0230,FH0231,FH0232,FH0233,FH0234,FH0235,FH0236,FH0237,FH0238,FH0239,FH0240,FH0241,FH0242,FH0243,FH0244,FH0245,FH0246,FH0247,FH0248,FH0249,FH0250,FH0251,FH0252,FH0253,FH0254,FH0255,FH0256,FH0257,FH0258,FH0259,FH0260,FH0261,FH0262,FH0263,FH0264,FH0265,FH0266,FH0267,FH0268,FH0269,FH0270,FH0271,FH0272,FH0273"
+        },
+        {
+          "id_course": "FI1101",
+          "name": "física general i",
+          "truncatedName": "física general i",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [],
+          "co_requirements": [
+            {
+              "id": "MA1102"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL2113"
+            },
+            {
+              "id": "FI1102"
+            },
+            {
+              "id": "FI2103"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "FI1201",
+          "name": "laboratorio física general i",
+          "truncatedName": "laboratorio física general i",
+          "credits": 1,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [
+            {
+              "id": "FI1101"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL2110"
+            },
+            {
+              "id": "FI1102"
+            },
+            {
+              "id": "FI2103"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "MA1102",
+          "name": "cálculo diferencial e integral",
+          "truncatedName": "cálculo diferencial e integral",
+          "credits": 4,
+          "hours": 5,
+          "requirements": [
+            {
+              "id": "MA0101"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL2113"
+            },
+            {
+              "id": "FI1101"
+            },
+            {
+              "id": "FI1102"
+            },
+            {
+              "id": "FI2103"
+            },
+            {
+              "id": "MA1103"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        }
+      ]
+    },
+    {
+      "id": "Semestre 3",
+      "courses": [
+        {
+          "id_course": "CI1231",
+          "name": "inglés ii",
+          "truncatedName": "inglés ii",
+          "credits": 2,
+          "hours": 3,
+          "requirements": [
+            {
+              "id": "CI1230"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL2110",
+          "name": "laboratorio de mediciones eléctricas",
+          "truncatedName": "laboratorio de mediciones eléctricas",
+          "credits": 1,
+          "hours": 2,
+          "requirements": [
+            {
+              "id": "FI1201"
+            }
+          ],
+          "co_requirements": [
+            {
+              "id": "EL2113"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL2111"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL2113",
+          "name": "circuitos eléctricos en corriente continua",
+          "truncatedName": "circuitos eléctricos en corriente continua",
+          "credits": 4,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "EL1200"
+            },
+            {
+              "id": "MA1102"
+            }
+          ],
+          "co_requirements": [
+            {
+              "id": "FI1102"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL2114"
+            },
+            {
+              "id": "EL2207"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "FI1102",
+          "name": "física general ii",
+          "truncatedName": "física general ii",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "FI1101"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL2113"
+            },
+            {
+              "id": "EL4513"
+            },
+            {
+              "id": "SO4604"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "FI2103",
+          "name": "física general iii",
+          "truncatedName": "física general iii",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "FI1101"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL2114"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "MA1103",
+          "name": "cálculo y álgebra lineal",
+          "truncatedName": "cálculo y álgebra lineal",
+          "credits": 4,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "MA1102"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CM3207"
+            },
+            {
+              "id": "MA2104"
+            },
+            {
+              "id": "MA2105"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "SE1100",
+          "name": "actividad cultural i",
+          "truncatedName": "actividad cultural i",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL5617"
+            },
+            {
+              "id": "SE1400"
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "SE1101"
+            },
+            {
+              "id": "SE1102"
+            },
+            {
+              "id": "SE1103"
+            },
+            {
+              "id": "SE1104"
+            },
+            {
+              "id": "SE1105"
+            },
+            {
+              "id": "SE1106"
+            },
+            {
+              "id": "SE1107"
+            },
+            {
+              "id": "SE1108"
+            },
+            {
+              "id": "SE1109"
+            },
+            {
+              "id": "SE1110"
+            },
+            {
+              "id": "SE1111"
+            },
+            {
+              "id": "SE2100"
+            },
+            {
+              "id": "SE2101"
+            },
+            {
+              "id": "SE2102"
+            },
+            {
+              "id": "SE2103"
+            },
+            {
+              "id": "SE2104"
+            },
+            {
+              "id": "SE2105"
+            },
+            {
+              "id": "SE2106"
+            },
+            {
+              "id": "SE2107"
+            },
+            {
+              "id": "SE2108"
+            },
+            {
+              "id": "SE2109"
+            },
+            {
+              "id": "SE2110"
+            },
+            {
+              "id": "SE2111"
+            }
+          ],
+          "tEquiv": "SE1101,SE1102,SE1103,SE1104,SE1105,SE1106,SE1107,SE1108,SE1109,SE1110,SE1111,SE2100,SE2101,SE2102,SE2103,SE2104,SE2105,SE2106,SE2107,SE2108,SE2109,SE2110,SE2111"
+        }
+      ]
+    },
+    {
+      "id": "Semestre 4",
+      "courses": [
+        {
+          "id_course": "CS2303",
+          "name": "relaciones laborales",
+          "truncatedName": "relaciones laborales",
+          "credits": 2,
+          "hours": 6,
+          "requirements": [
+            {
+              "id": "CI1407"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "AE4208"
+            },
+            {
+              "id": "CS3404"
+            },
+            {
+              "id": "PI4001"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL2111",
+          "name": "laboratorio de circuitos eléctricos",
+          "truncatedName": "laboratorio de circuitos eléctricos",
+          "credits": 1,
+          "hours": 2,
+          "requirements": [
+            {
+              "id": "EL2110"
+            }
+          ],
+          "co_requirements": [
+            {
+              "id": "EL2114"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL3215"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL2114",
+          "name": "circuitos eléctricos en corriente alterna",
+          "truncatedName": "circuitos eléctricos en corriente alterna",
+          "credits": 4,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "EL2113"
+            },
+            {
+              "id": "FI2103"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL3212"
+            },
+            {
+              "id": "EL4513"
+            },
+            {
+              "id": "EL4703"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL2207",
+          "name": "elementos activos",
+          "truncatedName": "elementos activos",
+          "credits": 4,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "EL2113"
+            }
+          ],
+          "co_requirements": [
+            {
+              "id": "EL2114"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL3212"
+            },
+            {
+              "id": "EL3307"
+            },
+            {
+              "id": "EL3310"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "EL4702",
+          "name": "probabilidad y estadística",
+          "truncatedName": "probabilidad y estadística",
+          "credits": 3,
+          "hours": 4,
+          "requirements": [],
+          "co_requirements": [
+            {
+              "id": "MA2104"
+            }
+          ],
+          "required_by": [
+            {
+              "id": "EL4514"
+            },
+            {
+              "id": "EL5513"
+            },
+            {
+              "id": "PI5516"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "MA2104",
+          "name": "cálculo superior",
+          "truncatedName": "cálculo superior",
+          "credits": 4,
+          "hours": 4,
+          "requirements": [
+            {
+              "id": "MA1103"
+            }
+          ],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "EL4513"
+            },
+            {
+              "id": "EL4702"
+            }
+          ],
+          "equivalent": [],
+          "tEquiv": ""
+        },
+        {
+          "id_course": "SE1400",
+          "name": "actividad cultural-deportiva",
+          "truncatedName": "actividad cultural-deportiva",
+          "credits": 0,
+          "hours": 2,
+          "requirements": [],
+          "co_requirements": [],
+          "required_by": [
+            {
+              "id": "CS3404"
+            },
+            {
+              "id": "EL5617"
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "SE1100"
+            },
+            {
+              "id": "SE1101"
+            },
+            {
+              "id": "SE1102"
+            },
+            {
+              "id": "SE1103"
+            },
+            {
+              "id": "SE1104"
+            },
+            {
+              "id": "SE1105"
+            },
+            {
+              "id": "SE1106"
+            },
+            {
+              "id": "SE1107"
+            },
+            {
+              "id": "SE1108"
+            },
+            {
+              "id": "SE1109"
+            },
+            {
+              "id": "SE1110"
+            },
+            {
+              "id": "SE1111"
+            },
+            {
+              "id": "SE1200"
+            },
+            {
+              "id": "SE1201"
+            },
+            {
+              "id": "SE1202"
+            },
+            {
+              "id": "SE1203"
+            },
+            {
+              "id": "SE1204"
+            },
+            {
+              "id": "SE1205"
+            },
+            {
+              "id": "SE1206"
+            },
+            {
+              "id": "SE1207"
+            },
+            {
+              "id": "SE1208"
+            },
+            {
+              "id": "SE1209"
+            },
+            {
+              "id": "SE1210"
+            },
+            {
+              "id": "SE1211"
+            },
+            {
+              "id": "SE1218"
+            },
+            {
+              "id": "SE1219"
+            },
+            {
+              "id": "SE1220"
+            },
+            {
+              "id": "SE1221"
+            },
+            {
+              "id": "SE1222"
+            },
+            {
+              "id": "SE1223"
+            },
+            {
+              "id": "SE2100"
+            },
+            {
+              "id": "SE2101"
+            },
+            {
+              "id": "SE2102"
+            },
+            {
+              "id": "SE2103"
+            },
+            {
+              "id": "SE2104"
+            },
+            {
+              "id": "SE2105"
+            },
+            {
+              "id": "SE2106"
+            },
+            {
+              "id": "SE2107"
+            },
+            {
+              "id": "SE2108"
+            },
+            {
+              "id": "SE2109"
+            },
+            {
+              "id": "SE2110"
+            },
+            {
+              "id": "SE2111"
+            },
+            {
+              "id": "SE2200"
+            },
+            {
+              "id": "SE2201"
+            },
+            {
+              "id": "SE2202"
+            },
+            {
+              "id": "SE2203"
+            },
+            {
+              "id": "SE2204"
+            },
+            {
+              "id": "SE2205"
+            },
+            {
+              "id": "SE2206"
+            },
+            {
+              "id": "SE2207"
+            },
+            {
+              "id": "SE2208"
+            },
+            {
+              "id": "SE2209"
+            },
+            {
+              "id": "SE2210"
+            },
+            {
+              "id": "SE2218"
+            },
+            {
+              "id": "SE2219"
+            }
+          ],
+          "tEquiv": "SE1100,SE1101,SE1102,SE1103,SE1104,SE1105,SE1106,SE1107,SE1108,SE1109,SE1110,SE1111,SE1200,SE1201,SE1202,SE1203,SE1204,SE1205,SE1206,SE1207,SE1208,SE1209,SE1210,SE1211,SE1218,SE1219,SE1220,SE1221,SE1222,SE1223,SE2100,SE2101,SE2102,SE2103,SE2104,SE2105,SE2106,SE2107,SE2108,SE2109,SE2110,SE2111,SE2200,SE2201,SE2202,SE2203,SE2204,SE2205,SE2206,SE2207,SE2208,SE2209,SE2210,SE2218,SE2219"
+        }
+      ]
+    }
+  ]
+}

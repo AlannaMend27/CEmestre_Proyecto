@@ -1,0 +1,4797 @@
+[
+  {
+    "codigo": "CI0200",
+    "nombre": "examen diagnóstico",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI0202",
+    "nombre": "inglés básico",
+    "creditos": 2,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:19:50"
+        ],
+        "profesores": [
+          "Rivera Vega Katerine"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Murillo Escalante Rocio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 15:0:17:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vindas Fernandez Nuria"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Lunes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CA2125",
+    "nombre": "elementos de computación",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Cerdas Quesada Ivannia"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Campos Fernandez Ivan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Campos Fernandez Ivan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Quiros Ramirez Franco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Hernandez Sibaja Bryan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Bogarin Navarro Rodrigo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Navas Su Jose Dolores"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Coto Sarmiento Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Sarmiento Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Villalobos Arias Luis Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CS1502",
+    "nombre": "introducción a la técnica ciencia y tecnología",
+    "creditos": 1,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Introducción a la técnica ciencia y tecnología",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortiz Acuña Leonardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la técnica ciencia y tecnología",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la técnica ciencia y tecnología",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la técnica ciencia y tecnología",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la técnica ciencia y tecnología",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL1100",
+    "nombre": "introducción a la ingeniería",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MA0101",
+    "nombre": "matemática general",
+    "creditos": 2,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:10:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Solis Palma Angie"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:12:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Vasquez Arturo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:15:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Cordero Quiros Marcial"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:17:50"
+        ],
+        "profesores": [
+          "Jimenez Madrigal Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 16:0:18:50",
+          "Jueves - 16:0:17:50"
+        ],
+        "profesores": [
+          "Rodriguez Castro Bryan"
+        ],
+        "tipo_grupo": "Asistida"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 18:0:20:50",
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Cordero Quiros Marcial"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Sanchez Fernandez Ivonne"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Marrero Calvo Marcela"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Quesada Villalobos Lourdes"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 15:0:17:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Azofeifa Cubero Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 16:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Prendas Rojas Juan Pablo"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Matemática general",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Sabado - 7:30:12:20"
+        ],
+        "profesores": [
+          "Solano Varela Daniel Jesus"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MI2101",
+    "nombre": "dibujo técnico",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Bermudez Chacon Marvin"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Bonilla Guido Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Cordoba Ramirez Luis Felipe"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Jimenez Ceciliano Maximino"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 7:30:11:20"
+        ],
+        "profesores": [
+          "Marin Guillen Frank"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 13:0:16:50"
+        ],
+        "profesores": [
+          "Marin Guillen Frank"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 17:0:20:50"
+        ],
+        "profesores": [
+          "Hernandez Gonzalez Victor Julio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Jueves - 13:0:16:50"
+        ],
+        "profesores": [
+          "Hernandez Gonzalez Victor Julio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Ureña Sandi Noel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Jackson Quiros Herbert"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Bonilla Guido Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Viernes - 13:0:16:50"
+        ],
+        "profesores": [
+          "Rojas Gomez Julio Cesar"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "QU1102",
+    "nombre": "laboratorio de química básica i",
+    "creditos": 1,
+    "requisitos": [],
+    "correquisitos": [
+      "QU1106"
+    ],
+    "grupos": [
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Salas Jimenez Juan Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Calleja Amador Carlos Enrique"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Calleja Amador Carlos Enrique"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Mata Mata Alejandra"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mora Molina Jesus"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mora Molina Jesus"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Mora Molina Jesus"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Hernandez Alpizar Laura"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quiros Bustos Noemi"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quiros Bustos Noemi"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Calleja Amador Carlos Enrique"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Soto Cordoba Silvia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de química básica I",
+        "numero_grupo": "015",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Ledezma Espinoza Aura"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "QU1106",
+    "nombre": "química básica i",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [
+      "QU1102"
+    ],
+    "grupos": [
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Porras Acosta Maria"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Calleja Amador Carlos Enrique"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Porras Acosta Maria"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Soto Cordoba Silvia"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Quiros Bustos Noemi"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Porras Acosta Maria"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Villalta Romero Fabian"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "SE1200",
+    "nombre": "actividad deportiva i",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Atletismo",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Atletismo",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Bogantes Garcia Fernando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Mendez Gamboa Rosaura"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Cabrera Araya Gustavo Alcides"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mendez Gamboa Rosaura"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Travieso Rodriguez Alberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ajedrez",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Cordero Maroto Nelson"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Baloncesto recreativo",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Cabrera Araya Gustavo Alcides"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Baloncesto recreativo",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Marin Vargas Fabian"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Jimenez Daniel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol sala",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol sala",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "SO4604",
+    "nombre": "seguridad y salud ocupacional",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Seguridad y salud ocupacional",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Morales Martinez Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Seguridad y salud ocupacional",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Carpio Chaves Monica"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Seguridad y salud ocupacional",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 17:0:19:50"
+        ],
+        "profesores": [
+          "Morales Martinez Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Seguridad y salud ocupacional",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Morales Martinez Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Seguridad y salud ocupacional",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Viernes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Morales Martinez Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CA3125",
+    "nombre": "análisis y diseño de algoritmos",
+    "creditos": 3,
+    "requisitos": [
+      "CA2125"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Arce Orozco Armando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Garro Abarca Victor"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Garro Abarca Victor"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Hernandez Sibaja Bryan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Bogarin Navarro Rodrigo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI1230",
+    "nombre": "inglés i",
+    "creditos": 2,
+    "requisitos": [
+      "CI0200",
+      "CI0202"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Brenes Rojas Leonardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Herrera Jimenez Ingrid"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Molina Villalobos Tania"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Solano Solano Jose Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 15:0:17:50"
+        ],
+        "profesores": [
+          "Guillen Jimenez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Ramirez Castro Monserrat"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Viernes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Solano Solano Jose Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI1407",
+    "nombre": "habilidades de comunicación en ingeniería",
+    "creditos": 2,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Habilidades de comunicación en Ingeniería",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Godinez Rojas Paulette"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Habilidades de comunicación en Ingeniería",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Morales Solano Paola Natalia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Habilidades de comunicación en Ingeniería",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Morales Garay Saray"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Habilidades de comunicación en Ingeniería",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Morales Solano Paola Natalia"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL1200",
+    "nombre": "introducción a la electrónica",
+    "creditos": 0,
+    "requisitos": [
+      "EL1100"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Molina Robles Roberto Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Contreras Sanchez Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Arriola Valverde Sergio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Contreras Sanchez Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Molina Robles Roberto Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FH1000",
+    "nombre": "centros de formación humanística",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Educación en nuestros tiempos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 7:30:13:50",
+          "Viernes - 7:30:13:50"
+        ],
+        "profesores": [
+          "Rivera Rojas Fanni"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "De Freud al fenómeno bio-psico-social de la sexualidad",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 8:30:12:20",
+          "Jueves - 8:30:12:20",
+          "Viernes - 8:30:12:20"
+        ],
+        "profesores": [
+          "Hernandez Jimenez Maria Teresa"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Recrecían, ocio, esparcimiento",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 13:0:18:50",
+          "Sabado - 13:0:18:50"
+        ],
+        "profesores": [
+          "Artavia Granados Xinia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "La cultura de la alteridad: como respuesta, realidad actual Costa Rica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 7:30:13:50",
+          "Viernes - 7:30:13:50"
+        ],
+        "profesores": [
+          "Amador Solano Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Hablemos de discapacidad",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50",
+          "Jueves - 18:0:20:50",
+          "Viernes - 18:0:20:50",
+          "Sabado - 18:0:20:50"
+        ],
+        "profesores": [
+          "Bogarin Marin Milene"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Estado o mercado: el origen de la discusión ideológica",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 14:0:17:50",
+          "Jueves - 14:0:17:50",
+          "Viernes - 14:0:17:50"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Introducción a la filosofía a través del cine",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 16:0:19:50",
+          "Jueves - 16:0:19:50",
+          "Viernes - 16:0:19:50"
+        ],
+        "profesores": [
+          "Gonzalez Zuñiga Rodolfo"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "El universo de Star Wars: entre la ciencia ficción, la política y la mitología",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50",
+          "Jueves - 18:0:20:50",
+          "Viernes - 18:0:20:50",
+          "Sabado - 18:0:20:50"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Adecuado manejo del conflicto humano",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 7:30:13:50",
+          "Sabado - 7:30:13:50"
+        ],
+        "profesores": [
+          "Artavia Granados Xinia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Manifestaciones del racismo en Costa Rica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 17:0:19:50",
+          "Jueves - 17:0:19:50",
+          "Viernes - 17:0:19:50",
+          "Sabado - 17:0:19:50"
+        ],
+        "profesores": [
+          "Campos Chavarria Benjamin"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FI1101",
+    "nombre": "física general i",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [
+      "MA1102"
+    ],
+    "grupos": [
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Murillo Salazar Dennis"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Murillo Zumbado Gustavo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Pineda Lizano Juan Jose"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Elizondo Zuñiga Jennifer"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Elizondo Zuñiga Jennifer"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Vargas Blanco Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Pineda Lizano Juan Jose"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Corrales Quesada Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Corrales Quesada Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Moya Serrano Roy David"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Cambronero Cordero Michael"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "014",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Montero Zeledon Ernesto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "015",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "017",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Rojas Perez Francisco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "018",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "019",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Rojas Perez Francisco"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Física general I",
+        "numero_grupo": "020",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FI1201",
+    "nombre": "laboratorio física general i",
+    "creditos": 1,
+    "requisitos": [],
+    "correquisitos": [
+      "FI1101"
+    ],
+    "grupos": [
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sevilla Quesada Evar"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Carballo Carlos Adrian"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Campos Rodriguez Melania"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Campos Rodriguez Melania"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Segura Carvajal Marcos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Perez Hidalgo Jose Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Carballo Carlos Adrian"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Mayorga Espinoza Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Segura Carvajal Marcos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Corrales Quesada Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Alfaro Alvarado Jose Abrahan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Montero Zeledon Ernesto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "014",
+        "bloques_horario": [
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Morales Muñoz Walter"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "015",
+        "bloques_horario": [
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Segura Carvajal Marcos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "016",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Morales Muñoz Walter"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "017",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Morales Muñoz Walter"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "018",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Corrales Quesada Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "019",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Solano Piedra Ricardo Adolfo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "022",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Elizondo Zuñiga Jennifer"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "023",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Cambronero Cordero Michael"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "024",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Cambronero Cordero Michael"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "025",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Solano Piedra Ricardo Adolfo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "026",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Morales Muñoz Walter"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "027",
+        "bloques_horario": [
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Alfaro Alvarado Jose Abrahan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio física general I",
+        "numero_grupo": "029",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Oreamuno Madriz Rafael"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MA1102",
+    "nombre": "cálculo diferencial e integral",
+    "creditos": 4,
+    "requisitos": [
+      "MA0101"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:10:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quesada Villalobos Lourdes"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:10:20"
+        ],
+        "profesores": [
+          "Cordero Quiros Marcial"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Masis Flores David"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 9:30:12:20",
+          "Jueves - 10:30:12:20"
+        ],
+        "profesores": [
+          "Paez Paez Cristian"
+        ],
+        "tipo_grupo": "Asistida"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 13:0:15:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Rodriguez Granados Natalia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:17:50"
+        ],
+        "profesores": [
+          "Parra Salazar Edward"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 16:0:18:50",
+          "Jueves - 16:0:17:50"
+        ],
+        "profesores": [
+          "Masis Flores David"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 15:0:17:50",
+          "Jueves - 16:0:17:50"
+        ],
+        "profesores": [
+          "Quesada Villalobos Lourdes"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 17:0:19:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Esquivel Samudio Jeison"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 18:0:20:50",
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Fallas Monge Juan Jose"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Paez Paez Cristian"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Miercoles - 7:30:10:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Jimenez Madrigal Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Miercoles - 10:30:12:20",
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Parra Salazar Edward"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "014",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20",
+          "Viernes - 10:30:12:20"
+        ],
+        "profesores": [
+          "Mora Picado Luis Fernando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "015",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Nuñez Vanegas Felix"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "016",
+        "bloques_horario": [
+          "Miercoles - 15:0:17:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Mora Picado Luis Fernando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "017",
+        "bloques_horario": [
+          "Miercoles - 16:0:18:50",
+          "Viernes - 16:0:17:50"
+        ],
+        "profesores": [
+          "Gutierrez Montenegro Marco Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "018",
+        "bloques_horario": [
+          "Miercoles - 17:0:19:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Parra Salazar Edward"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "019",
+        "bloques_horario": [
+          "Miercoles - 17:0:19:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Mora Casasola Maria Fernanda"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "020",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50",
+          "Viernes - 18:0:19:50"
+        ],
+        "profesores": [
+          "Lopez Mora Veronica"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "021",
+        "bloques_horario": [
+          "Sabado - 7:30:12:20"
+        ],
+        "profesores": [
+          "Jimenez Madrigal Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo diferencial e integral",
+        "numero_grupo": "022",
+        "bloques_horario": [
+          "Miercoles - 16:0:18:50",
+          "Viernes - 16:0:17:50"
+        ],
+        "profesores": [
+          "Sanchez Fernandez Ivonne"
+        ],
+        "tipo_grupo": "Tutoría"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI1231",
+    "nombre": "inglés ii",
+    "creditos": 2,
+    "requisitos": [
+      "CI1230"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Herrera Jimenez Ingrid"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Viernes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 16:0:18:50"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Fuentes Mora Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2110",
+    "nombre": "laboratorio de mediciones eléctricas",
+    "creditos": 1,
+    "requisitos": [
+      "FI1201"
+    ],
+    "correquisitos": [
+      "EL2113"
+    ],
+    "grupos": [
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Segura Quiros Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2113",
+    "nombre": "circuitos eléctricos en corriente continua",
+    "creditos": 4,
+    "requisitos": [
+      "EL1200",
+      "MA1102"
+    ],
+    "correquisitos": [
+      "FI1102"
+    ],
+    "grupos": [
+      {
+        "nombre": "Circuitos eléctricos en corriente continua",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Castillo Paola"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente continua",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente continua",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Picado Garcia Fabian Alberto"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente continua",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20",
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Hernandez Rivera Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FI1102",
+    "nombre": "física general ii",
+    "creditos": 3,
+    "requisitos": [
+      "FI1101"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vargas Blanco Ivan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Amador Jara Alvaro"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Pineda Lizano Juan Jose"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Pineda Lizano Juan Jose"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Murillo Zumbado Gustavo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Perez Hidalgo Jose Esteban"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Oreamuno Madriz Rafael"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Corrales Quesada Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Soto Chinchilla Yerry"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Física general Ii",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Murillo Zumbado Gustavo"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FI2103",
+    "nombre": "física general iii",
+    "creditos": 3,
+    "requisitos": [
+      "FI1101"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Zeledon Ernesto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Rojas Rojas Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Araya Solano Luis Alonso"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Font Cruz Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Oreamuno Madriz Rafael"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Rojas Perez Francisco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gutierrez Chaves Carlos Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MA1103",
+    "nombre": "cálculo y álgebra lineal",
+    "creditos": 4,
+    "requisitos": [
+      "MA1102"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Chavarria Molina Jeffry"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Chinchilla Valverde Jorge Luis"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Chinchilla Valverde Jorge Luis"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Chavarria Molina Jeffry"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Jimenez Romero Alejandra"
+        ],
+        "tipo_grupo": "Asistida"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Figueroa Mata Geovanni"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 16:0:17:50",
+          "Jueves - 16:0:17:50"
+        ],
+        "profesores": [
+          "Brenes Gomez Randall"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Gutierrez Montenegro Marco Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 18:0:19:50",
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Alpizar Brenes Geisel"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 18:0:19:50",
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Figueroa Mata Geovanni"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Acuña Prado Luis"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Gutierrez Montenegro Marco Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Figueroa Mata Geovanni"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "014",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Calderon Solano Manuel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "015",
+        "bloques_horario": [
+          "Miercoles - 16:0:17:50",
+          "Viernes - 16:0:17:50"
+        ],
+        "profesores": [
+          "Parra Rodriguez Emmanuelle"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "016",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Calderon Solano Manuel"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "017",
+        "bloques_horario": [
+          "Miercoles - 18:0:19:50",
+          "Viernes - 18:0:19:50"
+        ],
+        "profesores": [
+          "Mora Picado Luis Fernando"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "018",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Brenes Gomez Randall"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo y álgebra lineal",
+        "numero_grupo": "019",
+        "bloques_horario": [
+          "Jueves - 7:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Madrigal Jorge"
+        ],
+        "tipo_grupo": "Tutoría"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "SE1100",
+    "nombre": "actividad cultural i",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "De Simone Castellon Alexandra"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Gomez Jimenez Andrea"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gomez Jimenez Andrea"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:19:50"
+        ],
+        "profesores": [
+          "Barrantes Alvarado Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Barrantes Alvarado Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Danza",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quesada Villalobos Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Castillo Ulate Elena"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Castillo Ulate Elena"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación literaria",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Ramos Vargas Arnoldo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dinámica de la cultura",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sancho Martinez Laura Karina"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Dinámica de la cultura",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sancho Martinez Laura Karina"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CS2303",
+    "nombre": "relaciones laborales",
+    "creditos": 2,
+    "requisitos": [
+      "CI1407"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Calderon Ferrey Martha"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 15:0:17:50"
+        ],
+        "profesores": [
+          "Chacon Mata Alfonso"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Achoy Hernandez Alejandro"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Calderon Ferrey Martha"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2111",
+    "nombre": "laboratorio de circuitos eléctricos",
+    "creditos": 1,
+    "requisitos": [
+      "EL2110"
+    ],
+    "correquisitos": [
+      "EL2114"
+    ],
+    "grupos": [
+      {
+        "nombre": "Laboratorio de circuitos eléctricos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de circuitos eléctricos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2114",
+    "nombre": "circuitos eléctricos en corriente alterna",
+    "creditos": 4,
+    "requisitos": [
+      "EL2113",
+      "FI2103"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Circuitos eléctricos en corriente alterna",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Chinchilla Vargas Erick Gustavo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente alterna",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quiros Solano William"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente alterna",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valverde Gardela Heberth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Circuitos eléctricos en corriente alterna",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Herrero Chavarria Felipe"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2207",
+    "nombre": "elementos activos",
+    "creditos": 4,
+    "requisitos": [
+      "EL2113"
+    ],
+    "correquisitos": [
+      "EL2114"
+    ],
+    "grupos": [
+      {
+        "nombre": "Elementos activos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Segura Quiros Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos activos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Rodriguez Juan Jose"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos activos",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Vega Castillo Paola"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos activos",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Pinnock Chacon Mac Alfred"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4702",
+    "nombre": "probabilidad y estadística",
+    "creditos": 3,
+    "requisitos": [],
+    "correquisitos": [
+      "MA2104"
+    ],
+    "grupos": [
+      {
+        "nombre": "Probabilidad y estadística",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Madrigal Sanchez Johanna"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MA2104",
+    "nombre": "cálculo superior",
+    "creditos": 4,
+    "requisitos": [
+      "MA1103"
+    ],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Monge Fallas Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 18:0:19:50",
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Borbon Alpizar Alexander"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Valverde Sanchez Samuel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Romero Alejandra"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 18:0:19:50",
+          "Viernes - 18:0:19:50"
+        ],
+        "profesores": [
+          "Oviedo Ugalde Norberto"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Esquivel Samudio Jeison"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Cálculo superior",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Chacon Vargas Erick"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "SE1400",
+    "nombre": "actividad cultural-deportiva",
+    "creditos": 0,
+    "requisitos": [],
+    "correquisitos": [],
+    "grupos": [
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "De Simone Castellon Alexandra"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Gomez Jimenez Andrea"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes dramáticas",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gomez Jimenez Andrea"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:19:50"
+        ],
+        "profesores": [
+          "Barrantes Alvarado Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Valerin Rojas Sofia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Acción social",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Barrantes Alvarado Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Danza",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quesada Villalobos Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes visuales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Castillo Ulate Elena"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Meza Solano Vinicio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:19:50"
+        ],
+        "profesores": [
+          "Monge Perez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Artes musicales",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Castillo Ulate Elena"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación literaria",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Ramos Vargas Arnoldo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Diaz Brenes Nelson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Apreciación de cine",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Guzman Alicia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dinámica de la cultura",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sancho Martinez Laura Karina"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Dinámica de la cultura",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sancho Martinez Laura Karina"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Atletismo",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Atletismo",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Bogantes Garcia Fernando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Sanchez Perez Lisbeth"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Natación",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Loaiza Soto Biery"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Mendez Gamboa Rosaura"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Cabrera Araya Gustavo Alcides"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Quiros Valverde Rodrigo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Juegos y deportes en conjunto",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Loria Solano Johnny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mendez Gamboa Rosaura"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Acondicionamiento físico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Travieso Rodriguez Alberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mendez Solano Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Béisbol-softbol",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vega Aguero Jorge"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ajedrez",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Cordero Maroto Nelson"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Baloncesto recreativo",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Cabrera Araya Gustavo Alcides"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Baloncesto recreativo",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Marin Vargas Fabian"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Jimenez Jimenez Daniel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol sala",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Futbol sala",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Ortega Artavia Jhonny"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  }
+]
