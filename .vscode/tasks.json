@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc build catalogo (main + cJSON)",
+            "command": "/usr/bin/gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${fileDirname}/main.c",
+                "${fileDirname}/cJSON.c",
+                "-o",
+                "${fileDirname}/catalogo"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compila main.c y cJSON.c juntos y enlaza el ejecutable."
+        }
+    ],
+    "version": "2.0.0"
+}
