@@ -2,11 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug catalogo_run",
+            "name": "Debug catalogo_run (Windows)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/etapa1_c/build/catalogo_run.exe",
+            "args": [
+                "${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json"
+            ],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/ucrt64/bin/gdb.exe",
+            "preLaunchTask": "C/C++: gcc build catalogo (main + modulos + cJSON)"
+        },
+        {
+            "name": "Debug catalogo_run (Linux)",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/etapa1_c/build/catalogo_run",
-            "args": ["${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json"],
+            "args": [
+                "${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json"
+            ],
             "cwd": "${workspaceFolder}",
             "MIMode": "gdb",
             "preLaunchTask": "C/C++: gcc build catalogo (main + modulos + cJSON)"
