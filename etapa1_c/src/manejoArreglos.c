@@ -3,62 +3,81 @@
 #include <string.h>
 #include "manejoArreglos.h"
 
-// aqui van funciones de manejo de arreglos de strings
+//Aqui van funciones de manejo de arreglos de strings
 
-// Copia un string de forma segura hacia un buffer
-
+//Copia un string hacia un buffer de destino evitando desbordamientos
 void copiarStr(char *destino, size_t tamDestino, const char *origen) {
+    //Si el origen viene nulo dejamos el destino vacio y salimos
     if (origen == NULL) {
         destino[0] = '\0';
         return;
     }
+    
     strncpy(destino, origen, tamDestino - 1);
     destino[tamDestino - 1] = '\0';
 }
 
-// Convierte un arreglo JSON de strings en un arreglo de strings dinamico
-char **leerArregloStrings(const cJSON *arregloJson, int *n) {
-    *n = 0;
+//Convierte un arreglo JSON de strings en un arreglo de strings dinamico en memoria
+char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
+    *cantidadSalida = 0;
+    
+    //Verificamos que el elemento recibido sea realmente un arreglo en el json
     if (!cJSON_IsArray(arregloJson)) {
         return NULL;
     }
 
-    int total = cJSON_GetArraySize(arregloJson);
-    if (total == 0) {
+    int totalElementos = cJSON_GetArraySize(arregloJson);
+    
+    //Si el arreglo esta vacio retornamos nulo
+    if (totalElementos == 0) {
         return NULL;
     }
 
-    char **arreglo = malloc(sizeof(char *) * total);
-    if (!arreglo) {
+    char **arregloDinamico = malloc(sizeof(char *) * totalElementos);
+    
+    //Si falla la reserva de memoria reportamos el error y detenemos el programa
+    if (!arregloDinamico) {
         fprintf(stderr, "Error de memoria en leerArregloStrings\n");
         exit(1);
     }
 
-    int idx = 0;
-    const cJSON *item;
-    cJSON_ArrayForEach(item, arregloJson) {
-        if (cJSON_IsString(item) && item->valuestring != NULL) {
-            arreglo[idx] = malloc(strlen(item->valuestring) + 1);
-            if (!arreglo[idx]) {
+    //Declaramos la variable para el indice y el puntero temporal del item json
+    int indiceElemento = 0;
+    const cJSON *itemJson;
+    
+    //Recorremos cada elemento del arreglo json para extraer sus valores de texto
+    cJSON_ArrayForEach(itemJson, arregloJson) {
+        if (cJSON_IsString(itemJson) && itemJson->valuestring != NULL) {
+            arregloDinamico[indiceElemento] = malloc(strlen(itemJson->valuestring) + 1);
+            
+            //Validamos la memoria para el string individual
+            if (!arregloDinamico[indiceElemento]) {
                 fprintf(stderr, "Error de memoria en leerArregloStrings\n");
                 exit(1);
             }
-            strcpy(arreglo[idx], item->valuestring);
-            idx++;
+            
+            //Copiamos el texto del item al arreglo dinamico y avanzamos el indice
+            strcpy(arregloDinamico[indiceElemento], itemJson->valuestring);
+            indiceElemento++;
         }
     }
 
-    *n = idx;
-    return arreglo;
+    //Guardamos la cantidad total de elementos procesados y retornamos el arreglo dinamico
+    *cantidadSalida = indiceElemento;
+    return arregloDinamico;
 }
 
-// libera el arreglo de strings el de (**char)
-void liberarArregloStrings(char **arreglo, int n) {
-    if (!arreglo) {
+//Libera por completo el arreglo dinamico de strings y cada uno de sus elementos internos
+void liberarArregloStrings(char **arregloStrings, int cantidadElementos) {
+    //Si el arreglo es nulo salimos de inmediato
+    if (!arregloStrings) {
         return;
     }
-    for (int i = 0; i < n; i++) {
-        free(arreglo[i]);
+    
+    //Recorremos cada posicion del arreglo para liberar la memoria del string contenido
+    for (int indiceElemento = 0; indiceElemento < cantidadElementos; indiceElemento++) {
+        free(arregloStrings[indiceElemento]);
     }
-    free(arreglo);
+    
+    free(arregloStrings);
 }

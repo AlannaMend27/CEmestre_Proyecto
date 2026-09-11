@@ -1,106 +1,132 @@
-/*aqui va la logica de preguntarle cosas al catalogo 
-ya cargado, tipo preguntarle que cuales puede matricular y asi
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
 #include "consulta.h"
 
-/* Imprime todos los datos de un curso en consola */
-void imprimirCurso(const Curso *c) {
-    printf("Codigo: %s\n", c->codigo);
-    printf("Nombre: %s\n", c->nombre);
-    printf("Creditos: %d\n", c->creditos);
-    printf("Puede matricular: %s\n", c->estudiantePuedeMatricular ? "si" : "no");
+//Imprime todos los datos de un curso especifico en la consola
+void imprimirCurso(const Curso *cursoActual) {
 
-    printf("Requisitos (%d): ", c->numRequisitos);
-    for (int i = 0; i < c->numRequisitos; i++) {
-        printf("%s ", c->requisitos[i]);
+    printf("Codigo: %s\n", cursoActual->codigo);
+    printf("Nombre: %s\n", cursoActual->nombre);
+    printf("Creditos: %d\n", cursoActual->creditos);
+    
+    //Revisamos si el estudiante tiene permiso de matricularlo
+    if (cursoActual->estudiantePuedeMatricular) {
+        printf("Puede matricular: si\n");   
+    } else {
+        printf("Puede matricular: no\n");
+    }
+
+    printf("Requisitos (%d): ", cursoActual->numRequisitos);
+
+    //Recorremos e imprimimos la lista de requisitos separados por un espacio
+    for (int indiceRequisito = 0; indiceRequisito < cursoActual->numRequisitos; indiceRequisito++) {
+        printf("%s ", cursoActual->requisitos[indiceRequisito]);
     }
     printf("\n");
 
-    printf("Correquisitos (%d): ", c->numCorrequisitos);
-    for (int i = 0; i < c->numCorrequisitos; i++) {
-        printf("%s ", c->correquisitos[i]);
+    printf("Correquisitos (%d): ", cursoActual->numCorrequisitos);
+
+    //Hacemos lo mismo para listar los correquisitos del curso
+    for (int indiceCorrequisito = 0; indiceCorrequisito < cursoActual->numCorrequisitos; indiceCorrequisito++) {
+        printf("%s ", cursoActual->correquisitos[indiceCorrequisito]);
     }
     printf("\n");
 
-    printf("Grupos (%d):\n", c->numGrupos);
-    for (int i = 0; i < c->numGrupos; i++) {
-        const Grupo *g = &c->grupos[i];
+    printf("Grupos (%d):\n", cursoActual->numGrupos);
+    //Iteramos sobre los grupos disponibles del curso para mostrar sus detalles
+    for (int indiceGrupo = 0; indiceGrupo < cursoActual->numGrupos; indiceGrupo++) {
+
+        const Grupo *grupoActual = &cursoActual->grupos[indiceGrupo];
         printf("  - Grupo %s (%s) [%s]\n",
-            g->numeroGrupo, g->nombre, g->tipoGrupo);
+        grupoActual->numeroGrupo, grupoActual->nombre, grupoActual->tipoGrupo);
 
         printf("    Horarios: ");
-        for (int k = 0; k < g->numBloquesHorario; k++) {
-            printf("%s | ", g->bloquesHorario[k]);
+        //Mostramos cada bloque de horario en el que se imparte este grupo especifico
+        for (int indiceBloque = 0; indiceBloque < grupoActual->numBloquesHorario; indiceBloque++) {
+            printf("%s | ", grupoActual->bloquesHorario[indiceBloque]);
         }
 
         printf("\n    Profesores: ");
-        for (int k = 0; k < g->numProfesores; k++) {
-            printf("%s | ", g->profesores[k]);
+        //Listamos los profesores asignados a impartir las lecciones de este grupo
+        for (int indiceProfesor = 0; indiceProfesor < grupoActual->numProfesores; indiceProfesor++) {
+            printf("%s | ", grupoActual->profesores[indiceProfesor]);
         }
         printf("\n");
     }
     printf("--------------------------------------------------\n");
 }
 
-/* Busca un curso por codigo e imprime sus datos si lo encuentra */
-void buscar(const char *codigoCurso, Curso *cursos, int numCursos) {
-    for (int i = 0; i < numCursos; i++) {
-        if (strcmp(cursos[i].codigo, codigoCurso) == 0) {
+//Busca un curso por su codigo dentro del catalogo e imprime sus datos si lo encuentra
+void buscar(const char *codigoCurso, Curso *arregloCursos, int cantidadCursos) {
+
+    //Recorremos todo el catalogo buscando la coincidencia con el codigo solicitado
+    for (int indiceCurso = 0; indiceCurso < cantidadCursos; indiceCurso++) {
+
+        //Si el codigo del catalogo coincide con el buscado imprimimos y detenemos la busqueda de inmediato
+        if (strcmp(arregloCursos[indiceCurso].codigo, codigoCurso) == 0) {
             printf("\nCurso encontrado (%s):\n", codigoCurso);
-            imprimirCurso(&cursos[i]);
+            imprimirCurso(&arregloCursos[indiceCurso]);
             return;
         }
     }
+
     printf("Curso con codigo %s no encontrado.\n", codigoCurso);
 }
 
-/* Devuelve un arreglo de punteros a los cursos que el estudiante
-   puede matricular segun su historial de aprobados */
-Curso **obtenerCursosDisponibles(Curso *cursos, int numCursos, char **cursosAprobados, int numAprobados, int *cantidadOut) {
-    Curso **cursosDisponibles = malloc(sizeof(Curso *) * numCursos);
+//Devuelve un arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
+Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char **cursosAprobados, int cantidadAprobados,int *cantidadSalida) {
+    
+    Curso **cursosDisponibles = malloc(sizeof(Curso *) * cantidadCursos);
     int cantidad = 0;
 
-    for (int i = 0; i < numCursos; i++) {
+    //Evaluamos cada curso del catalogo para ver si el estudiante es elegible
+    for (int indiceCurso = 0; indiceCurso < cantidadCursos; indiceCurso++) {
 
-        //Si el curso ya fue aprobado, se omite 
         bool yaAprobado = false;
-        for (int j = 0; j < numAprobados; j++) {
-            if (strcmp(cursos[i].codigo, cursosAprobados[j]) == 0) {
+        //Revisamos el historial del estudiante para verificar si ya paso este curso
+        for (int indiceAprobado = 0; indiceAprobado < cantidadAprobados; indiceAprobado++) {
+            //Si los codigos coinciden levantamos la bandera de aprobado y rompemos el ciclo
+            if (strcmp(arregloCursos[indiceCurso].codigo, cursosAprobados[indiceAprobado]) == 0) {
                 yaAprobado = true;
                 break;
             }
         }
+        
+        //Si el curso ya fue aprobado lo saltamos y seguimos evaluando el siguiente
         if (yaAprobado) {
             continue;
         }
 
-        // Verifica que TODOS los requisitos del curso esten aprobados 
         bool requisitosCumplidos = true;
-        for (int k = 0; k < cursos[i].numRequisitos; k++) {
+        //Validamos que el estudiante cumpla con todos y cada uno de los requisitos del curso
+        for (int indiceRequisito = 0; indiceRequisito < arregloCursos[indiceCurso].numRequisitos; indiceRequisito++) {
             bool requisitoCumplido = false;
-            for (int l = 0; l < numAprobados; l++) {
-                if (strcmp(cursos[i].requisitos[k], cursosAprobados[l]) == 0) {
+            
+            //Buscamos el requisito actual dentro de la lista de cursos aprobados del estudiante
+            for (int indiceHistorial = 0; indiceHistorial < cantidadAprobados; indiceHistorial++) {
+                //Si encontramos el requisito en su historial lo marcamos como cumplido
+                if (strcmp(arregloCursos[indiceCurso].requisitos[indiceRequisito], cursosAprobados[indiceHistorial]) == 0) {
                     requisitoCumplido = true;
                     break;
                 }
             }
+            
+            //Si le falta un solo requisito marcamos fallo y detenemos la revision para ese curso
             if (!requisitoCumplido) {
                 requisitosCumplidos = false;
                 break;
             }
         }
 
+        //Si cumplio absolutamente todos los requisitos agregamos el curso al arreglo de disponibles
         if (requisitosCumplidos) {
-            cursosDisponibles[cantidad] = &cursos[i];
+            cursosDisponibles[cantidad] = &arregloCursos[indiceCurso];
             cantidad++;
         }
     }
 
-    *cantidadOut = cantidad;
+    *cantidadSalida = cantidad;
     return cursosDisponibles;
 }

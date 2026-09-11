@@ -3,12 +3,12 @@
 
 #include "modelos.h"
 
-// aqui van los metodos que tienen que ver con leer el json y convertirlo en structs de c
+// Aqui van las funciones para leer el JSON y convertirlo a los structs
 
-//Lee el archivo JSON, devuelve un arreglo dinamico de Curso y escribe la cantidad de numcursos
-Curso *cargarCatalogo(const char *rutaArchivo, int *numCursos);
+// Lee el archivo JSON y devuelve un arreglo dinamico de tipo Curso
+Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos);
 
-// Libera toda la memoria del catalogo cargado 
-void liberarCatalogo(Curso *cursos, int numCursos);
+// Libera toda la memoria dinamica reservada para el catalogo cuando ya no se ocupa
+void liberarCatalogo(Curso *arregloCursos, int cantidadCursos);
 
 #endif

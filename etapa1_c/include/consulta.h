@@ -3,19 +3,16 @@
 
 #include "modelos.h"
 
-/*aqui va la logica de preguntarle cosas al catalogo 
-ya cargado, tipo preguntarle que cuales puede matricular y asi
-*/
+//Aqui va la logica para consultar datos del catalogo ya cargado
+//Por ejemplo para saber cuales cursos puede matricular el estudiante y asi
 
-//Imprime todos los datos de un curso en consola 
-void imprimirCurso(const Curso *c);
+//Imprime todos los datos de un curso en la consola
+void imprimirCurso(const Curso *cursoActual);
 
-// Busca un curso por codigo e imprime sus datos si lo encuentra 
-void buscar(const char *codigoCurso, Curso *cursos, int numCursos);
+//Busca un curso por su codigo e imprime sus datos si lo encuentra
+void buscar(const char *codigoCurso, Curso *arregloCursos, int cantidadCursos);
 
-/* Devuelve un arreglo de punteros a los cursos que el estudiante
-   puede matricular segun el historial
-   Escribe la cantidad en *cantidadOut */
-Curso **obtenerCursosDisponibles(Curso *cursos, int numCursos,char **cursosAprobados, int numAprobados,int *cantidadOut);
+//Devuelve un arreglo de punteros a los cursos que el estudiante puede llevar segun sus aprobados
+Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos, char **cursosAprobados, int cantidadAprobados, int *cantidadSalida);
 
 #endif
