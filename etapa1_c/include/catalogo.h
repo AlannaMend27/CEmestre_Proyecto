@@ -1,0 +1,1 @@
+// aqui van los metodos que tienen que ver con leer el json y convertirlo en structs de c

@@ -1,0 +1,1 @@
+//aqui van las comparaciones de bloques de horario entre gurpos

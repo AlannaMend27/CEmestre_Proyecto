@@ -1,7 +1,15 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "Debug catalogo_run",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/etapa1_c/build/catalogo_run",
+            "args": ["${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json"],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "C/C++: gcc build catalogo (main + modulos + cJSON)"
+        }
+    ]
 }

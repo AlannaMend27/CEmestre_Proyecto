@@ -1,0 +1,1 @@
+// aqui van las definiciones de los structs

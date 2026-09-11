@@ -3,26 +3,23 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc build catalogo (main + cJSON)",
-            "command": "/usr/bin/gcc",
+            "command": "gcc",
             "args": [
                 "-fdiagnostics-color=always",
+                "-Wall",
+                "-Wextra",
                 "-g",
-                "${fileDirname}/main.c",
-                "${fileDirname}/cJSON.c",
+                "-I${workspaceFolder}/etapa1_c/include",
+                "-I${workspaceFolder}/etapa1_c/lib",
+                "${workspaceFolder}/etapa1_c/src/main.c",
+                "${workspaceFolder}/etapa1_c/lib/cJSON.c",
                 "-o",
-                "${fileDirname}/catalogo"
+                "${workspaceFolder}/etapa1_c/build/catalogo_run"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Compila main.c y cJSON.c juntos y enlaza el ejecutable."
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "Compila main.c y cJSON.c (version de transicion, antes del split)."
         }
     ],
     "version": "2.0.0"

@@ -1,0 +1,1 @@
+//esto escribe el catalogo ya pricesado a un archivo de entrada
