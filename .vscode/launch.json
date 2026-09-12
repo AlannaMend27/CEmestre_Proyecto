@@ -7,7 +7,8 @@
             "request": "launch",
             "program": "${workspaceFolder}/etapa1_c/build/catalogo_run.exe",
             "args": [
-                "${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json"
+                "${workspaceFolder}/etapa1_c/ArchivosEntrada/info_cursos/ingComputadores/catalogo_cursos_computadores.json",
+                "${workspaceFolder}/etapa1_c/ArchivosEntrada/historial_computadores.txt"
             ],
             "cwd": "${workspaceFolder}",
             "MIMode": "gdb",

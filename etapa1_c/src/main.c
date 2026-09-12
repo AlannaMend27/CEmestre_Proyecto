@@ -3,7 +3,10 @@
 #include "catalogo.h"
 #include "consulta.h"
 #include "horario.h"
+#include "historial.h"
 
+
+//NOTA: NO SE SI PREFIEREN ESTOS NOMBRES O ARGC Y ARGV
 int main(int cantidadArgumentos, char *arregloArgumentos[]) {
 
     //Verificamos que se haya pasado la ruta del catalogo como argumento por linea de comandos
@@ -14,10 +17,24 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     
     const char *rutaArchivoJson = arregloArgumentos[1];
 
-    //ESTO ES POR MIENTRAS LUEGO VA EL ARCHIVO
-    char *cursosAprobados[] = {"MA0101", "CE1101", "CE1104", "MA1102", "MA1403"};
-    int cantidadAprobados = 5;
+    //Verificamos que se haya pasado la ruta del historial como segundo argumento
+    if (cantidadArgumentos < 3) {
+        fprintf(stderr, "Uso: catalogo_run <ruta_catalogo.json> <ruta_historial.txt>\n");
+        return 1;
+    }
+    
+    const char *rutaHistorial = arregloArgumentos[2];
 
+    //Cargamos el historial del estudiante desde el archivo de texto
+    Historial *historial = cargarHistorial(rutaHistorial);
+    
+    //Validamos que el historial se haya cargado correctamente en memoria
+    if (!historial) {
+        fprintf(stderr, "No se pudo cargar el historial.\n");
+        return 1;
+    }
+    
+    printf("Carrera: %s | Cursos aprobados: %d\n\n", historial->carrera, historial->cantidadAprobados);
     int cantidadCursos = 0;
     
     //Cargamos el catalogo completo desde el archivo JSON proporcionado
@@ -51,7 +68,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     int cantidadDisponibles = 0;
     
     //Obtenemos el arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-    Curso **cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,cursosAprobados, cantidadAprobados,&cantidadDisponibles
+    Curso **cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados,&cantidadDisponibles
     );
 
     printf("\nCursos disponibles: %d\n", cantidadDisponibles);
@@ -64,6 +81,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     //Liberamos toda la memoria dinamica utilizada antes de finalizar el programa
     free(cursosDisponibles);
     liberarCatalogo(arregloCursos, cantidadCursos);
+    liberarHistorial(historial);
     
     return 0;
 }

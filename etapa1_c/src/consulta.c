@@ -21,6 +21,8 @@ void imprimirCurso(const Curso *cursoActual) {
     printf("Requisitos (%d): ", cursoActual->numRequisitos);
 
     //Recorremos e imprimimos la lista de requisitos separados por un espacio
+
+    //NOTA: ESTO ESTA ASI FEO POR MIENTRAS LUEGO SE CAMBIA 
     for (int indiceRequisito = 0; indiceRequisito < cursoActual->numRequisitos; indiceRequisito++) {
         printf("%s ", cursoActual->requisitos[indiceRequisito]);
     }
@@ -122,6 +124,7 @@ Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char *
 
         //Si cumplio absolutamente todos los requisitos agregamos el curso al arreglo de disponibles
         if (requisitosCumplidos) {
+            arregloCursos[indiceCurso].estudiantePuedeMatricular = true;
             cursosDisponibles[cantidad] = &arregloCursos[indiceCurso];
             cantidad++;
         }

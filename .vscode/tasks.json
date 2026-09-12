@@ -14,6 +14,7 @@
                 "${workspaceFolder}/etapa1_c/src/manejoArreglos.c",
                 "${workspaceFolder}/etapa1_c/lib/cJSON.c",
                 "${workspaceFolder}/etapa1_c/src/horario.c",
+                "${workspaceFolder}/etapa1_c/src/historial.c",
                 "-o", "${workspaceFolder}/etapa1_c/build/catalogo_run"
             ],
             "options": { "cwd": "${workspaceFolder}" },

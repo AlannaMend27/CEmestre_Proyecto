@@ -1,23 +1,23 @@
 #ifndef MODELOS_H
 #define MODELOS_H
-
 #include <stdbool.h>
 #include "constantes.h"
 
 //Este archivo define las estructuras principales para representar los cursos
 
-//Representa un bloque de horario ya parseado
 typedef struct {
+//Representa un bloque de horario ya parseado
     char dia[4];  
-    int inicioMin; //Hora de inicio en minutos desde medianoche, ej: 07:30 -> 450
-    int finMin; //igual
+    int inicioMin;//Hora de inicio en minutos desde medianoche, ej: 07:30 -> 450
+    int finMin;
 
     //NOTA: la idea de usar ints es para comparar numeros y no strings directamente clq cosa
 
-} BloqueHorario; //Evita tener que escribir struct BloqueHorario a cada rato
+} BloqueHorario; 
 
-//Representa un grupo especifico de un curso con su horario y profesores
+
 typedef struct {
+//Representa un grupo especifico de un curso con su horario y profesores
     char nombre[TAM_NOMBRE_GRUPO];
     char numeroGrupo[TAM_NUMERO_GRUPO];
     char tipoGrupo[TAM_TIPO_GRUPO];
@@ -25,10 +25,11 @@ typedef struct {
     int numBloquesHorario;
     char **profesores;
     int numProfesores;
-} Grupo; // typedef es para evitar tener que escribir struct Grupo a cada rato
+} Grupo; 
 
-//Representa un curso completo con todos sus datos, requisitos y grupos disponibles
+
 typedef struct {
+//Representa un curso completo con todos sus datos, requisitos y grupos disponibles
     char codigo[TAM_CODIGO_CURSO];
     char nombre[TAM_NOMBRE_CURSO];
     int creditos;
@@ -48,4 +49,11 @@ typedef struct {
     bool estudiantePuedeMatricular;
 } Curso; //igual
 
+typedef struct {
+ //Representa el historial de un estudiante y la carrera a la que pertenece
+    char carrera[32];
+    char **aprobados;// Arreglo dinamico de codigos de cursos aprobados
+    int cantidadAprobados;  
+} Historial;
+ 
 #endif
