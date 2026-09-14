@@ -19,6 +19,7 @@ void copiarStr(char *destino, size_t tamDestino, const char *origen) {
 
 //Convierte un arreglo JSON de strings en un arreglo de strings dinamico en memoria
 char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
+    
     *cantidadSalida = 0;
     
     //Verificamos que el elemento recibido sea realmente un arreglo en el json
@@ -65,6 +66,25 @@ char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
     //Guardamos la cantidad total de elementos procesados y retornamos el arreglo dinamico
     *cantidadSalida = indiceElemento;
     return arregloDinamico;
+}
+
+// Convierte un arreglo de strings de C en un arreglo JSON de cJSON
+cJSON *arregloStringsAJson(char **arreglo, int cantidad) {
+    cJSON *arregloJson = cJSON_CreateArray();
+
+    // Si el arreglo viene nulo o vacio devolvemos un arreglo JSON vacio de todas formas
+    if (!arreglo || cantidad == 0) {
+        return arregloJson;
+    }
+
+    // agregar elemento si no es un string nulo
+    for (int i = 0; i < cantidad; i++) {
+        if (arreglo[i] != NULL) {
+            cJSON_AddItemToArray(arregloJson, cJSON_CreateString(arreglo[i]));
+        }
+    }
+
+    return arregloJson;
 }
 
 //Libera por completo el arreglo dinamico de strings y cada uno de sus elementos internos

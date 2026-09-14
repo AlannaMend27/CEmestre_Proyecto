@@ -4,10 +4,11 @@
 #include "consulta.h"
 #include "horario.h"
 #include "historial.h"
+#include "exportar.h"
 
-
-//NOTA: NO SE SI PREFIEREN ESTOS NOMBRES O ARGC Y ARGV
 int main(int cantidadArgumentos, char *arregloArgumentos[]) {
+
+    printf("Proyecto CEmestre \n");   
 
     //Verificamos que se haya pasado la ruta del catalogo como argumento por linea de comandos
     if (cantidadArgumentos < 2) {
@@ -33,7 +34,8 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
         fprintf(stderr, "No se pudo cargar el historial.\n");
         return 1;
     }
-    
+
+    printf("Datos del estudiante cargados exitosamente \n");   
     printf("Carrera: %s | Cursos aprobados: %d\n\n", historial->carrera, historial->cantidadAprobados);
     int cantidadCursos = 0;
     
@@ -45,38 +47,21 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
         fprintf(stderr, "No se pudo cargar el catalogo.\n");
         return 1;
     }
-    
-    printf("Se cargaron %d cursos.\n\n", cantidadCursos);
 
     //Detectamos los choques de horario entre todos los cursos cargados en el catalogo
     detectarChoques(arregloCursos, cantidadCursos);
-    printf("Choques de horario calculados.\n\n");
-
-    //Recorremos los cursos para mostrar en consola los choques encontrados y verificar el resultado
-    for (int indiceCurso = 0; indiceCurso < cantidadCursos; indiceCurso++) {
-        if (arregloCursos[indiceCurso].numChocaCon > 0) {
-            printf("%s choca con: ", arregloCursos[indiceCurso].codigo);
-            
-            for (int indiceChoque = 0; indiceChoque < arregloCursos[indiceCurso].numChocaCon; indiceChoque++) {
-                printf("%s ", arregloCursos[indiceCurso].chocaCon[indiceChoque]);
-            }
-            
-            printf("\n");
-        }
-    }
-
-    int cantidadDisponibles = 0;
     
     //Obtenemos el arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-    Curso **cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados,&cantidadDisponibles
-    );
+    Curso **cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados);
 
-    printf("\nCursos disponibles: %d\n", cantidadDisponibles);
-    
-    //Listamos cada uno de los cursos que el estudiante tiene permitidos llevar
-    for (int indiceDisponible = 0; indiceDisponible < cantidadDisponibles; indiceDisponible++) {
-        printf("%s - %s\n",cursosDisponibles[indiceDisponible]->codigo,cursosDisponibles[indiceDisponible]->nombre);
+    // generar el archivo de salida json con los cursos disponibles y sus datos para el estudiante
+    const char *rutaSalida = "etapa1_c/output/catalogo_salida.json";
+    if (!exportarCatalogo(arregloCursos, cantidadCursos, rutaSalida)) {
+        fprintf(stderr, "Error al exportar el catalogo.\n");
     }
+
+    printf("El archivo ha sido generado con exito, revisa la carpeta ubicada en: %s \n", rutaSalida);
+
 
     //Liberamos toda la memoria dinamica utilizada antes de finalizar el programa
     free(cursosDisponibles);

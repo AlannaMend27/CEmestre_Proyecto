@@ -13,6 +13,6 @@ void imprimirCurso(const Curso *cursoActual);
 void buscar(const char *codigoCurso, Curso *arregloCursos, int cantidadCursos);
 
 //Devuelve un arreglo de punteros a los cursos que el estudiante puede llevar segun sus aprobados
-Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos, char **cursosAprobados, int cantidadAprobados, int *cantidadSalida);
+Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos, char **cursosAprobados, int cantidadAprobados);
 
 #endif

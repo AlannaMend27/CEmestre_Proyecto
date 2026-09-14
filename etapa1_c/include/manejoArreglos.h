@@ -14,4 +14,7 @@ char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida);
 //Libera toda la memoria reservada para el arreglo dinamico de strings
 void liberarArregloStrings(char **arregloStrings, int cantidadElementos);
 
+// Convierte un arreglo de strings de C en un arreglo JSON de cJSON
+cJSON *arregloStringsAJson(char **arreglo, int cantidad);
+
 #endif

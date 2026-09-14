@@ -78,7 +78,7 @@ void buscar(const char *codigoCurso, Curso *arregloCursos, int cantidadCursos) {
 }
 
 //Devuelve un arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char **cursosAprobados, int cantidadAprobados,int *cantidadSalida) {
+Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char **cursosAprobados, int cantidadAprobados) {
     
     Curso **cursosDisponibles = malloc(sizeof(Curso *) * cantidadCursos);
     int cantidad = 0;
@@ -130,6 +130,5 @@ Curso **obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char *
         }
     }
 
-    *cantidadSalida = cantidad;
     return cursosDisponibles;
 }
