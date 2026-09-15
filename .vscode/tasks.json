@@ -16,6 +16,7 @@
                 "${workspaceFolder}/etapa1_c/src/horario.c",
                 "${workspaceFolder}/etapa1_c/src/historial.c",
                 "${workspaceFolder}/etapa1_c/src/exportar.c",
+                "${workspaceFolder}/etapa1_c/structures/listaEnlazada.c",
                 "-o", "${workspaceFolder}/etapa1_c/build/catalogo_run"
             ],
             "options": { "cwd": "${workspaceFolder}" },

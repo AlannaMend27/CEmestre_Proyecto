@@ -2,4 +2,3 @@ Electronica
 MA0101
 EL1100
 FI1101
-QU1102

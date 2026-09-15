@@ -5,6 +5,7 @@
 #include "horario.h"
 #include "historial.h"
 #include "exportar.h"
+#include "listaEnlazada.h"
 
 int main(int cantidadArgumentos, char *arregloArgumentos[]) {
 
@@ -52,7 +53,16 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     detectarChoques(arregloCursos, cantidadCursos);
     
     //Obtenemos el arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-    Curso **cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados);
+    ListaCursos cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados);
+
+    // mostrar cursos disponibles en consola
+    printf("\nCursos disponibles para matricular: %d\n", cursosDisponibles.cant);
+
+    NodoCurso *nodoActual = cursosDisponibles.cabeza;
+    while (nodoActual != NULL) {
+        printf("%s - %s\n", nodoActual->curso->codigo, nodoActual->curso->nombre);
+        nodoActual = nodoActual->siguiente;
+    }
 
     // generar el archivo de salida json con los cursos disponibles y sus datos para el estudiante
     const char *rutaSalida = "etapa1_c/output/catalogo_salida.json";
@@ -64,7 +74,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
 
 
     //Liberamos toda la memoria dinamica utilizada antes de finalizar el programa
-    free(cursosDisponibles);
+    liberarLista(&cursosDisponibles);
     liberarCatalogo(arregloCursos, cantidadCursos);
     liberarHistorial(historial);
     
