@@ -250,6 +250,169 @@ Mediante la obtención de los payloads nos dimos cuenta que el código del curso
 
 <img width="416" height="456" alt="Screenshot from 2026-09-20 00-01-13" src="https://github.com/user-attachments/assets/439275bd-955b-4ead-a71e-0a51615c2496" />
 
-encontramos en plan de estudios de cada carrera en json al revisar las respuestas de la pagina al seleccionar la escuela de cada carrera especifica.
+Encontramos en plan de estudios de cada carrera en json al revisar las respuestas de la pagina al seleccionar la escuela de cada carrera especifica.
 
 Esta decisión de automatizar la recolección (en lugar de transcribir manualmente) garantiza exactitud en los datos y permite regenerar el catálogo fácilmente ante cambios de horario.
+
+#### Cursos compartidos entre carreras
+
+Un caso concreto del dataset es que varios cursos aparecen en ambas carreras. Por ejemplo, `MA0101 Matemática General`, `QU1102 Laboratorio de Química Básica I` y `CS1502 Introducción a la Técnica, Ciencia y Tecnología` forman parte de los primeros semestres tanto de Ingeniería en Computadores como de Ingeniería en Electrónica. El catálogo de cada carrera es independiente, pero los datos de horario se obtienen de las mismas escuelas.
+
+#### Cursos sin grupos en el período actual
+
+El catálogo incluye `CI0205 Prueba Avanzada de Inglés`, que no tiene grupos registrados en el período consultado (II Semestre 2026). En lugar de descartarlo, se decidió incluirlo en el catálogo con `"grupos": []`, porque el curso existe en el plan de estudios y su ausencia de grupos es una condición del período, no un error del dato. Esto significa que puede aparecer como elegible para un estudiante que cumpla sus requisitos, aunque sin grupos disponibles para matricular actualmente.
+
+#### Representación de horarios como enteros
+
+Los bloques de horario del TEC-Digital vienen en texto con el formato `"Martes - 7:30:10:20"`. Se decidió convertirlos a minutos desde medianoche (por ejemplo, `7:30` → `450 minutos`) al momento de comparar, en lugar de guardar strings o structs en los archivos. Esto simplifica radicalmente la detección de choque: dos bloques chocan si y solo si `A.inicioMin < B.finMin && B.inicioMin < A.finMin`, sin necesidad de parsear strings durante la comparación.
+
+Por ejemplo, `MA0101 grupo 001` tiene bloque `Martes - 7:30:10:20` (450 a 620 min) y `CE1101 grupo 001` tiene `Martes - 7:30:9:20` (450 a 560 min). Ambos coinciden en el mismo día y sus rangos se solapan, por lo que se detecta choque correctamente.
+
+#### Correquisitos no validados como condición de acceso
+
+Los correquisitos del plan de estudios (por ejemplo, `FI1102 Física General II` tiene como requisito `FI1101` y como correquisito `MA1102`) se almacenan en el catálogo de salida pero **no se usan para bloquear la matriculabilidad**. Esto es correcto porque los correquisitos son cursos que se deben llevar simultáneamente, no previamente. La validación de si el estudiante lleva el correquisito al mismo tiempo es responsabilidad de la Etapa 2, que ya trabaja con combinaciones de cursos.
+
+---
+
+### 2.2.2 Caso límite real encontrado y cómo se resolvió
+
+**Problema:** Cursos compartidos entre múltiples escuelas generaban entradas duplicadas en `horarios_raw.json`.
+
+Durante la recolección, el scraper consultaba múltiples escuelas por separado (Computadores, Ciencias, Matemática, Física, etc.) para obtener todos los grupos disponibles para los cursos de cada carrera. Esto hacía que cursos que aparecen en varias escuelas (como `MA0101` o `FI1101`) se incluyeran múltiples veces en el JSON crudo, con grupos duplicados o incluso inconsistentes entre sí.
+
+**Solución:** En `CombinarDatos.py` se construyó un índice de horarios agrupado por código de curso (`horarios_por_codigo`), donde para cada código se acumulan todos los grupos encontrados en cualquier escuela. Al momento de generar el catálogo final, se toman todos los grupos de ese índice sin importar la escuela de origen, y se conservan todos (incluyendo los de escuelas distintas a la principal), ya que representan grupos realmente disponibles para ese curso en ese período. Esto garantiza que el catálogo refleje todas las opciones de horario reales.
+
+---
+
+### 2.2.3 Justificación del formato de salida
+
+**Formato elegido: JSON**
+
+El archivo de salida usa el mismo formato que el archivo de entrada: JSON. Esta decisión está directamente ligada a la naturaleza incremental del sistema: la Etapa 2 en Racket necesita consumir fácilmente los datos producidos en esta etapa, y JSON es un formato estándar con soporte nativo en prácticamente todos los lenguajes.
+
+**Ventajas concretas para este proyecto:**
+
+1. **Contrato claro entre etapas.** El JSON de salida extiende el de entrada añadiendo únicamente los dos campos calculados: `choca_con` (lista de códigos de cursos que generan conflicto) y `estudiante_puede_matricular` (booleano). Racket puede leer el mismo archivo sin transformaciones adicionales.
+
+2. **Legibilidad durante desarrollo.** El archivo generado con `cJSON_Print()` produce JSON indentado y legible. Durante el desarrollo, esto permitió verificar manualmente que los choques y la matriculabilidad se calculaban correctamente sin necesidad de herramientas adicionales.
+
+3. **Arreglos vacíos explícitos.** Se decidió exportar siempre `[]` en lugar de omitir las claves cuando un curso no tiene requisitos, correquisitos o choques. Esto hace el formato predecible: la Etapa 2 siempre puede asumir que las claves existen.
+
+4. **Extensibilidad.** Si en etapas futuras se necesita agregar información adicional por curso (por ejemplo, una puntuación de prioridad o notas del estudiante), se puede añadir como un campo más al objeto JSON sin romper la compatibilidad con los campos existentes.
+
+**Ejemplo del objeto de salida para un curso:**
+
+```json
+{
+  "codigo": "FI1102",
+  "nombre": "física general ii",
+  "creditos": 3,
+  "requisitos": ["FI1101"],
+  "correquisitos": ["MA1102"],
+  "choca_con": ["CE1103", "MA1403"],
+  "estudiante_puede_matricular": false,
+  "grupos": [
+    {
+      "numero_grupo": "001",
+      "nombre": "Física general II",
+      "tipo_grupo": "Regular",
+      "profesores": ["Pérez Mora Carlos"],
+      "bloques_horario": ["Martes - 7:30:9:20", "Jueves - 7:30:9:20"]
+    }
+  ]
+}
+```
+
+---
+
+## 2.3 Estructuras de datos desarrolladas
+
+### `BloqueHorario`
+```c
+typedef struct {
+    char dia[4];     // Abreviatura: "LUN", "MAR", "MIE", "JUE", "VIE"
+    int inicioMin;   // Hora de inicio en minutos desde medianoche (ej: 7:30 → 450)
+    int finMin;      // Hora de fin en minutos desde medianoche   (ej: 10:20 → 620)
+} BloqueHorario;
+```
+Representa un bloque de tiempo ya parseado. Usar enteros en lugar de strings permite comparar rangos de horario con aritmética simple sin llamadas a funciones de string.
+
+---
+
+### `Grupo`
+```c
+typedef struct {
+    char nombre[128];
+    char numeroGrupo[16];
+    char tipoGrupo[32];       // "Regular", "Asistida", etc.
+    char **bloquesHorario;    // Arreglo dinámico de strings de horario
+    int numBloquesHorario;
+    char **profesores;        // Arreglo dinámico de nombres de profesores
+    int numProfesores;
+} Grupo;
+```
+Representa un grupo específico de un curso. Los bloques de horario se almacenan como strings originales para exportación y se parsean a `BloqueHorario` solo durante la comparación, evitando almacenar información redundante.
+
+---
+
+### `Curso`
+```c
+typedef struct {
+    char codigo[16];
+    char nombre[160];
+    int creditos;
+    char **requisitos;                // Arreglo dinámico de códigos
+    int numRequisitos;
+    char **correquisitos;             // Arreglo dinámico de códigos
+    int numCorrequisitos;
+    Grupo *grupos;                    // Arreglo dinámico de structs Grupo
+    int numGrupos;
+    char **chocaCon;                  // Calculado por detectarChoques()
+    int numChocaCon;
+    bool estudiantePuedeMatricular;   // Calculado por obtenerCursosDisponibles()
+} Curso;
+```
+Estructura central del sistema. Todos los arreglos son dinámicos (reservados con `malloc`/`realloc`) porque la cantidad de grupos, requisitos y choques varía por curso y no se conoce en tiempo de compilación. Los campos `chocaCon` y `estudiantePuedeMatricular` se inicializan vacíos/falsos y se llenan durante el procesamiento.
+
+---
+
+### `Historial`
+```c
+typedef struct {
+    char carrera[32];
+    char **aprobados;   // Arreglo dinámico de códigos de cursos aprobados
+    int cantidadAprobados;
+} Historial;
+```
+Representa el estado académico del estudiante. El arreglo `aprobados` es dinámico porque su tamaño depende del contenido del archivo de historial. Se reserva en dos pasadas: primero se cuenta el número de líneas y luego se reserva la memoria exacta necesaria.
+
+---
+
+### `NodoCurso` y `ListaCursos`
+```c
+typedef struct NodoCurso {
+    Curso *curso;               // Puntero al curso en el arreglo principal
+    struct NodoCurso *siguiente;
+} NodoCurso;
+
+typedef struct ListaCursos {
+    NodoCurso *cabeza;
+    int cant;
+} ListaCursos;
+```
+Lista enlazada simple usada para acumular los cursos disponibles para el estudiante. Los nodos almacenan punteros (no copias) al arreglo principal de cursos, por lo que la lista no duplica datos en memoria. Al liberar la lista, solo se liberan los nodos, no los cursos apuntados.
+
+---
+
+## Compilación
+
+```bash
+gcc -o build/catalogo_run \
+    src/main.c src/catalogo.c src/horario.c src/historial.c \
+    src/consulta.c src/exportar.c src/manejoArreglos.c \
+    structures/listaEnlazada.c lib/cJSON.c \
+    -I include -I lib \
+    -Wall -Wextra -std=c11
+```
+
+---
