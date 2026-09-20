@@ -225,4 +225,22 @@ Dicha solicitud requiere tres parámetros en el cuerpo de la petición:
 
 <img width="371" height="168" alt="Screenshot from 2026-09-19 23-55-20" src="https://github.com/user-attachments/assets/9ff8dcaa-70fd-4b6d-8cb8-f73962bf600f" />
 
+Adicionalmente, la solicitud requiere autenticación mediante la cookie de sesión ad_session_id, obtenida al iniciar sesión en el TEC-Digital.
 
+Para la obtención del plan de estudios con requisitos y correquisitos de cada curso, se identificó un segundo endpoint utilizado por el módulo de malla curricular:
+
+https://tecdigital.tec.ac.cr/tds-curriculum-exp/ajax/json_draw_angular?id_plan=2103
+
+Este endpoint retorna un JSON con la estructura completa del plan de estudios, incluyendo los campos requirements, co_requirements y equivalent por curso, los cuales fueron utilizados para enriquecer el catálogo final.
+
+Con base en ambos endpoints se desarrolló un script en Python que automatiza la descarga, limpieza y combinación de los datos, generando el archivo catalogo_cursos.json que sirve como entrada al programa en C.
+
+De la información que podemos obtener por medio del API que usa tec digital quitamos la siguiente info de cada curso
+
+- Aula
+- Cupo
+- Semestre en el que está la materia
+
+Para cada escuela se obtuvo el payload donde se obtiene el código de la carrera que usa el api y se pone el archivo de python para que haga todos los cálculos, a partir de ese payload es que se genero el python para realizar consultas automáticas de acuerdo con el código de la escuela a la que pertenece cada curso. De manera que en el mismo python se pueden realizar múltiples consultas a todas las escuelas de interés y así obtener todos los grupos disponibles para cada curso
+
+<img width="599" height="327" alt="Screenshot from 2026-09-19 23-59-15" src="https://github.com/user-attachments/assets/0323e365-5569-4acf-ae1a-a5b7fc7d9ce4" />
