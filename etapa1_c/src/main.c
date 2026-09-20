@@ -66,17 +66,22 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
 
     // generar el archivo de salida json con los cursos disponibles y sus datos para el estudiante
     const char *rutaSalida = "etapa1_c/output/catalogo_salida.json";
-    if (!exportarCatalogo(arregloCursos, cantidadCursos, rutaSalida)) {
+    int exitoExport = exportarCatalogo(arregloCursos, cantidadCursos, rutaSalida);
+
+    if (!exitoExport) {
         fprintf(stderr, "Error al exportar el catalogo.\n");
+    } else {
+        printf("El archivo ha sido generado con exito, revisa la carpeta ubicada en: %s \n", rutaSalida);
     }
-
-    printf("El archivo ha sido generado con exito, revisa la carpeta ubicada en: %s \n", rutaSalida);
-
 
     //Liberamos toda la memoria dinamica utilizada antes de finalizar el programa
     liberarLista(&cursosDisponibles);
     liberarCatalogo(arregloCursos, cantidadCursos);
     liberarHistorial(historial);
-    
+
+    if (!exitoExport) {
+        return 1;
+    }
+
     return 0;
 }
