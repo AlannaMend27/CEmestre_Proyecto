@@ -209,3 +209,20 @@ Define los tamaños máximos de los campos de texto de los structs usando `#defi
 Librería de código abierto para parsear y generar JSON en C puro. Se incluyó directamente en el proyecto (sin dependencias externas) para garantizar que el ejecutable compile sin configuración adicional.
 
 ---
+
+## 2.2 Decisiones de diseño
+
+### 2.2.1 Justificación de decisiones propias y específicas del dataset
+
+#### Recolección de datos desde TEC-Digital
+
+Para la obtención de los horarios de cursos se utilizó la Guía de Horarios del Instituto Tecnológico de Costa Rica. En una primera instancia se intentó trabajar con la versión pública de dicha guía, sin embargo, al estar construida con una tecnología antigua (ASP.NET WebForms), no exponía una API convencional de fácil acceso.
+Como alternativa, se inspeccionó el módulo de Guía de Horario dentro del Expediente Estudiantil del TEC-Digital mediante las herramientas de desarrollo del navegador (DevTools → Network). A través de este análisis se identificó que la página realiza una solicitud HTTP de tipo POST al siguiente endpoint:
+
+https://tecdigital.tec.ac.cr/tda-expediente-estudiantil/ajax/tabla_guia_horario
+
+Dicha solicitud requiere tres parámetros en el cuerpo de la petición:
+
+<img width="371" height="168" alt="Screenshot from 2026-09-19 23-55-20" src="https://github.com/user-attachments/assets/9ff8dcaa-70fd-4b6d-8cb8-f73962bf600f" />
+
+
