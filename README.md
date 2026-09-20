@@ -244,3 +244,12 @@ De la información que podemos obtener por medio del API que usa tec digital qui
 Para cada escuela se obtuvo el payload donde se obtiene el código de la carrera que usa el api y se pone el archivo de python para que haga todos los cálculos, a partir de ese payload es que se genero el python para realizar consultas automáticas de acuerdo con el código de la escuela a la que pertenece cada curso. De manera que en el mismo python se pueden realizar múltiples consultas a todas las escuelas de interés y así obtener todos los grupos disponibles para cada curso
 
 <img width="599" height="327" alt="Screenshot from 2026-09-19 23-59-15" src="https://github.com/user-attachments/assets/0323e365-5569-4acf-ae1a-a5b7fc7d9ce4" />
+<img width="535" height="476" alt="Screenshot from 2026-09-20 00-00-21" src="https://github.com/user-attachments/assets/854ed3d1-78aa-40cb-bce8-fd2ff0b2d216" />
+
+Mediante la obtención de los payloads nos dimos cuenta que el código del curso era el mismo o parecido que utilizaban para hacer consultas en el api de la página del tec digital
+
+<img width="416" height="456" alt="Screenshot from 2026-09-20 00-01-13" src="https://github.com/user-attachments/assets/439275bd-955b-4ead-a71e-0a51615c2496" />
+
+encontramos en plan de estudios de cada carrera en json al revisar las respuestas de la pagina al seleccionar la escuela de cada carrera especifica.
+
+Esta decisión de automatizar la recolección (en lugar de transcribir manualmente) garantiza exactitud en los datos y permite regenerar el catálogo fácilmente ante cambios de horario.
