@@ -150,7 +150,7 @@ def agrupar_por_curso(registros: list[dict]) -> list[dict]:
 
 if __name__ == "__main__":
     if AD_SESSION_ID == "PEGA_AQUI_TU_SESSION_ID":
-        print("❌  Falta pegar el session ID. Leé las instrucciones al inicio del script.")
+        print("Falta pegar el session ID. Leé las instrucciones al inicio del script.")
         sys.exit(1)
 
     print("=== Scraper Guía de Horarios TEC-Digital ===")

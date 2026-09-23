@@ -2,27 +2,27 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: gcc build catalogo (main + cJSON)",
-            "command": "/usr/bin/gcc",
+            "label": "C/C++: gcc build catalogo (main + modulos + cJSON)",
+            "command": "gcc",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${fileDirname}/main.c",
-                "${fileDirname}/cJSON.c",
-                "-o",
-                "${fileDirname}/catalogo"
+                "-fdiagnostics-color=always", "-Wall", "-Wextra", "-g",
+                "-I${workspaceFolder}/etapa1_c/include",
+                "-I${workspaceFolder}/etapa1_c/lib",
+                "${workspaceFolder}/etapa1_c/src/main.c",
+                "${workspaceFolder}/etapa1_c/src/catalogo.c",
+                "${workspaceFolder}/etapa1_c/src/consulta.c",
+                "${workspaceFolder}/etapa1_c/src/manejoArreglos.c",
+                "${workspaceFolder}/etapa1_c/lib/cJSON.c",
+                "${workspaceFolder}/etapa1_c/src/horario.c",
+                "${workspaceFolder}/etapa1_c/src/historial.c",
+                "${workspaceFolder}/etapa1_c/src/exportar.c",
+                "${workspaceFolder}/etapa1_c/structures/listaEnlazada.c",
+                "-o", "${workspaceFolder}/etapa1_c/build/catalogo_run"
             ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Compila main.c y cJSON.c juntos y enlaza el ejecutable."
+            "options": { "cwd": "${workspaceFolder}" },
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true },
+            "detail": "Compila todos los modulos de la Etapa 1."
         }
     ],
     "version": "2.0.0"

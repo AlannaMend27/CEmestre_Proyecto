@@ -1,0 +1,15 @@
+etapa1_c/build/
+*.exe
+*.out
+*.o
+*.obj
+
+etapa1_c/catalogo
+etapa1_c/src/catalogo
+
+
+.DS_Store
+Thumbs.db
+
+.vscode/ipch/
+.vscode/*.log
