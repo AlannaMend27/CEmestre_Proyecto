@@ -8,10 +8,8 @@
 typedef struct {
 //Representa un bloque de horario ya parseado
     char dia[4];  
-    int inicioMin;//Hora de inicio en minutos desde medianoche, ej: 07:30 -> 450
+    int inicioMin;  //Hora de inicio en minutos desde medianoche
     int finMin;
-
-    //NOTA: la idea de usar ints es para comparar numeros y no strings directamente clq cosa
 
 } BloqueHorario; 
 
@@ -47,13 +45,16 @@ typedef struct {
     int numChocaCon;
 
     bool estudiantePuedeMatricular;
-} Curso; //igual
+
+} Curso; 
 
 typedef struct {
+
  //Representa el historial de un estudiante y la carrera a la que pertenece
     char carrera[32];
-    char **aprobados;// Arreglo dinamico de codigos de cursos aprobados
+    char **aprobados; // Arreglo dinamico de codigos de cursos aprobados
     int cantidadAprobados;  
+
 } Historial;
  
 #endif

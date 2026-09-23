@@ -9,13 +9,13 @@
 static void limpiarLineaFinal(char *lineaActual) {
     int longitudLinea = strlen(lineaActual);
 
-    //Revisamos si el ultimo caracter es un salto de linea tradicional (un enter) 
+    //Revisamos si el ultimo caracter es un salto de linea 
     if (longitudLinea > 0 && lineaActual[longitudLinea - 1] == '\n') {
         lineaActual[longitudLinea - 1] = '\0';
         longitudLinea--;
     }
 
-    //Revisamos tambien si existe un retorno de carro (un escape)
+    //Revisamos tambien si existe un retorno de carro
     if (longitudLinea > 0 && lineaActual[longitudLinea - 1] == '\r') {
         lineaActual[longitudLinea - 1] = '\0';
     }
@@ -24,6 +24,7 @@ static void limpiarLineaFinal(char *lineaActual) {
 //Lee el archivo de historial y devuelve un struct Historial con carrera y codigos aprobados
 Historial *cargarHistorial(const char *rutaArchivo) {
 
+    //Abrimos el archivo en modo lectura 
     FILE *archivoHistorial = fopen(rutaArchivo, "r");
     
     //Verificamos si hubo un problema al intentar abrir el archivo de texto
@@ -56,6 +57,7 @@ Historial *cargarHistorial(const char *rutaArchivo) {
     //Limpiamos el texto y lo copiamos a la variable de carrera
     limpiarLineaFinal(lineaActual);
     strncpy(historial->carrera, lineaActual, sizeof(historial->carrera) - 1);
+    //Forzamos poner un caracter nulo al final
     historial->carrera[sizeof(historial->carrera) - 1] = '\0';
 
     int cantidadLineas = 0;
@@ -76,6 +78,7 @@ Historial *cargarHistorial(const char *rutaArchivo) {
         return historial;
     }
 
+    //Reservamos memoria para donde estaran los cursos aprobados del historial
     historial->aprobados = malloc(sizeof(char *) * cantidadLineas);
     
     //Validamos que se haya podido reservar la memoria para el arreglo de strings

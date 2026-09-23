@@ -33,23 +33,20 @@ static cJSON *cursoAJson(const Curso *curso) {
     cJSON *cursoJson = cJSON_CreateObject();
 
     // crear propiedades del jasony asignarle el valor de los datos del struct curso recibido
-    cJSON_AddStringToObject(cursoJson, "codigo",   curso->codigo);
-    cJSON_AddStringToObject(cursoJson, "nombre",   curso->nombre);
-    cJSON_AddNumberToObject(cursoJson, "creditos", curso->creditos);
+    cJSON_AddStringToObject(cursoJson, "codigo", curso->codigo);
+    cJSON_AddStringToObject(cursoJson, "nombre", curso->nombre);
+    cJSON_AddNumberToObject(cursoJson, "creditos",curso->creditos);
 
-    cJSON_AddItemToObject(cursoJson, "requisitos",
-        arregloStringsAJson(curso->requisitos, curso->numRequisitos));
+    //en este caso es un arreglo
+    cJSON_AddItemToObject(cursoJson, "requisitos", arregloStringsAJson(curso->requisitos, curso->numRequisitos));
 
-    cJSON_AddItemToObject(cursoJson, "correquisitos",
-        arregloStringsAJson(curso->correquisitos, curso->numCorrequisitos));
+    cJSON_AddItemToObject(cursoJson, "correquisitos", arregloStringsAJson(curso->correquisitos, curso->numCorrequisitos));
 
     // choca_con ya fue calculado por detectarChoques() antes de llegar aqui
-    cJSON_AddItemToObject(cursoJson, "choca_con",
-        arregloStringsAJson(curso->chocaCon, curso->numChocaCon));
+    cJSON_AddItemToObject(cursoJson, "choca_con", arregloStringsAJson(curso->chocaCon, curso->numChocaCon));
 
     // true/false segun si el estudiante cumple los requisitos
-    cJSON_AddBoolToObject(cursoJson, "estudiante_puede_matricular",
-        curso->estudiantePuedeMatricular);
+    cJSON_AddBoolToObject(cursoJson, "estudiante_puede_matricular", curso->estudiantePuedeMatricular);
 
     // Arreglo de grupos con sus horarios y profesores
     cJSON *gruposJson = cJSON_CreateArray();

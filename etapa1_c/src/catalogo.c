@@ -9,34 +9,39 @@
 //Toma el objeto json de un grupo y llena el struct correspondiente
 static void parsearGrupo(const cJSON *grupoJson, Grupo *grupo) {
 
-    //Extraemos el valor string del json y lo copiamos al struct de forma segura
+    //Buscamos en el json, extraemos su valor de texto y lo copiamos en el struct
     copiarStr(grupo->nombre, sizeof(grupo->nombre), 
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(grupoJson, "nombre")));
 
+    //Igual para numero grupo, no verificamos que sea numero por que no operamos con el
     copiarStr(grupo->numeroGrupo, sizeof(grupo->numeroGrupo),
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(grupoJson, "numero_grupo")));
 
+    //tipo grupo
     copiarStr(grupo->tipoGrupo, sizeof(grupo->tipoGrupo),
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(grupoJson, "tipo_grupo")));
 
+    //leeemos el arreglos de bloques de horario
     const cJSON *bloquesJson = cJSON_GetObjectItemCaseSensitive(grupoJson, "bloques_horario");
     grupo->bloquesHorario = leerArregloStrings(bloquesJson, &grupo->numBloquesHorario);
 
+    //y el de profesores
     const cJSON *profesoresJson = cJSON_GetObjectItemCaseSensitive(grupoJson, "profesores");
     grupo->profesores = leerArregloStrings(profesoresJson, &grupo->numProfesores);
-
 }
 
 //Toma el objeto json de un curso, llena el struct y parsea sus grupos internos
 static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
 
-    //Igual que en los grupos extraemos los valores para copiarlos al struct
+    //Buscamos en el json, extraemos su valor de texto y lo copiamos en el struct
     copiarStr(curso->codigo, sizeof(curso->codigo),
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(cursoJson, "codigo")));
 
+    //Igualmente para nombre
     copiarStr(curso->nombre, sizeof(curso->nombre),
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(cursoJson, "nombre")));
 
+    //Para el numero de creditos tenemos que verificar que sea un numero
     const cJSON *creditosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "creditos");
     
     //Verificamos si los creditos vienen como un numero valido para guardarlos
@@ -46,23 +51,28 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
         curso->creditos = 0;
     }
 
-    //seguimos extrayendo
+    //En estos casos tenemos que leer un arreglo
     const cJSON *requisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "requisitos");
+    //Leemos ese arreglo
     curso->requisitos = leerArregloStrings(requisitosJson, &curso->numRequisitos);
 
+    //De igual forma para los demas arreglos
     const cJSON *correquisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "correquisitos");
     curso->correquisitos = leerArregloStrings(correquisitosJson, &curso->numCorrequisitos);
 
     const cJSON *chocaConJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "choca_con");
     curso->chocaCon = leerArregloStrings(chocaConJson, &curso->numChocaCon);
 
+    //De igual manera
     const cJSON *puedeMatricularJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "estudiante_puede_matricular");
+    //El dato es booleano, evalua y devuelve 0 o 1
     curso->estudiantePuedeMatricular = cJSON_IsTrue(puedeMatricularJson);
 
     const cJSON *gruposJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "grupos");
     
     //Validamos que haya un arreglo de grupos antes de intentar parsearlos
     if (cJSON_IsArray(gruposJson)) {
+        
         curso->numGrupos = cJSON_GetArraySize(gruposJson);
         
         //Comprobamos si el curso tiene al menos un grupo para reservarle memoria
@@ -75,6 +85,7 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
                 exit(1);
             }
             
+            //Para saber donde escribir y que escribir
             int indiceGrupo = 0;
             const cJSON *grupoItemJson;
             
@@ -97,8 +108,11 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
 
 //Lee el archivo JSON completo y construye el catalogo en memoria
 Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
+
+    //Inicializamos la cantidad de cursos en cero, por si acaso falla algo
     *cantidadCursos = 0;
 
+    //Abrimos en modo lectura binaria
     FILE *archivoJson = fopen(rutaArchivoJson, "rb");
     
     //Verificamos si pudimos abrir el archivo correctamente
@@ -112,6 +126,7 @@ Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
     long tamanioArchivo = ftell(archivoJson);
     fseek(archivoJson, 0, SEEK_SET);
 
+    //Reservamos memoria del tamanio del archivo
     char *bufferArchivo = malloc(tamanioArchivo + 1);
     
     //Validamos que tengamos memoria para cargar el archivo en el buffer
@@ -153,6 +168,7 @@ Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
         return NULL;
     }
 
+    //Contamos cuantos cursos hay y reservamos memoria para todos ellos
     int totalCursos = cJSON_GetArraySize(jsonRaiz);
     Curso *arregloCursos = malloc(sizeof(Curso) * totalCursos);
     
@@ -163,6 +179,7 @@ Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
         return NULL;
     }
 
+    //Declaramos dos punteros de recorrido, uno para saber donde escribir y otro de donde leer en el json
     int indiceCurso = 0;
     const cJSON *cursoItemJson;
     

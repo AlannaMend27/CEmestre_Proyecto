@@ -13,7 +13,9 @@ void copiarStr(char *destino, size_t tamDestino, const char *origen) {
         return;
     }
     
+    //copiamos el texto de origen en el destino
     strncpy(destino, origen, tamDestino - 1);
+    //dejando un espacio para el caracter final
     destino[tamDestino - 1] = '\0';
 }
 
@@ -27,6 +29,7 @@ char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
         return NULL;
     }
 
+    //obtenemos el total de elementos del arreglo que esta en el json
     int totalElementos = cJSON_GetArraySize(arregloJson);
     
     //Si el arreglo esta vacio retornamos nulo
@@ -34,6 +37,7 @@ char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
         return NULL;
     }
 
+    //reservamos memoria justa para esa cantidad de elementos
     char **arregloDinamico = malloc(sizeof(char *) * totalElementos);
     
     //Si falla la reserva de memoria reportamos el error y detenemos el programa
@@ -42,13 +46,16 @@ char **leerArregloStrings(const cJSON *arregloJson, int *cantidadSalida) {
         exit(1);
     }
 
-    //Declaramos la variable para el indice y el puntero temporal del item json
+    //Un contador para saber donde escribir y un puntero de reccrrido
     int indiceElemento = 0;
     const cJSON *itemJson;
     
-    //Recorremos cada elemento del arreglo json para extraer sus valores de texto
+    //Para cada elemento el arreglo json
     cJSON_ArrayForEach(itemJson, arregloJson) {
+        //Verificamos que esto sea un string valido
         if (cJSON_IsString(itemJson) && itemJson->valuestring != NULL) {
+
+            //Reservamos memoria del tamanio del texto
             arregloDinamico[indiceElemento] = malloc(strlen(itemJson->valuestring) + 1);
             
             //Validamos la memoria para el string individual

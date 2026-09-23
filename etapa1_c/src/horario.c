@@ -36,6 +36,7 @@ static void abreviarDia(const char *diaCompleto, char *abreviatura) {
 //Convierte un string de texto horario en una estructura BloqueHorario
 int parsearBloqueHorario(const char *textoHorario, BloqueHorario *bloqueParseado) {
 
+    //Declaramos variables temporales
     char diaCompleto[32];
     int horaInicio, minInicio, horaFin, minFin;
 
@@ -124,10 +125,13 @@ void agregarChoque(Curso *cursoActual, const char *codigoQueChoca) {
         exit(1);
     }
     
+    //asignamos el nuevo arreglo al struct
     cursoActual->chocaCon = nuevoArreglo;
 
     //Reservamos el espacio exacto para el string del codigo y lo copiamos
     cursoActual->chocaCon[cursoActual->numChocaCon] = malloc(strlen(codigoQueChoca) + 1);
+
+    //Verificamos is no hay error
     if (!cursoActual->chocaCon[cursoActual->numChocaCon]) {
         fprintf(stderr, "Error de memoria en agregarChoque\n");
         exit(1);
