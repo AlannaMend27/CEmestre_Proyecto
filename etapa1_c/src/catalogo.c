@@ -28,6 +28,10 @@ static void parsearGrupo(const cJSON *grupoJson, Grupo *grupo) {
     //y el de profesores
     const cJSON *profesoresJson = cJSON_GetObjectItemCaseSensitive(grupoJson, "profesores");
     grupo->profesores = leerArregloStrings(profesoresJson, &grupo->numProfesores);
+
+    //Los choques se calculan despues en detectarChoques
+    grupo->chocaCon = NULL;
+    grupo->numChocaCon = 0;
 }
 
 //Toma el objeto json de un curso, llena el struct y parsea sus grupos internos
@@ -60,9 +64,6 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
     const cJSON *correquisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "correquisitos");
     curso->correquisitos = leerArregloStrings(correquisitosJson, &curso->numCorrequisitos);
 
-    const cJSON *chocaConJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "choca_con");
-    curso->chocaCon = leerArregloStrings(chocaConJson, &curso->numChocaCon);
-
     //De igual manera
     const cJSON *puedeMatricularJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "estudiante_puede_matricular");
     //El dato es booleano, evalua y devuelve 0 o 1
@@ -91,7 +92,11 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
             
             //Recorremos el arreglo de grupos del json uno por uno
             cJSON_ArrayForEach(grupoItemJson, gruposJson) {
-                parsearGrupo(grupoItemJson, &curso->grupos[indiceGrupo]);indiceGrupo++;
+                parsearGrupo(grupoItemJson, &curso->grupos[indiceGrupo]);
+
+                //El numero de grupo se repite en algunos cursos asi que asignamos un id unico por curso
+                curso->grupos[indiceGrupo].idGrupo = indiceGrupo + 1;
+                indiceGrupo++;
             }
 
         } else {
@@ -208,13 +213,13 @@ void liberarCatalogo(Curso *arregloCursos, int cantidadCursos) {
         Curso *cursoActual = &arregloCursos[indiceCurso];
         liberarArregloStrings(cursoActual->requisitos, cursoActual->numRequisitos);
         liberarArregloStrings(cursoActual->correquisitos, cursoActual->numCorrequisitos);
-        liberarArregloStrings(cursoActual->chocaCon, cursoActual->numChocaCon);
         
         //Recorremos los grupos de este curso para limpiar bloques y profesores
         for (int indiceGrupo = 0; indiceGrupo < cursoActual->numGrupos; indiceGrupo++) {
             Grupo *grupoActual = &cursoActual->grupos[indiceGrupo];
             liberarArregloStrings(grupoActual->bloquesHorario, grupoActual->numBloquesHorario);
             liberarArregloStrings(grupoActual->profesores, grupoActual->numProfesores);
+            free(grupoActual->chocaCon);
         }
         
         free(cursoActual->grupos);

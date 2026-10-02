@@ -6,6 +6,12 @@
 //Este archivo define las estructuras principales para representar los cursos
 
 typedef struct {
+//Identifica un grupo especifico de un curso
+    char codigoCurso[TAM_CODIGO_CURSO];
+    int idGrupo; 
+} ChoqueGrupo;
+
+typedef struct {
 //Representa un bloque de horario ya parseado
     char dia[4];  
     int inicioMin;  //Hora de inicio en minutos desde medianoche
@@ -16,6 +22,7 @@ typedef struct {
 
 typedef struct {
 //Representa un grupo especifico de un curso con su horario y profesores
+    int idGrupo;
     char nombre[TAM_NOMBRE_GRUPO];
     char numeroGrupo[TAM_NUMERO_GRUPO];
     char tipoGrupo[TAM_TIPO_GRUPO];
@@ -23,6 +30,8 @@ typedef struct {
     int numBloquesHorario;
     char **profesores;
     int numProfesores;
+    ChoqueGrupo *chocaCon; //Grupos de otros cursos con los que choca
+    int numChocaCon;
 } Grupo; 
 
 
@@ -41,8 +50,6 @@ typedef struct {
     Grupo *grupos;
     int numGrupos;
 
-    char **chocaCon; //Arreglo dinamico con los codigos de los cursos con los que choca
-    int numChocaCon;
 
     bool estudiantePuedeMatricular;
 

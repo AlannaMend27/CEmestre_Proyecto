@@ -23,6 +23,17 @@ static cJSON *grupoAJson(const Grupo *grupo) {
     cJSON_AddItemToObject(grupoJson, "bloques_horario",
         arregloStringsAJson(grupo->bloquesHorario, grupo->numBloquesHorario));
 
+    //Cada choque se exporta con el curso y el grupo con el que choca
+    cJSON *chocaConJson = cJSON_CreateArray();
+    for (int indiceChoque = 0; indiceChoque < grupo->numChocaCon; indiceChoque++) {
+        cJSON *choqueJson = cJSON_CreateObject();
+        cJSON_AddStringToObject(choqueJson, "curso", grupo->chocaCon[indiceChoque].codigoCurso);
+        cJSON_AddNumberToObject(choqueJson, "id_grupo", grupo->chocaCon[indiceChoque].idGrupo);
+        cJSON_AddItemToArray(chocaConJson, choqueJson);
+    }
+    cJSON_AddItemToObject(grupoJson, "choca_con", chocaConJson);
+
+    cJSON_AddNumberToObject(grupoJson, "id_grupo", grupo->idGrupo);
     return grupoJson;
 }
 
@@ -41,9 +52,6 @@ static cJSON *cursoAJson(const Curso *curso) {
     cJSON_AddItemToObject(cursoJson, "requisitos", arregloStringsAJson(curso->requisitos, curso->numRequisitos));
 
     cJSON_AddItemToObject(cursoJson, "correquisitos", arregloStringsAJson(curso->correquisitos, curso->numCorrequisitos));
-
-    // choca_con ya fue calculado por detectarChoques() antes de llegar aqui
-    cJSON_AddItemToObject(cursoJson, "choca_con", arregloStringsAJson(curso->chocaCon, curso->numChocaCon));
 
     // true/false segun si el estudiante cumple los requisitos
     cJSON_AddBoolToObject(cursoJson, "estudiante_puede_matricular", curso->estudiantePuedeMatricular);

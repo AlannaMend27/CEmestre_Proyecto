@@ -13,10 +13,10 @@ int bloquesChocan(const BloqueHorario *primerBloque, const BloqueHorario *segund
 //Compara todos los bloques de dos grupos para revisar si hay conflictos
 int gruposChocan(const Grupo *primerGrupo, const Grupo *segundoGrupo);
 
-//Agrega un codigo de curso a la lista chocaCon de otro curso especifico
-void agregarChoque(Curso *cursoActual, const char *codigoQueChoca);
+//Agrega un par curso-grupo a la lista chocaCon de un grupo especifico
+void agregarChoque(Grupo *grupoActual, const char *codigoCursoQueChoca, int idGrupoQueChoca);
 
-//Recorre todos los pares de cursos del catalogo y llena el arreglo chocaCon de cada uno
+//Recorre todos los pares de grupos de cursos distintos y llena el chocaCon de cada grupo
 void detectarChoques(Curso *arregloCursos, int cantidadCursos);
 
 #endif
