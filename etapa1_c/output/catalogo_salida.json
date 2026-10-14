@@ -4,6 +4,7 @@
 		"creditos":	0,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[]
 	}, {
@@ -12,6 +13,7 @@
 		"creditos":	2,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -220,6 +222,15 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	1
 			}, {
@@ -393,6 +404,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -527,6 +544,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -661,6 +687,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -828,6 +866,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -947,6 +997,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -1114,6 +1176,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -1257,6 +1325,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -1382,6 +1456,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -1501,6 +1587,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	10
 			}, {
@@ -1626,6 +1721,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -1646,6 +1753,18 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	6
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
 					}],
 				"id_grupo":	12
 			}]
@@ -1655,6 +1774,7 @@
 		"creditos":	3,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -1755,6 +1875,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -1931,6 +2054,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}]
@@ -1940,6 +2069,7 @@
 		"creditos":	3,
 		"requisitos":	[],
 		"correquisitos":	["CE1101"],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -2040,6 +2170,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}]
@@ -2049,6 +2182,7 @@
 		"creditos":	4,
 		"requisitos":	["MA0101"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -2251,6 +2385,15 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	1
 			}, {
@@ -2433,6 +2576,15 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -2600,6 +2752,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}, {
@@ -2767,6 +2925,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	4
 			}, {
@@ -2898,6 +3062,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -3026,6 +3199,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -3187,6 +3372,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -3336,6 +3533,21 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -3461,6 +3673,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -3577,6 +3801,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	10
 			}, {
@@ -3741,6 +3977,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -3929,6 +4171,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	12
 			}, {
@@ -4066,6 +4314,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	13
 			}, {
@@ -4194,6 +4448,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -4319,6 +4579,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	15
 			}, {
@@ -4429,6 +4701,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	16
 			}, {
@@ -4542,6 +4823,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}, {
@@ -4616,6 +4909,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	18
 			}, {
@@ -4690,6 +4995,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	19
 			}, {
@@ -4752,6 +5069,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	20
 			}, {
@@ -4772,6 +5101,18 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	6
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
 					}],
 				"id_grupo":	21
 			}, {
@@ -4885,6 +5226,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	22
 			}]
@@ -4894,6 +5247,7 @@
 		"creditos":	4,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -5143,6 +5497,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -5265,6 +5625,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -5351,6 +5723,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -5452,6 +5833,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -5565,6 +5949,7 @@
 		"creditos":	1,
 		"requisitos":	[],
 		"correquisitos":	["QU1106"],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -5644,6 +6029,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -5766,6 +6154,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -5828,6 +6222,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -5901,6 +6301,9 @@
 						"id_grupo":	59
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	4
@@ -6098,6 +6501,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -6151,6 +6560,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -6234,6 +6649,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -6305,6 +6726,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -6412,6 +6836,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	10
 			}, {
@@ -6471,6 +6901,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -6589,6 +7022,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	13
 			}]
@@ -6598,6 +7037,7 @@
 		"creditos":	3,
 		"requisitos":	[],
 		"correquisitos":	["QU1102"],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -6695,6 +7135,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -6793,6 +7236,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -6969,6 +7415,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}, {
@@ -7055,6 +7507,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -7156,6 +7617,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -7302,6 +7766,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -7382,6 +7852,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}]
@@ -7391,6 +7867,7 @@
 		"creditos":	0,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -7514,6 +7991,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -7597,6 +8086,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -7750,6 +8245,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -7943,6 +8441,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -8059,6 +8563,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	9
 			}, {
@@ -8163,6 +8673,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	10
 			}, {
@@ -8263,6 +8779,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	12
 			}, {
@@ -8351,6 +8879,9 @@
 						"id_grupo":	1
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
 						"id_grupo":	4
 					}],
 				"id_grupo":	13
@@ -8444,6 +8975,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -8619,6 +9156,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	16
 			}, {
@@ -8681,6 +9224,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}, {
@@ -8754,6 +9303,9 @@
 						"id_grupo":	59
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	18
@@ -8838,6 +9390,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	19
 			}, {
@@ -8992,6 +9556,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	21
 			}, {
@@ -9048,6 +9621,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	22
 			}, {
@@ -9125,6 +9704,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	23
 			}, {
@@ -9241,6 +9823,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	24
 			}, {
@@ -9297,6 +9885,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	25
 			}, {
@@ -9401,6 +9995,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	26
 			}, {
@@ -9555,6 +10155,7 @@
 		"creditos":	0,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -9631,6 +10232,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -9894,6 +10498,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -10072,6 +10688,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -10125,6 +10747,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -10208,6 +10836,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -10312,6 +10946,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	10
 			}, {
@@ -10413,6 +11053,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -10528,6 +11177,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	13
 			}, {
@@ -10590,6 +11242,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -10768,6 +11426,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	16
 			}, {
@@ -10839,6 +11503,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}, {
@@ -10943,6 +11610,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	18
 			}, {
@@ -11053,6 +11726,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	19
 			}, {
@@ -11163,6 +11842,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	20
 			}, {
@@ -11260,6 +11945,12 @@
 						"id_grupo":	1
 					}, {
 						"curso":	"CE1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
 						"id_grupo":	1
 					}],
 				"id_grupo":	21
@@ -11435,6 +12126,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	24
 			}, {
@@ -11601,6 +12298,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	26
 			}, {
@@ -11770,6 +12473,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	28
 			}, {
@@ -11880,6 +12589,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	29
 			}, {
@@ -12010,6 +12725,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	31
 			}, {
@@ -12120,6 +12838,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	32
 			}, {
@@ -12218,6 +12942,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	33
 			}, {
@@ -12307,6 +13037,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	34
 			}]
@@ -12316,6 +13052,7 @@
 		"creditos":	4,
 		"requisitos":	["CE1101", "CE1104", "MA1403"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -12404,6 +13141,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	1
 			}, {
@@ -12505,6 +13248,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -12681,6 +13427,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}]
@@ -12690,6 +13442,7 @@
 		"creditos":	3,
 		"requisitos":	["CE1104"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -12823,6 +13576,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -12912,6 +13677,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	2
 			}, {
@@ -12965,6 +13736,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}]
@@ -12974,6 +13748,7 @@
 		"creditos":	2,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -13109,6 +13884,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -13221,6 +13999,12 @@
 						"id_grupo":	7
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	3
@@ -13344,6 +14128,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}]
@@ -13353,6 +14143,7 @@
 		"creditos":	1,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -13459,6 +14250,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	1
 			}, {
@@ -13563,6 +14360,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -13652,6 +14455,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
 					}],
 				"id_grupo":	3
 			}, {
@@ -13725,6 +14531,9 @@
 						"id_grupo":	59
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	4
@@ -13830,6 +14639,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}]
@@ -13839,6 +14654,7 @@
 		"creditos":	3,
 		"requisitos":	["MA1102"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -13936,6 +14752,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -14034,6 +14853,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -14204,6 +15026,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}, {
@@ -14374,6 +15202,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	4
 			}, {
@@ -14457,6 +15291,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -14540,6 +15383,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -14638,6 +15490,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -14736,6 +15591,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -14870,6 +15728,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -15117,6 +15987,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -15257,6 +16133,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	12
 			}, {
@@ -15337,6 +16219,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	13
 			}, {
@@ -15420,6 +16308,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -15509,6 +16403,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	15
 			}, {
@@ -15679,6 +16579,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	16
 			}, {
@@ -15819,6 +16725,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}]
@@ -15828,6 +16740,7 @@
 		"creditos":	1,
 		"requisitos":	[],
 		"correquisitos":	["FI1101"],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -15907,6 +16820,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -16026,6 +16942,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -16085,6 +17007,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -16158,6 +17086,9 @@
 						"id_grupo":	59
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	4
@@ -16248,6 +17179,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -16441,6 +17384,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -16494,6 +17443,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -16574,6 +17529,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -16660,6 +17621,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
 					}],
 				"id_grupo":	10
 			}, {
@@ -16731,6 +17695,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	11
 			}, {
@@ -16835,6 +17802,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	12
 			}, {
@@ -17004,6 +17977,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -17155,6 +18137,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	16
 			}, {
@@ -17214,6 +18202,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}, {
@@ -17333,6 +18327,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	18
 			}, {
@@ -17437,6 +18437,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	19
 			}, {
@@ -17517,6 +18523,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	20
 			}, {
@@ -17602,6 +18614,9 @@
 						"id_grupo":	1
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
 						"id_grupo":	4
 					}],
 				"id_grupo":	21
@@ -17707,6 +18722,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	22
 			}, {
@@ -17766,6 +18787,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
 					}],
 				"id_grupo":	23
 			}, {
@@ -17864,6 +18888,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	24
 			}, {
@@ -17923,6 +18956,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	25
 			}]
@@ -17932,6 +18971,7 @@
 		"creditos":	4,
 		"requisitos":	["MA1102"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -18026,6 +19066,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -18121,6 +19164,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -18294,6 +19340,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}, {
@@ -18377,6 +19429,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -18460,6 +19521,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -18558,6 +19628,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -18704,6 +19777,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -18829,6 +19914,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -18945,6 +20042,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -19061,6 +20170,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	10
 			}, {
@@ -19314,6 +20435,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	12
 			}, {
@@ -19394,6 +20521,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	13
 			}, {
@@ -19474,6 +20607,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -19581,6 +20720,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	15
 			}, {
@@ -19664,6 +20815,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	16
 			}, {
@@ -19735,6 +20892,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	17
 			}, {
@@ -19755,6 +20924,18 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	6
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
 					}],
 				"id_grupo":	18
 			}, {
@@ -19907,6 +21088,15 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	19
 			}]
@@ -19916,6 +21106,7 @@
 		"creditos":	0,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -20030,6 +21221,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -20110,6 +21313,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -20245,6 +21454,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -20414,6 +21626,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -20515,6 +21733,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	9
 			}, {
@@ -20613,6 +21837,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	10
 			}, {
@@ -20710,6 +21940,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	12
 			}, {
@@ -20799,6 +22041,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
 					}],
 				"id_grupo":	13
 			}, {
@@ -20885,6 +22130,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	14
 			}, {
@@ -21033,6 +22284,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	16
 			}, {
@@ -21092,6 +22349,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	17
 			}, {
@@ -21162,6 +22425,9 @@
 						"id_grupo":	7
 					}, {
 						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
 						"id_grupo":	1
 					}],
 				"id_grupo":	18
@@ -21243,6 +22509,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	19
 			}, {
@@ -21394,6 +22672,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	21
 			}, {
@@ -21447,6 +22734,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	22
 			}, {
@@ -21518,6 +22811,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	23
 			}, {
@@ -21619,6 +22915,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	24
 			}, {
@@ -21672,6 +22974,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	25
 			}, {
@@ -21770,6 +23078,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	26
 			}, {
@@ -21962,6 +23276,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	29
 			}, {
@@ -22198,6 +23515,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	33
 			}, {
@@ -22367,6 +23696,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	35
 			}, {
@@ -22420,6 +23755,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	36
 			}, {
@@ -22500,6 +23841,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	37
 			}, {
@@ -22598,6 +23945,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	38
 			}, {
@@ -22696,6 +24049,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	39
 			}, {
@@ -22802,6 +24164,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	41
 			}, {
@@ -22861,6 +24226,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	42
 			}, {
@@ -23030,6 +24401,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	44
 			}, {
@@ -23101,6 +24478,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	45
 			}, {
@@ -23199,6 +24579,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	46
 			}, {
@@ -23300,6 +24686,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	47
 			}, {
@@ -23401,6 +24793,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	48
 			}, {
@@ -23495,6 +24893,12 @@
 						"id_grupo":	1
 					}, {
 						"curso":	"CE1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
 						"id_grupo":	1
 					}],
 				"id_grupo":	49
@@ -23655,6 +25059,12 @@
 					}, {
 						"curso":	"FI1202",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	52
 			}, {
@@ -23803,6 +25213,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	54
 			}, {
@@ -23963,6 +25379,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	56
 			}, {
@@ -24064,6 +25486,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	57
 			}, {
@@ -24182,6 +25610,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	1
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	59
 			}, {
@@ -24283,6 +25714,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	60
 			}, {
@@ -24378,6 +25815,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	61
 			}, {
@@ -24464,6 +25907,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	62
 			}]
@@ -24473,6 +25922,7 @@
 		"creditos":	4,
 		"requisitos":	["CE1103", "CE1105"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -24573,6 +26023,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}]
@@ -24582,6 +26035,7 @@
 		"creditos":	2,
 		"requisitos":	["CI1407"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -24673,6 +26127,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -24795,6 +26255,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -24901,6 +26367,12 @@
 						"id_grupo":	1
 					}, {
 						"curso":	"CE1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
 						"id_grupo":	1
 					}],
 				"id_grupo":	3
@@ -25027,6 +26499,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -25134,6 +26615,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	5
 			}, {
@@ -25329,6 +26816,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}]
@@ -25338,6 +26837,7 @@
 		"creditos":	4,
 		"requisitos":	["FI1101", "MA1102"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -25483,6 +26983,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -25659,6 +27165,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -25897,6 +27409,7 @@
 		"creditos":	0,
 		"requisitos":	[],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	true,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -26180,6 +27693,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -26548,6 +28073,21 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -26709,6 +28249,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -26993,6 +28545,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -27121,6 +28685,27 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -27423,6 +29008,36 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -27650,6 +29265,33 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -27778,6 +29420,27 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -27993,6 +29656,27 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
 					}],
 				"id_grupo":	9
 			}, {
@@ -28151,6 +29835,27 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	10
 			}]
@@ -28160,6 +29865,7 @@
 		"creditos":	3,
 		"requisitos":	["FI1101"],
 		"correquisitos":	["MA1102"],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -28257,6 +29963,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -28427,6 +30136,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -28597,6 +30312,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	3
 			}, {
@@ -28683,6 +30404,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -28817,6 +30547,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -29070,6 +30812,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}, {
@@ -29150,6 +30898,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -29233,6 +30987,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}, {
@@ -29331,6 +31091,9 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	10
 			}, {
@@ -29501,6 +31264,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	11
 			}]
@@ -29510,6 +31279,7 @@
 		"creditos":	1,
 		"requisitos":	["FI1201"],
 		"correquisitos":	["FI1102"],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -29631,6 +31401,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	1
 			}, {
@@ -29693,6 +31469,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	7
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -29782,6 +31564,18 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -29978,6 +31772,12 @@
 					}, {
 						"curso":	"CE1106",
 						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
 			}, {
@@ -30061,6 +31861,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	6
 			}, {
@@ -30168,6 +31974,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	7
 			}, {
@@ -30227,6 +32039,12 @@
 					}, {
 						"curso":	"FI1102",
 						"id_grupo":	8
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	8
 			}, {
@@ -30280,6 +32098,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
 					}],
 				"id_grupo":	9
 			}]
@@ -30289,6 +32113,7 @@
 		"creditos":	4,
 		"requisitos":	["MA1103"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -30434,6 +32259,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -30556,6 +32387,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -30639,6 +32482,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -30815,6 +32664,12 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	4
 			}, {
@@ -30889,6 +32744,18 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	5
 			}, {
@@ -30908,6 +32775,18 @@
 						"id_grupo":	18
 					}, {
 						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
 						"id_grupo":	9
 					}],
 				"id_grupo":	6
@@ -30995,6 +32874,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	7
 			}]
@@ -31004,6 +32892,7 @@
 		"creditos":	3,
 		"requisitos":	["CE2103"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -31149,6 +33038,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -31283,6 +33178,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}]
@@ -31292,6 +33199,7 @@
 		"creditos":	1,
 		"requisitos":	["FI1202"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -31406,6 +33314,7 @@
 		"creditos":	4,
 		"requisitos":	["EL2113"],
 		"correquisitos":	["EL2207"],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -31494,6 +33403,12 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
 					}],
 				"id_grupo":	1
 			}, {
@@ -31670,6 +33585,12 @@
 					}, {
 						"curso":	"MA2104",
 						"id_grupo":	4
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
 					}],
 				"id_grupo":	2
 			}, {
@@ -31911,6 +33832,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}]
@@ -31920,6 +33853,7 @@
 		"creditos":	4,
 		"requisitos":	["EL2113"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -32020,6 +33954,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
 					}],
 				"id_grupo":	1
 			}, {
@@ -32121,6 +34058,9 @@
 					}, {
 						"curso":	"FI1102",
 						"id_grupo":	10
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -32204,6 +34144,12 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -32377,6 +34323,15 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}]
@@ -32386,6 +34341,7 @@
 		"creditos":	2,
 		"requisitos":	["MA2104"],
 		"correquisitos":	[],
+		"carreras":	["Computadores"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -32575,6 +34531,18 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -32670,6 +34638,9 @@
 					}, {
 						"curso":	"SO4604",
 						"id_grupo":	2
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}]
@@ -32679,6 +34650,7 @@
 		"creditos":	3,
 		"requisitos":	["FI1102"],
 		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
 		"estudiante_puede_matricular":	false,
 		"grupos":	[{
 				"numero_grupo":	"001",
@@ -32862,6 +34834,9 @@
 					}, {
 						"curso":	"PI2609",
 						"id_grupo":	3
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
 					}],
 				"id_grupo":	2
 			}, {
@@ -32966,6 +34941,15 @@
 					}, {
 						"curso":	"EL2114",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
 					}],
 				"id_grupo":	3
 			}, {
@@ -33067,6 +35051,18 @@
 					}, {
 						"curso":	"PI2609",
 						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
 					}],
 				"id_grupo":	4
 			}, {
@@ -33189,7 +35185,2352 @@
 					}, {
 						"curso":	"EL2207",
 						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
 					}],
 				"id_grupo":	5
+			}]
+	}, {
+		"codigo":	"CE1107",
+		"nombre":	"fundamentos de arquitectura de computadores",
+		"creditos":	4,
+		"requisitos":	["EL2207"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Fundamentos de Arquitectura de Computadores",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Chavarria Zamora Luis"],
+				"bloques_horario":	["Martes - 9:30:11:20", "Jueves - 9:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	9
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	24
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	18
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	20
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	29
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	32
+					}, {
+						"curso":	"CE1103",
+						"id_grupo":	3
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	16
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	12
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	18
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	22
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	9
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	24
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	38
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	46
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	47
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	48
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	54
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	57
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	60
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	2
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	5
+					}, {
+						"curso":	"EL2113",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	11
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	4
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	3
+					}],
+				"id_grupo":	1
+			}]
+	}, {
+		"codigo":	"CE3101",
+		"nombre":	"bases de datos",
+		"creditos":	4,
+		"requisitos":	["CE1106"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Bases de datos",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Rivera Meneses Marco"],
+				"bloques_horario":	["Miercoles - 19:0:20:50", "Viernes - 19:0:20:50"],
+				"choca_con":	[{
+						"curso":	"MA1102",
+						"id_grupo":	18
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	17
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	5
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}],
+				"id_grupo":	1
+			}, {
+				"numero_grupo":	"002",
+				"nombre":	"Bases de datos",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Hernandez Vasquez Marco"],
+				"bloques_horario":	["Miercoles - 19:0:20:50", "Viernes - 19:0:20:50"],
+				"choca_con":	[{
+						"curso":	"MA1102",
+						"id_grupo":	18
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	17
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	5
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}],
+				"id_grupo":	2
+			}]
+	}, {
+		"codigo":	"CE3201",
+		"nombre":	"taller de diseño digital",
+		"creditos":	2,
+		"requisitos":	["CE2201"],
+		"correquisitos":	["CE1107"],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Taller de diseño digital",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Garcia Fernandez Ronald", "Calderon Prado Kimberly"],
+				"bloques_horario":	["Jueves - 13:0:14:50", "Sabado - 8:30:10:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	21
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	11
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	4
+					}, {
+						"curso":	"CI1407",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	6
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	23
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	18
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	3
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	7
+					}, {
+						"curso":	"PI2609",
+						"id_grupo":	3
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
+					}],
+				"id_grupo":	1
+			}, {
+				"numero_grupo":	"002",
+				"nombre":	"Taller de diseño digital",
+				"tipo_grupo":	"Tutoría",
+				"profesores":	["Garcia Fernandez Ronald", "Calderon Prado Kimberly"],
+				"bloques_horario":	["Martes - 13:0:14:50", "Sabado - 10:30:12:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	21
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	4
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	17
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	14
+					}, {
+						"curso":	"CI1407",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	6
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	25
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	18
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	17
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	42
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	9
+					}, {
+						"curso":	"CI3203",
+						"id_grupo":	1
+					}],
+				"id_grupo":	2
+			}]
+	}, {
+		"codigo":	"MA2105",
+		"nombre":	"ecuaciones diferenciales",
+		"creditos":	4,
+		"requisitos":	["MA1103"],
+		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Alpizar Brenes Geisel"],
+				"bloques_horario":	["Martes - 7:30:9:20", "Jueves - 7:30:9:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1104",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	1
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	6
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	23
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	1
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	13
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	17
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	6
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	23
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	29
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	41
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	45
+					}, {
+						"curso":	"CE2103",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	2
+					}],
+				"id_grupo":	1
+			}, {
+				"numero_grupo":	"002",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Marin Sanchez Mario"],
+				"bloques_horario":	["Miercoles - 13:0:14:50", "Viernes - 13:0:14:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	15
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	13
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	7
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	22
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	25
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	24
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	13
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	13
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	22
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	25
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	36
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	52
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	4
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	9
+					}, {
+						"curso":	"PI2609",
+						"id_grupo":	2
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	4
+					}, {
+						"curso":	"CE1108",
+						"id_grupo":	1
+					}],
+				"id_grupo":	2
+			}, {
+				"numero_grupo":	"003",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Brenes Gomez Randall"],
+				"bloques_horario":	["Martes - 9:30:11:20", "Jueves - 9:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	1
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	9
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	24
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	18
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	20
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	29
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	32
+					}, {
+						"curso":	"CE1103",
+						"id_grupo":	3
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	16
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	12
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	18
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	22
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	9
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	24
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	26
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	38
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	46
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	47
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	48
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	54
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	57
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	60
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	2
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	5
+					}, {
+						"curso":	"EL2113",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	11
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	4
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1107",
+						"id_grupo":	1
+					}],
+				"id_grupo":	3
+			}, {
+				"numero_grupo":	"004",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Marin Sanchez Mario"],
+				"bloques_horario":	["Miercoles - 17:0:18:50", "Viernes - 17:0:18:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	16
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	18
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	22
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	13
+					}, {
+						"curso":	"CE1103",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	2
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	15
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	10
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	21
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	15
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	16
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	17
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	13
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	4
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	5
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	1
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	4
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	2
+					}],
+				"id_grupo":	4
+			}, {
+				"numero_grupo":	"005",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Grupo Rn",
+				"profesores":	["Acuña Prado Luis"],
+				"bloques_horario":	["Sabado - 7:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	21
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	18
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}],
+				"id_grupo":	5
+			}, {
+				"numero_grupo":	"006",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Oviedo Ugalde Norberto"],
+				"bloques_horario":	["Miercoles - 15:0:16:50", "Viernes - 15:0:16:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	15
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	16
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	22
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	14
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	14
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	15
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	37
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	4
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	3
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	3
+					}, {
+						"curso":	"PI2609",
+						"id_grupo":	2
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	4
+					}, {
+						"curso":	"CE4301",
+						"id_grupo":	1
+					}],
+				"id_grupo":	6
+			}, {
+				"numero_grupo":	"007",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Ramirez Arce Greivin"],
+				"bloques_horario":	["Martes - 17:0:18:50", "Jueves - 17:0:18:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	5
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	11
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	14
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	24
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	33
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	39
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	3
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	2
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	4
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	3
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}],
+				"id_grupo":	7
+			}, {
+				"numero_grupo":	"008",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Tutoría",
+				"profesores":	["Mora Casasola Maria Fernanda"],
+				"bloques_horario":	["Martes - 17:0:18:50", "Jueves - 17:0:18:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	5
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	11
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	14
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	24
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	33
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	39
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	3
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	2
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	4
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	3
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}],
+				"id_grupo":	8
+			}, {
+				"numero_grupo":	"009",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Grupo Rn",
+				"profesores":	["Mora Casasola Maria Fernanda"],
+				"bloques_horario":	["Sabado - 7:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	21
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	18
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	6
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}],
+				"id_grupo":	9
+			}, {
+				"numero_grupo":	"010",
+				"nombre":	"Ecuaciones diferenciales",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Prendas Rojas Juan Pablo"],
+				"bloques_horario":	["Miercoles - 9:30:11:20", "Viernes - 9:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	13
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	14
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	2
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	6
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	14
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	7
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	28
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	33
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	34
+					}, {
+						"curso":	"CI1407",
+						"id_grupo":	4
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	2
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	11
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	12
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	17
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	16
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	14
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	35
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	44
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	49
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	56
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	61
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	62
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	3
+					}, {
+						"curso":	"EL2113",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	4
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	5
+					}, {
+						"curso":	"CE1110",
+						"id_grupo":	1
+					}],
+				"id_grupo":	10
+			}]
+	}, {
+		"codigo":	"PI5516",
+		"nombre":	"ingeniería económica",
+		"creditos":	3,
+		"requisitos":	["PI2609"],
+		"correquisitos":	[],
+		"carreras":	["Computadores", "Electronica"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Ingeniería económica",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Chacon Rojas Fernando"],
+				"bloques_horario":	["Martes - 17:0:20:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	5
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	33
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	2
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"CE1109",
+						"id_grupo":	1
+					}],
+				"id_grupo":	1
+			}, {
+				"numero_grupo":	"002",
+				"nombre":	"Ingeniería económica",
+				"tipo_grupo":	"Virtual",
+				"profesores":	["Farah Guzman Biljhana Shakira"],
+				"bloques_horario":	["Viernes - 17:0:20:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	18
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	22
+					}, {
+						"curso":	"CE1103",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	2
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	15
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	15
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	16
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	17
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	5
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3101",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	4
+					}],
+				"id_grupo":	2
+			}]
+	}, {
+		"codigo":	"CE1108",
+		"nombre":	"compiladores e intérpretes",
+		"creditos":	4,
+		"requisitos":	["CE1107"],
+		"correquisitos":	["CE4301"],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Compiladores e intérpretes",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Leiton Jimenez Jason"],
+				"bloques_horario":	["Miercoles - 13:0:14:50", "Viernes - 13:0:14:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	15
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	13
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	7
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	22
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	25
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	24
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	13
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	13
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	22
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	25
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	36
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	52
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	4
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	9
+					}, {
+						"curso":	"PI2609",
+						"id_grupo":	2
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	2
+					}],
+				"id_grupo":	1
+			}]
+	}, {
+		"codigo":	"CE1109",
+		"nombre":	"circuitos analógicos",
+		"creditos":	4,
+		"requisitos":	["EL2207", "SO4604"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Circuitos analógicos",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Araya Rodriguez Lisandro"],
+				"bloques_horario":	["Martes - 17:0:18:50", "Jueves - 17:0:18:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	5
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	11
+					}, {
+						"curso":	"CE1105",
+						"id_grupo":	1
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	14
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	24
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	10
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	2
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	19
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	33
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	39
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	3
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	5
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	8
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	10
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	2
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	2
+					}, {
+						"curso":	"EL2114",
+						"id_grupo":	4
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	8
+					}, {
+						"curso":	"PI5516",
+						"id_grupo":	1
+					}],
+				"id_grupo":	1
+			}]
+	}, {
+		"codigo":	"CE1110",
+		"nombre":	"análisis de señales mixtas",
+		"creditos":	4,
+		"requisitos":	["EL2114", "MA2105"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Análisis de señales mixtas",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Chavarria Zamora Luis"],
+				"bloques_horario":	["Miercoles - 9:30:11:20", "Viernes - 9:30:11:20"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	7
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	12
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	13
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	14
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	2
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	6
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	14
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	7
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	16
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	21
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	28
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	33
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	34
+					}, {
+						"curso":	"CI1407",
+						"id_grupo":	4
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	2
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	11
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	12
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	17
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	16
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	19
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	12
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	14
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	35
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	44
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	49
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	56
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	61
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	62
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	1
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	3
+					}, {
+						"curso":	"EL2113",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	1
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	2
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE1106",
+						"id_grupo":	1
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	4
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	10
+					}],
+				"id_grupo":	1
+			}]
+	}, {
+		"codigo":	"CE4301",
+		"nombre":	"arquitectura de computadores i",
+		"creditos":	4,
+		"requisitos":	["CE1107", "CE3201"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Arquitectura de computadores I",
+				"tipo_grupo":	"Semipresencial",
+				"profesores":	["Gonzalez Gomez Jeferson"],
+				"bloques_horario":	["Miercoles - 15:0:16:50", "Viernes - 15:0:16:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	9
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	10
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	11
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	15
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	16
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	17
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	22
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	14
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	20
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	14
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	15
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	3
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	37
+					}, {
+						"curso":	"CS2101",
+						"id_grupo":	4
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	6
+					}, {
+						"curso":	"FH1000",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	9
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	3
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	3
+					}, {
+						"curso":	"PI2609",
+						"id_grupo":	2
+					}, {
+						"curso":	"SO4604",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA2105",
+						"id_grupo":	6
+					}],
+				"id_grupo":	1
+			}]
+	}, {
+		"codigo":	"CI3203",
+		"nombre":	"inglés especializado para ingenierías en computadores",
+		"creditos":	2,
+		"requisitos":	["CI0205"],
+		"correquisitos":	[],
+		"carreras":	["Computadores"],
+		"estudiante_puede_matricular":	false,
+		"grupos":	[{
+				"numero_grupo":	"001",
+				"nombre":	"Inglés especializado para ingenierías en computadores",
+				"tipo_grupo":	"Regular",
+				"profesores":	["Jimenez Rodriguez Roxana"],
+				"bloques_horario":	["Martes - 13:0:15:50"],
+				"choca_con":	[{
+						"curso":	"MA0101",
+						"id_grupo":	3
+					}, {
+						"curso":	"MA0101",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	6
+					}, {
+						"curso":	"MA1102",
+						"id_grupo":	8
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA1403",
+						"id_grupo":	5
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	3
+					}, {
+						"curso":	"QU1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	4
+					}, {
+						"curso":	"QU1106",
+						"id_grupo":	5
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	17
+					}, {
+						"curso":	"SE1100",
+						"id_grupo":	18
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	14
+					}, {
+						"curso":	"SE1200",
+						"id_grupo":	31
+					}, {
+						"curso":	"CE1103",
+						"id_grupo":	2
+					}, {
+						"curso":	"CI1407",
+						"id_grupo":	3
+					}, {
+						"curso":	"CS1502",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	5
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	6
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	7
+					}, {
+						"curso":	"FI1101",
+						"id_grupo":	8
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	3
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1201",
+						"id_grupo":	25
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	4
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	5
+					}, {
+						"curso":	"MA1103",
+						"id_grupo":	6
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	17
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	18
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	42
+					}, {
+						"curso":	"SE1400",
+						"id_grupo":	59
+					}, {
+						"curso":	"FI1102",
+						"id_grupo":	4
+					}, {
+						"curso":	"FI1202",
+						"id_grupo":	2
+					}, {
+						"curso":	"MA2104",
+						"id_grupo":	7
+					}, {
+						"curso":	"EL2207",
+						"id_grupo":	1
+					}, {
+						"curso":	"CE3201",
+						"id_grupo":	2
+					}],
+				"id_grupo":	1
 			}]
 	}]

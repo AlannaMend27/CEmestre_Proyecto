@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "cJSON.h"
 #include "catalogo.h"
 #include "manejoArreglos.h"
@@ -63,6 +64,15 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
     //De igual forma para los demas arreglos
     const cJSON *correquisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "correquisitos");
     curso->correquisitos = leerArregloStrings(correquisitosJson, &curso->numCorrequisitos);
+
+    // extraer la carrera a la que pertenece el curso
+    cJSON *arrCarreras = cJSON_GetObjectItem(cursoJson, "carreras");
+    curso->numCarreras = cJSON_GetArraySize(arrCarreras);
+
+    // almacenarlas en el arreglo que contiene el struct
+    for (int i = 0; i < curso->numCarreras; i++) {
+    strcpy(curso->carreras[i], cJSON_GetStringValue(cJSON_GetArrayItem(arrCarreras, i)));
+    }
 
     //De igual manera
     const cJSON *puedeMatricularJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "estudiante_puede_matricular");

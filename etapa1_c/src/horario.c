@@ -137,13 +137,31 @@ void agregarChoque(Grupo *grupoActual, const char *codigoCursoQueChoca, int idGr
 }
 
 //Recorre todos los pares de grupos de cursos distintos y llena el chocaCon de cada grupo
-void detectarChoques(Curso *arregloCursos, int cantidadCursos) {
+void detectarChoques(Curso *arregloCursos, int cantidadCursos, const char *carreraEstudiante) {
 
     for (int indiceCurso1 = 0; indiceCurso1 < cantidadCursos; indiceCurso1++) {
         for (int indiceCurso2 = indiceCurso1 + 1; indiceCurso2 < cantidadCursos; indiceCurso2++) {
 
             Curso *primerCurso = &arregloCursos[indiceCurso1];
             Curso *segundoCurso = &arregloCursos[indiceCurso2];
+
+            // Saltar cursos que no pertenecen a la carrera del estudiante
+            int primerEsValido = 0;
+            int segundoEsValido = 0;
+
+            // verificar que los cursos esten en el plan de estudios del estudiante (computadores o electro)
+            for (int i = 0; i < primerCurso->numCarreras; i++){
+                if (strcmp(primerCurso->carreras[i], carreraEstudiante) == 0){
+                    primerEsValido = 1;
+                }
+            }
+
+            for (int i = 0; i < segundoCurso->numCarreras; i++){
+                if (strcmp(segundoCurso->carreras[i], carreraEstudiante) == 0)
+                    segundoEsValido = 1;
+            }
+            
+            if (!primerEsValido || !segundoEsValido) continue;
 
             //Si ambos cursos tienen el mismo codigo saltamos la comparacion
             if (strcmp(primerCurso->codigo, segundoCurso->codigo) == 0) {

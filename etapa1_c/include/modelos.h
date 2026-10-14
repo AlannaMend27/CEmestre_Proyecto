@@ -50,6 +50,9 @@ typedef struct {
     Grupo *grupos;
     int numGrupos;
 
+    char carreras[2][60];
+    int numCarreras;
+
 
     bool estudiantePuedeMatricular;
 

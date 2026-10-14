@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "cJSON.h"
 #include "catalogo.h"
 #include "exportar.h"
@@ -53,6 +54,13 @@ static cJSON *cursoAJson(const Curso *curso) {
 
     cJSON_AddItemToObject(cursoJson, "correquisitos", arregloStringsAJson(curso->correquisitos, curso->numCorrequisitos));
 
+    // arreglo de las carreras
+    cJSON *arregloCarreras = cJSON_CreateArray();
+    for (int i = 0; i < curso->numCarreras; i++) {
+        cJSON_AddItemToArray(arregloCarreras, cJSON_CreateString(curso->carreras[i]));
+    }
+    cJSON_AddItemToObject(cursoJson, "carreras", arregloCarreras);
+
     // true/false segun si el estudiante cumple los requisitos
     cJSON_AddBoolToObject(cursoJson, "estudiante_puede_matricular", curso->estudiantePuedeMatricular);
 
@@ -72,7 +80,7 @@ static cJSON *cursoAJson(const Curso *curso) {
 }
 
 // Recorre el catalogo completo, construye el JSON y lo escribe en el archivo de salida
-int exportarCatalogo(const Curso *arregloCursos, int cantidadCursos, const char *rutaArchivoSalida) {
+int exportarCatalogo(const Curso *arregloCursos, int cantidadCursos, const char *rutaArchivoSalida, const char *carreraEstudiante) {
 
     // Creamos el arreglo JSON raiz que va a contener todos los cursos
     cJSON *raiz = cJSON_CreateArray();
@@ -85,7 +93,20 @@ int exportarCatalogo(const Curso *arregloCursos, int cantidadCursos, const char 
 
     // almacenar cada curso en el archivo JSON
     for (int i = 0; i < cantidadCursos; i++) {
-        cJSON_AddItemToArray(raiz, cursoAJson(&arregloCursos[i]));
+        int esValido = 0;
+            for (int j = 0; j < arregloCursos[i].numCarreras; j++) {
+
+                if (strcmp(arregloCursos[i].carreras[j], carreraEstudiante) == 0) {
+                    
+                    esValido = 1;
+                    break;
+                }
+            }
+
+            // si el curso es del plan de estudios del estudiante, 
+            if (esValido) {
+                cJSON_AddItemToArray(raiz, cursoAJson(&arregloCursos[i]));
+            }
     }
 
     // serealizar el objeto JSON a texto con formato legible 

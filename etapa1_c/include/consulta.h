@@ -7,6 +7,6 @@
 //Por ejemplo para saber cuales cursos puede matricular el estudiante y asi
 
 //Devuelve un arreglo de punteros a los cursos que el estudiante puede llevar segun sus aprobados
-ListaCursos obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos, char **cursosAprobados, int cantidadAprobados);
+ListaCursos obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos, char **cursosAprobados, int cantidadAprobados, const char *carreraEstudiante);
 
 #endif

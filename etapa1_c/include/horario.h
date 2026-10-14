@@ -17,6 +17,6 @@ int gruposChocan(const Grupo *primerGrupo, const Grupo *segundoGrupo);
 void agregarChoque(Grupo *grupoActual, const char *codigoCursoQueChoca, int idGrupoQueChoca);
 
 //Recorre todos los pares de grupos de cursos distintos y llena el chocaCon de cada grupo
-void detectarChoques(Curso *arregloCursos, int cantidadCursos);
+void detectarChoques(Curso *arregloCursos, int cantidadCursos, const char *carreraEstudiante);
 
 #endif

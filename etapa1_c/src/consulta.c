@@ -6,7 +6,8 @@
 
 
 //Devuelve un arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-ListaCursos obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char **cursosAprobados, int cantidadAprobados) {
+ListaCursos obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,char **cursosAprobados, int cantidadAprobados, const char *carreraEstudiante) {
+
     
     // inicializamos lista enlazad apara guardar cursos
     ListaCursos lista;
@@ -15,6 +16,16 @@ ListaCursos obtenerCursosDisponibles(Curso *arregloCursos, int cantidadCursos,ch
     //Evaluamos cada curso del catalogo para ver si el estudiante es elegible
     for (int indiceCurso = 0; indiceCurso < cantidadCursos; indiceCurso++) {
 
+        // Saltar cursos que no pertenecen a la carrera del estudiante
+        int esValido = 0;
+        for (int i = 0; i < arregloCursos[indiceCurso].numCarreras; i++){
+            if (strcmp(arregloCursos[indiceCurso].carreras[i], carreraEstudiante) == 0){
+                esValido = 1;
+            }
+        }
+        if (!esValido) continue;
+
+        
         bool yaAprobado = false;
         //Revisamos el historial del estudiante para verificar si ya paso este curso
         for (int indiceAprobado = 0; indiceAprobado < cantidadAprobados; indiceAprobado++) {
