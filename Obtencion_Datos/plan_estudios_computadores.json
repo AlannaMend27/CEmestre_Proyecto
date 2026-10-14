@@ -133,9 +133,6 @@
                         },
                         {
                             "id": "CE2103"
-                        },
-                        {
-                            "id": "MA1102"
                         }
                     ],
                     "equivalent": [],
@@ -1589,9 +1586,15 @@
                         },
                         {
                             "id": "FH0273"
+                        },
+                        {
+                            "id": "FH0274"
+                        },
+                        {
+                            "id": "FH0275"
                         }
                     ],
-                    "tEquiv": "FH0001,FH0002,FH0003,FH0004,FH0005,FH0006,FH0007,FH0008,FH0009,FH0010,FH0011,FH0012,FH0013,FH0014,FH0015,FH0016,FH0017,FH0018,FH0019,FH0020,FH0021,FH0022,FH0023,FH0024,FH0025,FH0026,FH0027,FH0028,FH0029,FH0030,FH0031,FH0032,FH0033,FH0034,FH0035,FH0036,FH0037,FH0038,FH0039,FH0040,FH0041,FH0042,FH0043,FH0044,FH0045,FH0046,FH0047,FH0048,FH0049,FH0050,FH0051,FH0052,FH0053,FH0054,FH0055,FH0056,FH0057,FH0058,FH0059,FH0060,FH0061,FH0062,FH0063,FH0064,FH0065,FH0066,FH0067,FH0068,FH0069,FH0070,FH0071,FH0072,FH0073,FH0074,FH0075,FH0076,FH0077,FH0078,FH0079,FH0080,FH0081,FH0082,FH0083,FH0084,FH0085,FH0086,FH0087,FH0088,FH0089,FH0090,FH0091,FH0092,FH0093,FH0094,FH0095,FH0096,FH0097,FH0098,FH0099,FH0100,FH0101,FH0102,FH0103,FH0104,FH0105,FH0106,FH0107,FH0108,FH0109,FH0110,FH0111,FH0112,FH0113,FH0114,FH0115,FH0116,FH0117,FH0118,FH0119,FH0120,FH0121,FH0122,FH0123,FH0124,FH0125,FH0126,FH0127,FH0128,FH0129,FH0130,FH0131,FH0132,FH0133,FH0134,FH0135,FH0136,FH0137,FH0138,FH0139,FH0140,FH0141,FH0142,FH0143,FH0144,FH0145,FH0146,FH0147,FH0148,FH0149,FH0150,FH0151,FH0152,FH0153,FH0154,FH0155,FH0156,FH0157,FH0158,FH0159,FH0160,FH0161,FH0162,FH0163,FH0164,FH0165,FH0166,FH0167,FH0168,FH0169,FH0170,FH0171,FH0172,FH0173,FH0174,FH0175,FH0176,FH0177,FH0178,FH0179,FH0180,FH0181,FH0182,FH0183,FH0184,FH0185,FH0186,FH0187,FH0188,FH0189,FH0190,FH0191,FH0192,FH0193,FH0194,FH0195,FH0196,FH0197,FH0198,FH0199,FH0200,FH0201,FH0202,FH0203,FH0204,FH0205,FH0206,FH0207,FH0208,FH0209,FH0210,FH0211,FH0212,FH0213,FH0214,FH0215,FH0216,FH0217,FH0218,FH0219,FH0220,FH0221,FH0222,FH0223,FH0224,FH0225,FH0226,FH0227,FH0228,FH0229,FH0230,FH0231,FH0232,FH0233,FH0234,FH0235,FH0236,FH0237,FH0238,FH0239,FH0240,FH0241,FH0242,FH0243,FH0244,FH0245,FH0246,FH0247,FH0248,FH0249,FH0250,FH0251,FH0252,FH0253,FH0254,FH0255,FH0256,FH0257,FH0258,FH0259,FH0260,FH0261,FH0262,FH0263,FH0264,FH0265,FH0266,FH0267,FH0268,FH0269,FH0270,FH0271,FH0272,FH0273"
+                    "tEquiv": "FH0001,FH0002,FH0003,FH0004,FH0005,FH0006,FH0007,FH0008,FH0009,FH0010,FH0011,FH0012,FH0013,FH0014,FH0015,FH0016,FH0017,FH0018,FH0019,FH0020,FH0021,FH0022,FH0023,FH0024,FH0025,FH0026,FH0027,FH0028,FH0029,FH0030,FH0031,FH0032,FH0033,FH0034,FH0035,FH0036,FH0037,FH0038,FH0039,FH0040,FH0041,FH0042,FH0043,FH0044,FH0045,FH0046,FH0047,FH0048,FH0049,FH0050,FH0051,FH0052,FH0053,FH0054,FH0055,FH0056,FH0057,FH0058,FH0059,FH0060,FH0061,FH0062,FH0063,FH0064,FH0065,FH0066,FH0067,FH0068,FH0069,FH0070,FH0071,FH0072,FH0073,FH0074,FH0075,FH0076,FH0077,FH0078,FH0079,FH0080,FH0081,FH0082,FH0083,FH0084,FH0085,FH0086,FH0087,FH0088,FH0089,FH0090,FH0091,FH0092,FH0093,FH0094,FH0095,FH0096,FH0097,FH0098,FH0099,FH0100,FH0101,FH0102,FH0103,FH0104,FH0105,FH0106,FH0107,FH0108,FH0109,FH0110,FH0111,FH0112,FH0113,FH0114,FH0115,FH0116,FH0117,FH0118,FH0119,FH0120,FH0121,FH0122,FH0123,FH0124,FH0125,FH0126,FH0127,FH0128,FH0129,FH0130,FH0131,FH0132,FH0133,FH0134,FH0135,FH0136,FH0137,FH0138,FH0139,FH0140,FH0141,FH0142,FH0143,FH0144,FH0145,FH0146,FH0147,FH0148,FH0149,FH0150,FH0151,FH0152,FH0153,FH0154,FH0155,FH0156,FH0157,FH0158,FH0159,FH0160,FH0161,FH0162,FH0163,FH0164,FH0165,FH0166,FH0167,FH0168,FH0169,FH0170,FH0171,FH0172,FH0173,FH0174,FH0175,FH0176,FH0177,FH0178,FH0179,FH0180,FH0181,FH0182,FH0183,FH0184,FH0185,FH0186,FH0187,FH0188,FH0189,FH0190,FH0191,FH0192,FH0193,FH0194,FH0195,FH0196,FH0197,FH0198,FH0199,FH0200,FH0201,FH0202,FH0203,FH0204,FH0205,FH0206,FH0207,FH0208,FH0209,FH0210,FH0211,FH0212,FH0213,FH0214,FH0215,FH0216,FH0217,FH0218,FH0219,FH0220,FH0221,FH0222,FH0223,FH0224,FH0225,FH0226,FH0227,FH0228,FH0229,FH0230,FH0231,FH0232,FH0233,FH0234,FH0235,FH0236,FH0237,FH0238,FH0239,FH0240,FH0241,FH0242,FH0243,FH0244,FH0245,FH0246,FH0247,FH0248,FH0249,FH0250,FH0251,FH0252,FH0253,FH0254,FH0255,FH0256,FH0257,FH0258,FH0259,FH0260,FH0261,FH0262,FH0263,FH0264,FH0265,FH0266,FH0267,FH0268,FH0269,FH0270,FH0271,FH0272,FH0273,FH0274,FH0275"
                 },
                 {
                     "id_course": "FI1102",
@@ -1794,6 +1797,248 @@
                         },
                         {
                             "id": "CE1109"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                }
+            ]
+        },
+        {
+            "id": "Semestre 5",
+            "courses": [
+                {
+                    "id_course": "CE1107",
+                    "name": "fundamentos de arquitectura de computadores",
+                    "trucatedName": "fundamentos de arquitectura de ...",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "EL2207"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1108"
+                        },
+                        {
+                            "id": "CE4301"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CE3101",
+                    "name": "bases de datos",
+                    "trucatedName": "bases de datos",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "CE1106"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1105"
+                        },
+                        {
+                            "id": "CE1116"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CE3201",
+                    "name": "taller de diseño digital",
+                    "trucatedName": "taller de diseño digital",
+                    "credits": 2,
+                    "hours": 6,
+                    "requirements": [
+                        {
+                            "id": "CE2201"
+                        }
+                    ],
+                    "co_requirements": [
+                        {
+                            "id": "CE1107"
+                        }
+                    ],
+                    "required_by": [
+                        {
+                            "id": "CE4301"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "MA2105",
+                    "name": "ecuaciones diferenciales",
+                    "trucatedName": "ecuaciones diferenciales",
+                    "credits": 4,
+                    "hours": 4,
+                    "requirements": [
+                        {
+                            "id": "MA1103"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1110"
+                        },
+                        {
+                            "id": "CE1111"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "PI5516",
+                    "name": "ingeniería económica",
+                    "trucatedName": "ingeniería económica",
+                    "credits": 3,
+                    "hours": 4,
+                    "requirements": [
+                        {
+                            "id": "PI2609"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "AE4208"
+                        },
+                        {
+                            "id": "CE1116"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                }
+            ]
+        },
+        {
+            "id": "Semestre 6",
+            "courses": [
+                {
+                    "id_course": "CE1108",
+                    "name": "compiladores e intérpretes",
+                    "trucatedName": "compiladores e intérpretes",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "CE1107"
+                        }
+                    ],
+                    "co_requirements": [
+                        {
+                            "id": "CE4301"
+                        }
+                    ],
+                    "required_by": [
+                        {
+                            "id": "CE4303"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CE1109",
+                    "name": "circuitos analógicos",
+                    "trucatedName": "circuitos analógicos",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "EL2207"
+                        },
+                        {
+                            "id": "SO4604"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1112"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CE1110",
+                    "name": "análisis de señales mixtas",
+                    "trucatedName": "análisis de señales mixtas",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "EL2114"
+                        },
+                        {
+                            "id": "MA2105"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1112"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CE4301",
+                    "name": "arquitectura de computadores i",
+                    "trucatedName": "arquitectura de computadores i",
+                    "credits": 4,
+                    "hours": 12,
+                    "requirements": [
+                        {
+                            "id": "CE1107"
+                        },
+                        {
+                            "id": "CE3201"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE1116"
+                        },
+                        {
+                            "id": "CE4302"
+                        }
+                    ],
+                    "equivalent": [],
+                    "tEquiv": ""
+                },
+                {
+                    "id_course": "CI3203",
+                    "name": "inglés especializado para ingenierías en computadores",
+                    "trucatedName": "inglés especializado para ingen...",
+                    "credits": 2,
+                    "hours": 6,
+                    "requirements": [
+                        {
+                            "id": "CI0205"
+                        }
+                    ],
+                    "co_requirements": [],
+                    "required_by": [
+                        {
+                            "id": "CE5701"
                         }
                     ],
                     "equivalent": [],
