@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "horario.h"
+#include "manejoArreglos.h"
 
 //Aqui van las comparaciones de bloques de horario entre grupos
 
@@ -105,78 +106,81 @@ int gruposChocan(const Grupo *primerGrupo, const Grupo *segundoGrupo) {
     return 0;
 }
 
-//Agrega un codigo especifico a la lista de choques de un curso
-void agregarChoque(Curso *cursoActual, const char *codigoQueChoca) {
+//Agrega un par curso-grupo a la lista de choques de un grupo
+void agregarChoque(Grupo *grupoActual, const char *codigoCursoQueChoca, int idGrupoQueChoca) {
 
-    //Revisamos toda la lista actual para no insertar codigos duplicados
-    for (int indiceChoque = 0; indiceChoque < cursoActual->numChocaCon; indiceChoque++) {
-        if (strcmp(cursoActual->chocaCon[indiceChoque], codigoQueChoca) == 0) {
+    //Revisamos la lista actual para no insertar pares duplicados
+    for (int indiceChoque = 0; indiceChoque < grupoActual->numChocaCon; indiceChoque++) {
+        const ChoqueGrupo *choqueExistente = &grupoActual->chocaCon[indiceChoque];
+        if (strcmp(choqueExistente->codigoCurso, codigoCursoQueChoca) == 0 &&
+            choqueExistente->idGrupo == idGrupoQueChoca) {
             return;
         }
     }
 
-    //Calculamos el nuevo tamano para agrandar el arreglo y solicitamos la memoria
-    int nuevaCantidad = cursoActual->numChocaCon + 1;
-    char **nuevoArreglo = realloc(cursoActual->chocaCon, sizeof(char*) * nuevaCantidad);
-    
-    //Si falla la asignacion de memoria 
+    //Agrandamos el arreglo en uno
+    int nuevaCantidad = grupoActual->numChocaCon + 1;
+    ChoqueGrupo *nuevoArreglo = realloc(grupoActual->chocaCon, sizeof(ChoqueGrupo) * nuevaCantidad);
+
     if (!nuevoArreglo) {
         fprintf(stderr, "Error de memoria en agregarChoque\n");
         exit(1);
     }
-    
-    //asignamos el nuevo arreglo al struct
-    cursoActual->chocaCon = nuevoArreglo;
 
-    //Reservamos el espacio exacto para el string del codigo y lo copiamos
-    cursoActual->chocaCon[cursoActual->numChocaCon] = malloc(strlen(codigoQueChoca) + 1);
+    grupoActual->chocaCon = nuevoArreglo;
 
-    //Verificamos is no hay error
-    if (!cursoActual->chocaCon[cursoActual->numChocaCon]) {
-        fprintf(stderr, "Error de memoria en agregarChoque\n");
-        exit(1);
-    }
-    
-    //Copiamos el codigo nuevo en la posicion libre y actualizamos el total de choques
-    strcpy(cursoActual->chocaCon[cursoActual->numChocaCon], codigoQueChoca);
-    cursoActual->numChocaCon = nuevaCantidad;
+    //Guardamos el par en la posicion libre y actualizamos el total
+    ChoqueGrupo *choqueNuevo = &grupoActual->chocaCon[grupoActual->numChocaCon];
+    copiarStr(choqueNuevo->codigoCurso, sizeof(choqueNuevo->codigoCurso), codigoCursoQueChoca);
+    choqueNuevo->idGrupo = idGrupoQueChoca;
+    grupoActual->numChocaCon = nuevaCantidad;
 }
 
-//Recorre todos los pares de cursos del catalogo y llena el arreglo chocaCon de cada uno
-void detectarChoques(Curso *arregloCursos, int cantidadCursos) {
+//Recorre todos los pares de grupos de cursos distintos y llena el chocaCon de cada grupo
+void detectarChoques(Curso *arregloCursos, int cantidadCursos, const char *carreraEstudiante) {
 
-    //Recorremos cada par de cursos distintos sin repetir combinaciones
     for (int indiceCurso1 = 0; indiceCurso1 < cantidadCursos; indiceCurso1++) {
         for (int indiceCurso2 = indiceCurso1 + 1; indiceCurso2 < cantidadCursos; indiceCurso2++) {
 
-            //Si ambos cursos tienen exactamente el mismo codigo saltamos la comparacion
-            if (strcmp(arregloCursos[indiceCurso1].codigo, arregloCursos[indiceCurso2].codigo) == 0) {
+            Curso *primerCurso = &arregloCursos[indiceCurso1];
+            Curso *segundoCurso = &arregloCursos[indiceCurso2];
+
+            // Saltar cursos que no pertenecen a la carrera del estudiante
+            int primerEsValido = 0;
+            int segundoEsValido = 0;
+
+            // verificar que los cursos esten en el plan de estudios del estudiante (computadores o electro)
+            for (int i = 0; i < primerCurso->numCarreras; i++){
+                if (strcmp(primerCurso->carreras[i], carreraEstudiante) == 0){
+                    primerEsValido = 1;
+                }
+            }
+
+            for (int i = 0; i < segundoCurso->numCarreras; i++){
+                if (strcmp(segundoCurso->carreras[i], carreraEstudiante) == 0)
+                    segundoEsValido = 1;
+            }
+            
+            if (!primerEsValido || !segundoEsValido) continue;
+
+            //Si ambos cursos tienen el mismo codigo saltamos la comparacion
+            if (strcmp(primerCurso->codigo, segundoCurso->codigo) == 0) {
                 continue;
             }
 
-            int encontroChoque = 0;
+            //Comparamos cada grupo del primer curso contra cada grupo del segundo
+            for (int indiceGrupo1 = 0; indiceGrupo1 < primerCurso->numGrupos; indiceGrupo1++) {
+                for (int indiceGrupo2 = 0; indiceGrupo2 < segundoCurso->numGrupos; indiceGrupo2++) {
 
-            //Comparamos cada grupo del primer curso contra los grupos del segundo
-            for (int indiceGrupo1 = 0; indiceGrupo1 < arregloCursos[indiceCurso1].numGrupos; indiceGrupo1++) {
-                for (int indiceGrupo2 = 0; indiceGrupo2 < arregloCursos[indiceCurso2].numGrupos; indiceGrupo2++) {
-                    
-                    //Validamos si existe conflicto entre estos dos grupos especificos
-                    if (gruposChocan(&arregloCursos[indiceCurso1].grupos[indiceGrupo1], &arregloCursos[indiceCurso2].grupos[indiceGrupo2])) {
-                        encontroChoque = 1;
-                        break;
+                    Grupo *primerGrupo = &primerCurso->grupos[indiceGrupo1];
+                    Grupo *segundoGrupo = &segundoCurso->grupos[indiceGrupo2];
+
+                    //Si estos dos grupos chocan se registra el par en ambos lados
+                    if (gruposChocan(primerGrupo, segundoGrupo)) {
+                        agregarChoque(primerGrupo, segundoCurso->codigo, segundoGrupo->idGrupo);
+                        agregarChoque(segundoGrupo, primerCurso->codigo, primerGrupo->idGrupo);
                     }
                 }
-                
-                //Si ya encontramos un choque rompemos el ciclo exterior tambien
-                if (encontroChoque) {
-                    break;
-                }
-            }
-            
-            //Si detectamos que los cursos chocan agregamos el codigo correspondiente a cada uno
-            if (encontroChoque) {
-                agregarChoque(&arregloCursos[indiceCurso1], arregloCursos[indiceCurso2].codigo);
-                agregarChoque(&arregloCursos[indiceCurso2], arregloCursos[indiceCurso1].codigo);
             }
         }
     }

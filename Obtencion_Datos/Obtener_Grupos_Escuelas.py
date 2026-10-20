@@ -14,22 +14,24 @@ AD_SESSION_ID = "10949566054%2c202083176%2c1%2c1788239105%20{985%201788253505%20
 
 # Escuelas a la que se le va a realizar la consulta
 CONSULTAS = [
-    {"sede": "CA", "carrera": "MA", "periodo": "2026_S_2"},
-    {"sede": "CA", "carrera": "CI", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "CA", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "CD", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "CES", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "CI", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "CS", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "E", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "FH", "periodo": "2025_V_1"},
-    {"sede": "CA", "carrera": "MI", "periodo": "2026_S_2"},
-    {"sede": "CA", "carrera": "QU", "periodo": "2026_S_2"},
-    {"sede": "CA", "carrera": "CD", "periodo": "2026_S_2"},
-    {"sede": "CA", "carrera": "SHO", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "FI", "periodo": "2026_S_2"},
-
+    {"sede": "CA", "carrera": "MA", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "ME", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "MI", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "PI", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "QU", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "SHO", "periodo": "2026_S_2"},
 ]
 
 # Archivo de salida
-ARCHIVO_SALIDA = "horarios_raw.json"
+ARCHIVO_SALIDA = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
 
 #URL de la guia de horario del tec
 URL_ENDPOINT = "https://tecdigital.tec.ac.cr/tda-expediente-estudiantil/ajax/tabla_guia_horario"
@@ -151,7 +153,7 @@ def agrupar_por_curso(registros: list[dict]) -> list[dict]:
 
 if __name__ == "__main__":
     if AD_SESSION_ID == "PEGA_AQUI_TU_SESSION_ID":
-        print("❌  Falta pegar el session ID. Leé las instrucciones al inicio del script.")
+        print("Falta pegar el session ID. Leé las instrucciones al inicio del script.")
         sys.exit(1)
 
     print("=== Scraper Guía de Horarios TEC-Digital ===")

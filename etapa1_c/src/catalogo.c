@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "cJSON.h"
 #include "catalogo.h"
 #include "manejoArreglos.h"
@@ -28,10 +29,14 @@ static void parsearGrupo(const cJSON *grupoJson, Grupo *grupo) {
     //y el de profesores
     const cJSON *profesoresJson = cJSON_GetObjectItemCaseSensitive(grupoJson, "profesores");
     grupo->profesores = leerArregloStrings(profesoresJson, &grupo->numProfesores);
+
+    //Los choques se calculan despues en detectarChoques
+    grupo->chocaCon = NULL;
+    grupo->numChocaCon = 0;
 }
 
 //Toma el objeto json de un curso, llena el struct y parsea sus grupos internos
-static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
+static void parsearCurso(const cJSON *cursoJson, Curso *curso, const char *carreraEstudiante) {
 
     //Buscamos en el json, extraemos su valor de texto y lo copiamos en el struct
     copiarStr(curso->codigo, sizeof(curso->codigo),
@@ -51,22 +56,30 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
         curso->creditos = 0;
     }
 
-    //En estos casos tenemos que leer un arreglo
-    const cJSON *requisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "requisitos");
-    //Leemos ese arreglo
+    //Cada curso trae sus requisitos por carrera, tomamos los de la carrera del estudiante
+    const cJSON *porCarreraJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "requisitos_por_carrera");
+    const cJSON *datosCarreraJson = cJSON_GetObjectItemCaseSensitive(porCarreraJson, carreraEstudiante);
+
+    const cJSON *requisitosJson = cJSON_GetObjectItemCaseSensitive(datosCarreraJson, "requisitos");
     curso->requisitos = leerArregloStrings(requisitosJson, &curso->numRequisitos);
 
-    //De igual forma para los demas arreglos
-    const cJSON *correquisitosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "correquisitos");
+    const cJSON *correquisitosJson = cJSON_GetObjectItemCaseSensitive(datosCarreraJson, "correquisitos");
     curso->correquisitos = leerArregloStrings(correquisitosJson, &curso->numCorrequisitos);
 
-    const cJSON *chocaConJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "choca_con");
-    curso->chocaCon = leerArregloStrings(chocaConJson, &curso->numChocaCon);
+    // extraer la carrera a la que pertenece el curso
+    cJSON *arrCarreras = cJSON_GetObjectItem(cursoJson, "carreras");
+    curso->numCarreras = cJSON_GetArraySize(arrCarreras);
+
+    // almacenarlas en el arreglo que contiene el struct
+    for (int i = 0; i < curso->numCarreras; i++) {
+    strcpy(curso->carreras[i], cJSON_GetStringValue(cJSON_GetArrayItem(arrCarreras, i)));
+    }
 
     //De igual manera
     const cJSON *puedeMatricularJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "estudiante_puede_matricular");
     //El dato es booleano, evalua y devuelve 0 o 1
     curso->estudiantePuedeMatricular = cJSON_IsTrue(puedeMatricularJson);
+    curso->yaAprobado = false;
 
     const cJSON *gruposJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "grupos");
     
@@ -91,7 +104,11 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
             
             //Recorremos el arreglo de grupos del json uno por uno
             cJSON_ArrayForEach(grupoItemJson, gruposJson) {
-                parsearGrupo(grupoItemJson, &curso->grupos[indiceGrupo]);indiceGrupo++;
+                parsearGrupo(grupoItemJson, &curso->grupos[indiceGrupo]);
+
+                //El numero de grupo se repite en algunos cursos asi que asignamos un id unico por curso
+                curso->grupos[indiceGrupo].idGrupo = indiceGrupo + 1;
+                indiceGrupo++;
             }
 
         } else {
@@ -107,7 +124,7 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso) {
 }
 
 //Lee el archivo JSON completo y construye el catalogo en memoria
-Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
+Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos, const char *carreraEstudiante) {
 
     //Inicializamos la cantidad de cursos en cero, por si acaso falla algo
     *cantidadCursos = 0;
@@ -185,7 +202,7 @@ Curso *cargarCatalogo(const char *rutaArchivoJson, int *cantidadCursos) {
     
     //Extraemos cada curso del json y lo pasamos al struct en su posicion respectiva
     cJSON_ArrayForEach(cursoItemJson, jsonRaiz) {
-        parsearCurso(cursoItemJson, &arregloCursos[indiceCurso]);
+        parsearCurso(cursoItemJson, &arregloCursos[indiceCurso], carreraEstudiante);
         indiceCurso++;
     }
 
@@ -208,13 +225,13 @@ void liberarCatalogo(Curso *arregloCursos, int cantidadCursos) {
         Curso *cursoActual = &arregloCursos[indiceCurso];
         liberarArregloStrings(cursoActual->requisitos, cursoActual->numRequisitos);
         liberarArregloStrings(cursoActual->correquisitos, cursoActual->numCorrequisitos);
-        liberarArregloStrings(cursoActual->chocaCon, cursoActual->numChocaCon);
         
         //Recorremos los grupos de este curso para limpiar bloques y profesores
         for (int indiceGrupo = 0; indiceGrupo < cursoActual->numGrupos; indiceGrupo++) {
             Grupo *grupoActual = &cursoActual->grupos[indiceGrupo];
             liberarArregloStrings(grupoActual->bloquesHorario, grupoActual->numBloquesHorario);
             liberarArregloStrings(grupoActual->profesores, grupoActual->numProfesores);
+            free(grupoActual->chocaCon);
         }
         
         free(cursoActual->grupos);

@@ -3,8 +3,15 @@
     "codigo": "CI0205",
     "nombre": "prueba avanzada inglés",
     "creditos": 0,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [],
     "choca_con": [],
     "estudiante_puede_matricular": false
@@ -13,8 +20,20 @@
     "codigo": "MA0101",
     "nombre": "matemática general",
     "creditos": 2,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Matemática general",
@@ -167,8 +186,15 @@
     "codigo": "CE1101",
     "nombre": "introducción a la programación",
     "creditos": 3,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Introducción a la programación",
@@ -202,10 +228,17 @@
     "codigo": "CE1104",
     "nombre": "fundamentos de sistemas computacionales",
     "creditos": 3,
-    "requisitos": [],
-    "correquisitos": [
-      "CE1101"
+    "carreras": [
+      "Computadores"
     ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "CE1101"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Fundamentos de sistemas computacionales",
@@ -227,10 +260,24 @@
     "codigo": "MA1102",
     "nombre": "cálculo diferencial e integral",
     "creditos": 4,
-    "requisitos": [
-      "MA0101"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA0101"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA0101"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo diferencial e integral",
@@ -503,8 +550,15 @@
     "codigo": "MA1403",
     "nombre": "matemática discreta",
     "creditos": 4,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Matemática discreta",
@@ -586,10 +640,24 @@
     "codigo": "QU1102",
     "nombre": "laboratorio de química básica i",
     "creditos": 1,
-    "requisitos": [],
-    "correquisitos": [
-      "QU1106"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1106"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1106"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de química básica I",
@@ -742,10 +810,24 @@
     "codigo": "QU1106",
     "nombre": "química básica i",
     "creditos": 3,
-    "requisitos": [],
-    "correquisitos": [
-      "QU1102"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1102"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Química básica I",
@@ -839,8 +921,20 @@
     "codigo": "SE1100",
     "nombre": "actividad cultural i",
     "creditos": 0,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Artes dramáticas",
@@ -1158,8 +1252,20 @@
     "codigo": "SE1200",
     "nombre": "actividad deportiva i",
     "creditos": 0,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Atletismo",
@@ -1543,12 +1649,19 @@
     "codigo": "CE1103",
     "nombre": "algoritmos y estructuras de datos i",
     "creditos": 4,
-    "requisitos": [
-      "CE1101",
-      "CE1104",
-      "MA1403"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1101",
+          "CE1104",
+          "MA1403"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Algoritmos y estructuras de datos I",
@@ -1594,10 +1707,17 @@
     "codigo": "CE1105",
     "nombre": "principios de modelado en ingeniería",
     "creditos": 3,
-    "requisitos": [
-      "CE1104"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1104"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Principios de modelado en Ingeniería",
@@ -1643,8 +1763,20 @@
     "codigo": "CI1407",
     "nombre": "habilidades de comunicación en ingeniería",
     "creditos": 2,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Habilidades de comunicación en Ingeniería",
@@ -1698,8 +1830,20 @@
     "codigo": "CS1502",
     "nombre": "introducción a la técnica ciencia y tecnología",
     "creditos": 1,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Introducción a la técnica ciencia y tecnología",
@@ -1764,10 +1908,24 @@
     "codigo": "FI1101",
     "nombre": "física general i",
     "creditos": 3,
-    "requisitos": [
-      "MA1102"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "MA1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Física general I",
@@ -1981,10 +2139,24 @@
     "codigo": "FI1201",
     "nombre": "laboratorio física general i",
     "creditos": 1,
-    "requisitos": [],
-    "correquisitos": [
-      "FI1101"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "FI1101"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "FI1101"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio física general I",
@@ -2269,10 +2441,24 @@
     "codigo": "MA1103",
     "nombre": "cálculo y álgebra lineal",
     "creditos": 4,
-    "requisitos": [
-      "MA1102"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo y álgebra lineal",
@@ -2508,8 +2694,20 @@
     "codigo": "SE1400",
     "nombre": "actividad cultural-deportiva",
     "creditos": 0,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Artes dramáticas",
@@ -3201,11 +3399,18 @@
     "codigo": "CE2103",
     "nombre": "algoritmos y estructuras de datos ii",
     "creditos": 4,
-    "requisitos": [
-      "CE1103",
-      "CE1105"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1103",
+          "CE1105"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Algoritmos y estructuras de datos Ii",
@@ -3227,10 +3432,17 @@
     "codigo": "CS2101",
     "nombre": "ambiente humano",
     "creditos": 2,
-    "requisitos": [
-      "CI1407"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CI1407"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Ambiente humano",
@@ -3328,11 +3540,28 @@
     "codigo": "EL2113",
     "nombre": "circuitos eléctricos en corriente continua",
     "creditos": 4,
-    "requisitos": [
-      "FI1101",
-      "MA1102"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1101",
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL1200",
+          "MA1102"
+        ],
+        "correquisitos": [
+          "FI1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos eléctricos en corriente continua",
@@ -3389,8 +3618,20 @@
     "codigo": "FH1000",
     "nombre": "centros de formación humanística",
     "creditos": 0,
-    "requisitos": [],
-    "correquisitos": [],
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Educación en nuestros tiempos",
@@ -3529,12 +3770,26 @@
     "codigo": "FI1102",
     "nombre": "física general ii",
     "creditos": 3,
-    "requisitos": [
-      "FI1101"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [
-      "MA1102"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": [
+          "MA1102"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Física general Ii",
@@ -3676,12 +3931,19 @@
     "codigo": "FI1202",
     "nombre": "laboratorio física general ii",
     "creditos": 1,
-    "requisitos": [
-      "FI1201"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [
-      "FI1102"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1201"
+        ],
+        "correquisitos": [
+          "FI1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio física general Ii",
@@ -3790,10 +4052,24 @@
     "codigo": "MA2104",
     "nombre": "cálculo superior",
     "creditos": 4,
-    "requisitos": [
-      "MA1103"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo superior",
@@ -3886,10 +4162,17 @@
     "codigo": "CE1106",
     "nombre": "paradigmas de programación",
     "creditos": 3,
-    "requisitos": [
-      "CE2103"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE2103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Paradigmas de programación",
@@ -3923,10 +4206,17 @@
     "codigo": "CE2201",
     "nombre": "laboratorio de circuitos eléctricos",
     "creditos": 1,
-    "requisitos": [
-      "FI1202"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1202"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de circuitos eléctricos",
@@ -3958,12 +4248,27 @@
     "codigo": "EL2114",
     "nombre": "circuitos eléctricos en corriente alterna",
     "creditos": 4,
-    "requisitos": [
-      "EL2113"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [
-      "EL2207"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": [
+          "EL2207"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL2113",
+          "FI2103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos eléctricos en corriente alterna",
@@ -4021,10 +4326,26 @@
     "codigo": "EL2207",
     "nombre": "elementos activos",
     "creditos": 4,
-    "requisitos": [
-      "EL2113"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": [
+          "EL2114"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Elementos activos",
@@ -4082,10 +4403,17 @@
     "codigo": "PI2609",
     "nombre": "probabilidad y estadística",
     "creditos": 2,
-    "requisitos": [
-      "MA2104"
+    "carreras": [
+      "Computadores"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA2104"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Probabilidad y estadística",
@@ -4128,10 +4456,22 @@
     "codigo": "SO4604",
     "nombre": "seguridad y salud ocupacional",
     "creditos": 3,
-    "requisitos": [
-      "FI1102"
+    "carreras": [
+      "Computadores",
+      "Electronica"
     ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Seguridad y salud ocupacional",
@@ -4185,6 +4525,2368 @@
         ],
         "profesores": [
           "Morales Martinez Gabriela"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1107",
+    "nombre": "fundamentos de arquitectura de computadores",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2207"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Fundamentos de Arquitectura de Computadores",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Chavarria Zamora Luis"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE3101",
+    "nombre": "bases de datos",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1106"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Bases de datos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 19:0:20:50",
+          "Viernes - 19:0:20:50"
+        ],
+        "profesores": [
+          "Rivera Meneses Marco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Bases de datos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 19:0:20:50",
+          "Viernes - 19:0:20:50"
+        ],
+        "profesores": [
+          "Hernandez Vasquez Marco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE3201",
+    "nombre": "taller de diseño digital",
+    "creditos": 2,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE2201"
+        ],
+        "correquisitos": [
+          "CE1107"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Taller de diseño digital",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50",
+          "Sabado - 8:30:10:20"
+        ],
+        "profesores": [
+          "Garcia Fernandez Ronald",
+          "Calderon Prado Kimberly"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Taller de diseño digital",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Sabado - 10:30:12:20"
+        ],
+        "profesores": [
+          "Garcia Fernandez Ronald",
+          "Calderon Prado Kimberly"
+        ],
+        "tipo_grupo": "Tutoría"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MA2105",
+    "nombre": "ecuaciones diferenciales",
+    "creditos": 4,
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Alpizar Brenes Geisel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Marin Sanchez Mario"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Brenes Gomez Randall"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Marin Sanchez Mario"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Acuña Prado Luis"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Oviedo Ugalde Norberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Ramirez Arce Greivin"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Mora Casasola Maria Fernanda"
+        ],
+        "tipo_grupo": "Tutoría"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Mora Casasola Maria Fernanda"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Ecuaciones diferenciales",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Prendas Rojas Juan Pablo"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "PI5516",
+    "nombre": "ingeniería económica",
+    "creditos": 3,
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "PI2609"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL4702"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Ingeniería económica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Chacon Rojas Fernando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Ingeniería económica",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Viernes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Farah Guzman Biljhana Shakira"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1108",
+    "nombre": "compiladores e intérpretes",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1107"
+        ],
+        "correquisitos": [
+          "CE4301"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Compiladores e intérpretes",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Leiton Jimenez Jason"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1109",
+    "nombre": "circuitos analógicos",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2207",
+          "SO4604"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Circuitos analógicos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Araya Rodriguez Lisandro"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1110",
+    "nombre": "análisis de señales mixtas",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2114",
+          "MA2105"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Análisis de señales mixtas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Chavarria Zamora Luis"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE4301",
+    "nombre": "arquitectura de computadores i",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1107",
+          "CE3201"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Arquitectura de computadores I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gonzalez Gomez Jeferson"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI3203",
+    "nombre": "inglés especializado para ingenierías en computadores",
+    "creditos": 2,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CI0205"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Inglés especializado para ingenierías en computadores",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Jimenez Rodriguez Roxana"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI0200",
+    "nombre": "examen diagnóstico",
+    "creditos": 0,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
+    "grupos": [],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI0202",
+    "nombre": "inglés básico",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:19:50"
+        ],
+        "profesores": [
+          "Rivera Vega Katerine"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Murillo Escalante Rocio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 15:0:17:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vindas Fernandez Nuria"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Lunes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés básico",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CA2125",
+    "nombre": "elementos de computación",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Mata Rodriguez William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Cerdas Quesada Ivannia"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Campos Fernandez Ivan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Campos Fernandez Ivan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Quiros Ramirez Franco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Hernandez Sibaja Bryan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Bogarin Navarro Rodrigo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Navas Su Jose Dolores"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Coto Sarmiento Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Coto Sarmiento Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Elementos de computación",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Villalobos Arias Luis Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL1100",
+    "nombre": "introducción a la ingeniería",
+    "creditos": 0,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "CS1502"
+        ]
+      }
+    },
+    "grupos": [],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "MI2101",
+    "nombre": "dibujo técnico",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Bermudez Chacon Marvin"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Bonilla Guido Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Cordoba Ramirez Luis Felipe"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Jimenez Ceciliano Maximino"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 7:30:11:20"
+        ],
+        "profesores": [
+          "Marin Guillen Frank"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 13:0:16:50"
+        ],
+        "profesores": [
+          "Marin Guillen Frank"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 17:0:20:50"
+        ],
+        "profesores": [
+          "Hernandez Gonzalez Victor Julio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Jueves - 13:0:16:50"
+        ],
+        "profesores": [
+          "Hernandez Gonzalez Victor Julio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Ureña Sandi Noel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Jackson Quiros Herbert"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Bonilla Guido Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dibujo técnico",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Viernes - 13:0:16:50"
+        ],
+        "profesores": [
+          "Rojas Gomez Julio Cesar"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CA3125",
+    "nombre": "análisis y diseño de algoritmos",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA2125"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Arce Orozco Armando"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Garro Abarca Victor"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Garro Abarca Victor"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Hernandez Sibaja Bryan"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Análisis y diseño de algoritmos",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Bogarin Navarro Rodrigo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI1230",
+    "nombre": "inglés i",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI0200",
+          "CI0202"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Brenes Rojas Leonardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Herrera Jimenez Ingrid"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Molina Villalobos Tania"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Solano Solano Jose Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 15:0:17:50"
+        ],
+        "profesores": [
+          "Guillen Jimenez Luis Diego"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Ramirez Castro Monserrat"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Jueves - 13:0:15:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés I",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Viernes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Solano Solano Jose Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL1200",
+    "nombre": "introducción a la electrónica",
+    "creditos": 0,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL1100"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Molina Robles Roberto Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Contreras Sanchez Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Arriola Valverde Sergio"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Contreras Sanchez Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Introducción a la electrónica",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Martes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Molina Robles Roberto Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CI1231",
+    "nombre": "inglés ii",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI1230"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Herrera Jimenez Ingrid"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:10:20"
+        ],
+        "profesores": [
+          "Kennedy Russell Ana"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Albertazzi Osorio Sonia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Gomez Montoya Carlos Andres"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 9:30:12:20"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Viernes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Vallecillo Alfaro Johanny"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 16:0:18:50"
+        ],
+        "profesores": [
+          "Solano Obando Mabel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Inglés Ii",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Fuentes Mora Esteban"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2110",
+    "nombre": "laboratorio de mediciones eléctricas",
+    "creditos": 1,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1201"
+        ],
+        "correquisitos": [
+          "EL2113"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50"
+        ],
+        "profesores": [
+          "Segura Quiros Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de mediciones eléctricas",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "FI2103",
+    "nombre": "física general iii",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Zeledon Ernesto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Rojas Rojas Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Araya Solano Luis Alonso"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Font Cruz Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Oreamuno Madriz Rafael"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Rojas Perez Francisco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gutierrez Chaves Carlos Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CS2303",
+    "nombre": "relaciones laborales",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI1407"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Calderon Ferrey Martha"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Hasbun Del Valle Daniel"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 15:0:17:50"
+        ],
+        "profesores": [
+          "Chacon Mata Alfonso"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Achoy Hernandez Alejandro"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Relaciones laborales",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Jueves - 18:0:20:50"
+        ],
+        "profesores": [
+          "Calderon Ferrey Martha"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL2111",
+    "nombre": "laboratorio de circuitos eléctricos",
+    "creditos": 1,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2110"
+        ],
+        "correquisitos": [
+          "EL2114"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Laboratorio de circuitos eléctricos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de circuitos eléctricos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Perez Rodriguez Javier"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de circuitos eléctricos",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50"
+        ],
+        "profesores": [
+          "Marin Moreno William"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4702",
+    "nombre": "probabilidad y estadística",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "MA2104"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Probabilidad y estadística",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Madrigal Sanchez Johanna"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CM3207",
+    "nombre": "métodos numéricos para ingeniería",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA3125"
+        ],
+        "correquisitos": [
+          "MA2105"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Chine Polito Bruno"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 13:0:16:50"
+        ],
+        "profesores": [
+          "Vega Garita Victor"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Stradi Granados Benito"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Rodriguez Rojas Alfredo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 7:30:11:20"
+        ],
+        "profesores": [
+          "Araya Meneses Ivan"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 17:0:20:50"
+        ],
+        "profesores": [
+          "Rodriguez Rojas Alfredo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Rodriguez Mendez Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Métodos numéricos para ingeniería",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Jueves - 13:0:16:50"
+        ],
+        "profesores": [
+          "Calderon Arce Cindy"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CS3404",
+    "nombre": "seminario de ética para la ingeniería",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CS2303"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vargas Elizondo Celso"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Prendas Solano Jorge"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Cedeño Camacho Mauricio"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Prendas Solano Jorge"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3212",
+    "nombre": "circuitos discretos",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2114",
+          "EL2207"
+        ],
+        "correquisitos": [
+          "EL3215"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Circuitos discretos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Pinnock Chacon Mac Alfred"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Circuitos discretos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Rodriguez Juan Jose"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3215",
+    "nombre": "laboratorio de electrónica analógica",
+    "creditos": 1,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2111"
+        ],
+        "correquisitos": [
+          "EL3212"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Laboratorio de electrónica analógica",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Barboza Retana Jose Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de electrónica analógica",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Barboza Retana Jose Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3307",
+    "nombre": "diseño lógico",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA3125",
+          "EL2207"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Diseño lógico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Chacon Rodriguez Alfonso"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Diseño lógico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Retana Corrales Luis Felipe"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3216",
+    "nombre": "circuitos integrados analógicos",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3212"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Circuitos integrados analógicos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Navarro Henriquez Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3310",
+    "nombre": "diseño de sistemas digitales",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3307"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Diseño de sistemas digitales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Molina Robles Roberto Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Diseño de sistemas digitales",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 17:0:18:50",
+          "Viernes - 17:0:18:50"
+        ],
+        "profesores": [
+          "Gonzalez Vega Michael Alberto"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4513",
+    "nombre": "teoría electromagnética i",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1102",
+          "MA2104"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Teoría electromagnética I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Quiros Solano William"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Teoría electromagnética I",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 7:30:9:20",
+          "Miercoles - 7:30:9:20"
+        ],
+        "profesores": [
+          "Sanchez Masis Allan Roberto"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4703",
+    "nombre": "señales y sistemas",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2114",
+          "MA2105"
+        ],
+        "correquisitos": [
+          "EL4513"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Señales y sistemas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Barboza Retana Jose Miguel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Señales y sistemas",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Alvarado Moya Jose Pablo"
         ],
         "tipo_grupo": "Regular"
       }

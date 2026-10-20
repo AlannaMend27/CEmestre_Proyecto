@@ -41,7 +41,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     int cantidadCursos = 0;
     
     //Cargamos el catalogo completo desde el archivo JSON proporcionado
-    Curso *arregloCursos = cargarCatalogo(rutaArchivoJson, &cantidadCursos);
+    Curso *arregloCursos = cargarCatalogo(rutaArchivoJson, &cantidadCursos, historial->carrera);
     
     //Validamos si ocurrio un error al intentar cargar el catalogo
     if (!arregloCursos) {
@@ -50,10 +50,10 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     }
 
     //Detectamos los choques de horario entre todos los cursos cargados en el catalogo
-    detectarChoques(arregloCursos, cantidadCursos);
+    detectarChoques(arregloCursos, cantidadCursos, historial->carrera);
     
     //Obtenemos el arreglo de punteros a los cursos que el estudiante puede matricular segun su historial
-    ListaCursos cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados);
+    ListaCursos cursosDisponibles = obtenerCursosDisponibles(arregloCursos, cantidadCursos,historial->aprobados, historial->cantidadAprobados, historial->carrera);
 
     // mostrar cursos disponibles en consola
     printf("\nCursos disponibles para matricular: %d\n", cursosDisponibles.cant);
@@ -66,7 +66,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
 
     // generar el archivo de salida json con los cursos disponibles y sus datos para el estudiante
     const char *rutaSalida = "etapa1_c/output/catalogo_salida.json";
-    int exitoExport = exportarCatalogo(arregloCursos, cantidadCursos, rutaSalida);
+    int exitoExport = exportarCatalogo(arregloCursos, cantidadCursos, rutaSalida, historial->carrera);
 
     if (!exitoExport) {
         fprintf(stderr, "Error al exportar el catalogo.\n");
