@@ -61,6 +61,7 @@ static cJSON *cursoAJson(const Curso *curso) {
     }
     cJSON_AddItemToObject(cursoJson, "carreras", arregloCarreras);
 
+    cJSON_AddBoolToObject(cursoJson, "ya_aprobado", curso->yaAprobado);
     // true/false segun si el estudiante cumple los requisitos
     cJSON_AddBoolToObject(cursoJson, "estudiante_puede_matricular", curso->estudiantePuedeMatricular);
 

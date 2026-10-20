@@ -6,8 +6,12 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [],
     "choca_con": [],
     "estudiante_puede_matricular": false
@@ -20,8 +24,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Matemática general",
@@ -177,8 +189,12 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Introducción a la programación",
@@ -215,10 +231,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "CE1101"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "CE1101"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Fundamentos de sistemas computacionales",
@@ -244,10 +264,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "MA0101"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA0101"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA0101"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo diferencial e integral",
@@ -523,8 +553,12 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Matemática discreta",
@@ -610,10 +644,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "QU1106"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1106"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1106"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de química básica I",
@@ -770,10 +814,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "QU1102"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1102"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "QU1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Química básica I",
@@ -871,8 +925,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Artes dramáticas",
@@ -1194,8 +1256,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Atletismo",
@@ -1582,12 +1652,16 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1101",
-      "CE1104",
-      "MA1403"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1101",
+          "CE1104",
+          "MA1403"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Algoritmos y estructuras de datos I",
@@ -1636,10 +1710,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1104"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1104"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Principios de modelado en Ingeniería",
@@ -1689,8 +1767,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Habilidades de comunicación en Ingeniería",
@@ -1748,8 +1834,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Introducción a la técnica ciencia y tecnología",
@@ -1818,10 +1912,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "MA1102"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "MA1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Física general I",
@@ -2039,10 +2143,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "FI1101"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": [
+          "FI1101"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "FI1101"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio física general I",
@@ -2331,10 +2445,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "MA1102"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1102"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo y álgebra lineal",
@@ -2574,8 +2698,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Artes dramáticas",
@@ -3270,11 +3402,15 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1103",
-      "CE1105"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1103",
+          "CE1105"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Algoritmos y estructuras de datos Ii",
@@ -3299,10 +3435,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CI1407"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CI1407"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Ambiente humano",
@@ -3404,11 +3544,24 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "FI1101",
-      "MA1102"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1101",
+          "MA1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL1200",
+          "MA1102"
+        ],
+        "correquisitos": [
+          "FI1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos eléctricos en corriente continua",
@@ -3469,8 +3622,16 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Educación en nuestros tiempos",
@@ -3613,12 +3774,22 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "FI1101"
-    ],
-    "correquisitos": [
-      "MA1102"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": [
+          "MA1102"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Física general Ii",
@@ -3763,12 +3934,16 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "FI1201"
-    ],
-    "correquisitos": [
-      "FI1102"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1201"
+        ],
+        "correquisitos": [
+          "FI1102"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio física general Ii",
@@ -3881,10 +4056,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "MA1103"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Cálculo superior",
@@ -3980,10 +4165,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE2103"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE2103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Paradigmas de programación",
@@ -4020,10 +4209,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "FI1202"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1202"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de circuitos eléctricos",
@@ -4059,12 +4252,23 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "EL2113"
-    ],
-    "correquisitos": [
-      "EL2207"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": [
+          "EL2207"
+        ]
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL2113",
+          "FI2103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos eléctricos en corriente alterna",
@@ -4126,10 +4330,22 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "EL2113"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL2113"
+        ],
+        "correquisitos": [
+          "EL2114"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Elementos activos",
@@ -4190,10 +4406,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "MA2104"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA2104"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Probabilidad y estadística",
@@ -4240,10 +4460,18 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "FI1102"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "FI1102"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Seguridad y salud ocupacional",
@@ -4311,10 +4539,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "EL2207"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2207"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Fundamentos de Arquitectura de Computadores",
@@ -4339,10 +4571,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1106"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1106"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Bases de datos",
@@ -4379,12 +4615,16 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE2201"
-    ],
-    "correquisitos": [
-      "CE1107"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE2201"
+        ],
+        "correquisitos": [
+          "CE1107"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Taller de diseño digital",
@@ -4424,10 +4664,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "MA1103"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "MA1103"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Ecuaciones diferenciales",
@@ -4559,10 +4809,20 @@
       "Computadores",
       "Electronica"
     ],
-    "requisitos": [
-      "PI2609"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "PI2609"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "EL4702"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Ingeniería económica",
@@ -4597,12 +4857,16 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1107"
-    ],
-    "correquisitos": [
-      "CE4301"
-    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1107"
+        ],
+        "correquisitos": [
+          "CE4301"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Compiladores e intérpretes",
@@ -4627,11 +4891,15 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "EL2207",
-      "SO4604"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2207",
+          "SO4604"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos analógicos",
@@ -4656,11 +4924,15 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "EL2114",
-      "MA2105"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "EL2114",
+          "MA2105"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Análisis de señales mixtas",
@@ -4685,11 +4957,15 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CE1107",
-      "CE3201"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1107",
+          "CE3201"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Arquitectura de computadores I",
@@ -4714,10 +4990,14 @@
     "carreras": [
       "Computadores"
     ],
-    "requisitos": [
-      "CI0205"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CI0205"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Inglés especializado para ingenierías en computadores",
@@ -4741,8 +5021,12 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [],
     "choca_con": [],
     "estudiante_puede_matricular": false
@@ -4754,8 +5038,12 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Inglés básico",
@@ -4878,8 +5166,12 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Elementos de computación",
@@ -5048,10 +5340,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "CS1502"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "CS1502"
+        ]
+      }
+    },
     "grupos": [],
     "choca_con": [],
     "estudiante_puede_matricular": false
@@ -5063,8 +5359,12 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Dibujo técnico",
@@ -5209,10 +5509,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CA2125"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA2125"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Análisis y diseño de algoritmos",
@@ -5285,11 +5589,15 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CI0200",
-      "CI0202"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI0200",
+          "CI0202"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Inglés I",
@@ -5423,10 +5731,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL1100"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL1100"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Introducción a la electrónica",
@@ -5516,10 +5828,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CI1230"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI1230"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Inglés Ii",
@@ -5653,12 +5969,16 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "FI1201"
-    ],
-    "correquisitos": [
-      "EL2113"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1201"
+        ],
+        "correquisitos": [
+          "EL2113"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de mediciones eléctricas",
@@ -5704,10 +6024,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "FI1101"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1101"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Física general Iii",
@@ -5840,10 +6164,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CI1407"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CI1407"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Relaciones laborales",
@@ -5933,12 +6261,16 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL2110"
-    ],
-    "correquisitos": [
-      "EL2114"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2110"
+        ],
+        "correquisitos": [
+          "EL2114"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de circuitos eléctricos",
@@ -5984,10 +6316,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [],
-    "correquisitos": [
-      "MA2104"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [],
+        "correquisitos": [
+          "MA2104"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Probabilidad y estadística",
@@ -6011,12 +6347,16 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CA3125"
-    ],
-    "correquisitos": [
-      "MA2105"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA3125"
+        ],
+        "correquisitos": [
+          "MA2105"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Métodos numéricos para ingeniería",
@@ -6117,10 +6457,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CS2303"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CS2303"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Seminario de ética para la ingeniería",
@@ -6254,13 +6598,17 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL2114",
-      "EL2207"
-    ],
-    "correquisitos": [
-      "EL3215"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2114",
+          "EL2207"
+        ],
+        "correquisitos": [
+          "EL3215"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos discretos",
@@ -6297,12 +6645,16 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL2111"
-    ],
-    "correquisitos": [
-      "EL3212"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2111"
+        ],
+        "correquisitos": [
+          "EL3212"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Laboratorio de electrónica analógica",
@@ -6337,11 +6689,15 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "CA3125",
-      "EL2207"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CA3125",
+          "EL2207"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Diseño lógico",
@@ -6377,10 +6733,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL3212"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3212"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Circuitos integrados analógicos",
@@ -6405,10 +6765,14 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL3307"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3307"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Diseño de sistemas digitales",
@@ -6445,11 +6809,15 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "FI1102",
-      "MA2104"
-    ],
-    "correquisitos": [],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "FI1102",
+          "MA2104"
+        ],
+        "correquisitos": []
+      }
+    },
     "grupos": [
       {
         "nombre": "Teoría electromagnética I",
@@ -6486,13 +6854,17 @@
     "carreras": [
       "Electronica"
     ],
-    "requisitos": [
-      "EL2114",
-      "MA2105"
-    ],
-    "correquisitos": [
-      "EL4513"
-    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL2114",
+          "MA2105"
+        ],
+        "correquisitos": [
+          "EL4513"
+        ]
+      }
+    },
     "grupos": [
       {
         "nombre": "Señales y sistemas",

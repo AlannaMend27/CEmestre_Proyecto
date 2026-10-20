@@ -53,7 +53,7 @@ typedef struct {
     char carreras[2][60];
     int numCarreras;
 
-
+    bool yaAprobado; //Si el estudiante ya aprobo este curso segun su historial
     bool estudiantePuedeMatricular;
 
 } Curso; 

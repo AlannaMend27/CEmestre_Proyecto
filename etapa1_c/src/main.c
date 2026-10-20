@@ -41,7 +41,7 @@ int main(int cantidadArgumentos, char *arregloArgumentos[]) {
     int cantidadCursos = 0;
     
     //Cargamos el catalogo completo desde el archivo JSON proporcionado
-    Curso *arregloCursos = cargarCatalogo(rutaArchivoJson, &cantidadCursos);
+    Curso *arregloCursos = cargarCatalogo(rutaArchivoJson, &cantidadCursos, historial->carrera);
     
     //Validamos si ocurrio un error al intentar cargar el catalogo
     if (!arregloCursos) {
