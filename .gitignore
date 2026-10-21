@@ -7,7 +7,8 @@ etapa1_c/build/
 etapa1_c/catalogo
 etapa1_c/src/catalogo
 
-
+*.bak
+compiled/
 .DS_Store
 Thumbs.db
 
