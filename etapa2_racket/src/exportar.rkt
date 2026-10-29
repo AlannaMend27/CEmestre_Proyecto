@@ -1,10 +1,7 @@
 #lang typed/racket
 
-;; exportar.rkt
-;; Escribe las combinaciones validas en un archivo JSON, que es el contrato
-;; con la etapa de Prolog.
-;;
-;; Formato del archivo:
+;; El archivo exportar.rkt escribe las combinaciones validas en un archivo JSON, que es el contrato con la etapa de Prolog.
+;; Ejemplo del formato del archivo:
 ;; {
 ;;   "creditos_minimos": 10,
 ;;   "creditos_maximos": 14,
@@ -23,7 +20,7 @@
 
 (require typed/json "modelos.rkt")
 
-(provide exportar-combinaciones seleccion->json combinacion->json)
+(provide exportar-combinaciones)
 
 ;; Convierte un par curso-grupo a un objeto JSON.
 ;; "id_grupo" es el mismo identificador que usa "choca_con" en el catalogo de C

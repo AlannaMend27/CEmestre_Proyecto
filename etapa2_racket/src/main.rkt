@@ -10,7 +10,7 @@
 ;; combinaciones con los subconjuntos que si caben.
 ;;
 ;; Uso:
-;;   racket main.rkt [catalogo.json] [preferencias.json] [salida.json]
+;;   (ejecutar "catalogo_salida.json" "preferencias_ejemplo.json" "mi_salida.json")
 
 (require "modelos.rkt"
          "lectura.rkt"
@@ -37,9 +37,9 @@
          ejecutar)
 
 ;; Archivos por defecto si no se pasan argumentos
-(define catalogo-por-defecto "catalogo_salida.json")
-(define preferencias-por-defecto "preferencias_ejemplo.json")
-(define salida-por-defecto "combinaciones_salida.json")
+(define catalogo-por-defecto "../ArchivosEntrada/catalogo_salida.json")
+(define preferencias-por-defecto "../ArchivosEntrada/preferencias_ejemplo.json")
+(define salida-por-defecto "../ArchivosSalida/combinaciones_salida.json")
 
 ;; Suma los creditos de una lista de selecciones
 (: sumar-creditos (-> (Listof seleccion) Integer))
@@ -137,10 +137,13 @@
     (error 'main "el minimo de creditos (~a) es mayor que el maximo (~a)"
            (preferencias-creditos-minimos prefs)
            (preferencias-creditos-maximos prefs)))
-  (exportar-combinaciones ruta-salida
-                          (preferencias-creditos-minimos prefs)
-                          (preferencias-creditos-maximos prefs)
-                          (construir-combinaciones catalogo prefs)))
+  (define total
+    (exportar-combinaciones ruta-salida
+                            (preferencias-creditos-minimos prefs)
+                            (preferencias-creditos-maximos prefs)
+                            (construir-combinaciones catalogo prefs)))
+  (printf "Listo: ~a combinaciones escritas en ~a\n" total ruta-salida)
+  total)
 
 ;; Punto de entrada por linea de comandos
 (module+ main
@@ -161,5 +164,4 @@
     (unless (null? omitidos)
       (printf "Aviso: cursos de interes omitidos (no existen, no se pueden matricular o sin grupos validos): ~a\n"
               omitidos))
-    (define total (ejecutar ruta-catalogo ruta-preferencias ruta-salida))
-    (printf "Listo: ~a combinaciones escritas en ~a\n" total ruta-salida)))
+     (ejecutar ruta-catalogo ruta-preferencias ruta-salida)))

@@ -7,14 +7,7 @@
 
 (provide leer-catalogo leer-preferencias)
 
-
-;NOTA esto lo borramos dsp
-;las lineas que empiezan con : es para decirle al compilador que entra en una funcion
-;Es como una firma de un .h de C, esto es por que hay condiciones que pueden ser muy amplias
-;Se lee asi "como-objeto" es una funcion que recibe un JSEXPR osea un JSON y devuelve una
-;Hash table de llaves symbol las de "{{" y valores JSExpr (de JSON)
 (: como-objeto (-> JSExpr (HashTable Symbol JSExpr)))
-
 
 ;;; Confirma que el JSON es un objeto
 (define (como-objeto valor)

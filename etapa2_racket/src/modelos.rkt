@@ -3,7 +3,6 @@
 ;; modelos.rkt
 ;; aqui estan los structs, el archivo de C se moldea a estos structs
 
-
 (provide (all-defined-out)) ; esta linea hace que todo lo de este archivo se pueda usar en otros
 
 ;; Un choque de horario entre grupos

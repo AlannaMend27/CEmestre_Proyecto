@@ -3,41 +3,24 @@
 
 ; En este archivo se filtran que horarios "sirven"
 
-
 (require/typed racket/stream [stream-filter (All (A) (-> (-> A Boolean) (Sequenceof A) (Sequenceof A)))])
 
 (provide filtrar-con-todos creditos-en-rango? correquisitos-cubiertos? armar-opciones)
 
-;;NOTA: Esta funcion es la que tiene el polimorfismo
-; Quitemos esto despues: La idea es que esta funcion sirve para filtrar combinaciones
-; de cualquier tipo, por ejemplo cursos, numeros y textos, la idea es que recibe una lista
-; de cosas que se responden como true o false, la idea es que aqui solo pasan elemenos que cumplen
-; todo, osea recibe unas reglas y unas cosas, y devuelve las cosas que cumplen esas reglas
-
-;Entonces la funcion en si lo que hace es recibe combinaciones de horario y una lista de criterios
-;Por ejemplo los creditos maximos que quiere matricular o los grupos en los que quiere
-;Entonces filtra las combinaciones posibles y correctas bajo esas reglas
-
-
+;; Esta funcion sirve para filtrar combinaciones de cualquier tipo (cursos, numeros y textos)
+;; Recibe una lista con combinaciones de horario y una lista de criterios y filtra las combinaciones posibles y correctas bajo esos criterios (reglas)
 (: filtrar-con-todos (All (A) (-> (Listof (-> A Boolean)) (Sequenceof A) (Sequenceof A))))
 (define (filtrar-con-todos criterios secuencia)
   (if (null? criterios) secuencia
       (filtrar-con-todos (cdr criterios) (stream-filter (car criterios) secuencia))))
 
 
-;NOTA: cuando digo devuelve una funcion es una regla de la funcion de arriba
-;Por ejemplo en esta funcion retornamos la regla de que si cumple los creditos en el rango
-;Entonces la funcion con polimorfismo recibe esa regla
-
-
-;;Devuelve una funcion que dice si una combinacion tiene creditos entre el rango
+;;Devuelve una funcion que dice si una combinacion tiene creditos entre el rango (regla)
 (: creditos-en-rango? (-> Integer Integer (-> combinacion Boolean)))
 (define (creditos-en-rango? minimo maximo)
   (lambda ([elemento : combinacion])
     (and (>= (combinacion-creditos elemento) minimo)
          (<= (combinacion-creditos elemento) maximo))))
-
-
 
 ; Recibe el catalogo y devuelve una funcion que verifica si un correquisito esta cubierto
 (: correquisitos-cubiertos? (-> (Listof curso) (-> combinacion Boolean)))
