@@ -416,3 +416,464 @@ gcc -o build/catalogo_run \
 ```
 
 ---
+
+# CEmestre : Constructor de Horarios · Etapa 2
+
+## Descripción general
+
+CEmestre es un sistema que ayuda a un estudiante del TEC a armar su horario de matrícula. Esta segunda etapa, implementada en Racket bajo el paradigma funcional (Typed Racket), recibe el catálogo de cursos que produjo la Etapa 1 en C (con los choques de horario entre grupos y la elegibilidad de cada curso ya calculados) y un archivo de preferencias del estudiante con los cursos y grupos que le interesan y el rango de créditos deseado. A partir de eso genera, de forma perezosa mediante streams, las combinaciones de horario válidas (un grupo por cada curso elegido y sin choques entre ellos), las filtra por el rango de créditos y por los correquisitos, y las exporta a un archivo JSON que la Etapa 3 (Prolog) va a consumir.
+
+---
+
+## Uso del ejecutable
+
+El programa se puede ejecutar de tres formas. En todas recibe tres rutas: el catálogo de la Etapa 1 (JSON), el archivo de preferencias del estudiante (JSON) y el archivo de salida (JSON).
+
+### 1. Botón Run en DrRacket
+
+Se abre `main.rkt` y se presiona Run. Como no hay argumentos de línea de comandos, se usan las rutas por defecto definidas al inicio de `main.rkt`:
+
+| Constante | Valor por defecto |
+|---|---|
+| `catalogo-por-defecto` | `../ArchivosEntrada/catalogo_salida.json` |
+| `preferencias-por-defecto` | `../ArchivosEntrada/preferencias_ejemplo.json` |
+| `salida-por-defecto` | `../ArchivosSalida/combinaciones_salida.json` |
+
+
+### 2. Línea de comandos
+
+Desde la carpeta del proyecto:
+
+```bash
+racket main.rkt <catalogo.json> <preferencias.json> <salida.json>
+```
+
+**Ejemplo:**
+```bash
+racket main.rkt ../ArchivosEntrada/catalogo_salida.json ../ArchivosEntrada/preferencias_ejemplo.json ../ArchivosSalida/combinaciones_salida.json
+```
+
+### 3. Llamando `ejecutar` desde la ventana de Interactions de DrRacket
+
+Después de presionar Run, se puede probar con otros archivos sin modificar el código:
+
+```racket
+(ejecutar "../ArchivosEntrada/catalogo_salida.json"
+          "../ArchivosEntrada/preferencias_ejemplo.json"
+          "../ArchivosSalida/combinaciones_salida.json")
+```
+
+### Mensajes del programa
+
+Al terminar, `ejecutar` imprime cuántas combinaciones escribió y en qué archivo.
+
+### Archivos de entrada
+
+**1. Catálogo (salida de la Etapa 1).** Arreglo JSON de cursos. Esta etapa usa los siguientes campos, y si alguno falta o tiene un tipo distinto el programa se detiene con un mensaje que indica cuál:
+
+```json
+{
+  "codigo": "CE1101",
+  "nombre": "introducción a la programación",
+  "creditos": 3,
+  "carreras": ["Ingeniería en Computadores"],
+  "requisitos": [],
+  "correquisitos": [],
+  "ya_aprobado": false,
+  "estudiante_puede_matricular": true,
+  "grupos": [
+    {
+      "id_grupo": 1,
+      "numero_grupo": "001",
+      "tipo_grupo": "Regular",
+      "profesores": ["Schmidt Peralta Jeff"],
+      "bloques_horario": ["Martes - 7:30:9:20", "Jueves - 7:30:9:20"],
+      "choca_con": [{"curso": "MA1403", "id_grupo": 1}]
+    }
+  ]
+}
+```
+
+**2. Preferencias del estudiante.** Objeto JSON con el rango de créditos y la lista de cursos de interés, cada uno con los grupos que el estudiante está dispuesto a matricular (más de un grupo por curso cuando aplica):
+
+```json
+{
+  "creditos_minimos": 7,
+  "creditos_maximos": 10,
+  "cursos_interes": [
+    {"curso": "MA1403", "grupos": [1, 2]},
+    {"curso": "CE1101", "grupos": [1, 2]}
+  ]
+}
+```
+
+Los números de `grupos` corresponden al `id_grupo` del catálogo (el identificador único del grupo dentro de su curso), no al `numero_grupo` visible (`"001"`).
+
+---
+
+## 2.1 Arquitectura del proyecto
+
+### Estructura de carpetas
+
+```
+etapa2_racket/
+├── ArchivosEntrada/
+│   ├── catalogo_salida.json         # Catálogo producido por la Etapa 1 (C)
+│   └── preferencias_ejemplo.json    # Preferencias del estudiante
+├── ArchivosSalida/
+│   └── combinaciones_salida.json    # Archivo generado por el programa
+└── src/
+    ├── main.rkt                     # Punto de entrada y coordinador
+    ├── modelos.rkt                  # Definición de structs
+    ├── lectura.rkt                  # JSON -> structs, con validación
+    ├── choques.rkt                  # Consulta de choques entre grupos
+    ├── streams.rkt                  # Núcleo perezoso (sin tipos)
+    ├── combinaciones.rkt            # Genera combinaciones con streams
+    ├── filtros.rkt                  # Opciones y reglas de filtrado
+    └── exportar.rkt                 # Combinaciones -> JSON de salida
+```
+
+---
+
+### Flujo de ejecución
+
+```mermaid
+flowchart TD
+    A([Argumentos CLI]) --> B
+
+    B["leer catalogo y leer preferencias\nJSON para pasarlos a structs validados"]
+    B --> C
+
+    C["Armar opciones con los \nCursos de interés habilitados con sus grupos"]
+    C --> D
+
+    D["subconjuntos (stream)\nPoda por créditos máximos"]
+    D --> E
+
+    E["Generar-combinaciones (stream)\nUn grupo por curso, poda por choques"]
+    E --> F
+
+    F["filtrar-con-todos\nCréditos en rango y correquisitos cubiertos"]
+    F --> G
+
+    G["exportar-combinaciones\nEscribe el JSON mientras el stream produce"]
+    G --> H(Archivo de salida)
+
+    style A fill:#1B3F72,color:#fff,stroke:none
+    style H fill:#1A2F4E,color:#cdd8e8,stroke:none
+    style B fill:#1E3A5F,stroke:#4A7FB5,color:#A8C4E0
+    style C fill:#1A3550,stroke:#3A6D9E,color:#A8C4E0
+    style D fill:#162E47,stroke:#2E5F8A,color:#8AB4D4
+    style E fill:#112640,stroke:#245278,color:#7DAAC8
+    style F fill:#0D1F35,stroke:#1C4568,color:#6D9EBE
+    style G fill:#0A1828,stroke:#183A58,color:#5D8EAE
+    linkStyle default stroke:#F472B6,stroke-width:2px
+```
+---
+
+### Descripción de módulos
+
+#### `main.rkt` — Punto de entrada y coordinador principal
+
+Une todas las piezas. Lee los argumentos, carga los archivos, valida que el mínimo de créditos no supere el máximo, construye el stream de combinaciones válidas y se lo pasa al exportador. Todo el cálculo está en `construir-combinaciones`, que no hace trabajo hasta que alguien consume el stream.
+
+Funciones principales:
+- `construir-combinaciones(catalogo, prefs)` → Retorna el stream de combinaciones válidas.
+- `subconjuntos(opciones, disponible)` → Stream de los subconjuntos de cursos cuyos créditos no superan lo disponible.
+- `creditos-de-opciones(opciones)` y `sumar-creditos(selecciones)` → Suman créditos recursivamente.
+- `selecciones->combinacion(selecciones)` → Convierte una lista de pares curso-grupo en un struct `combinacion` con su total de créditos.
+- `ejecutar(ruta-catalogo, ruta-preferencias, ruta-salida)` → Corre todo el proceso y retorna cuántas combinaciones se exportaron.
+
+---
+
+#### `modelos.rkt` — Definición de structs
+
+Define los ocho structs del sistema (ver sección 2.3). Todos son inmutables y transparentes, el archivo los exporta con `all-defined-out` para que el resto de módulos los use.
+
+---
+
+#### `lectura.rkt` — Carga y validación de los archivos de entrada
+
+Convierte el JSON del catálogo y el de preferencias en structs. Cada valor pasa por una función de validación que lanza un error con un mensaje claro si el campo no existe o no tiene el tipo esperado.
+
+Funciones principales:
+- `leer-catalogo(ruta)` → Retorna una lista de structs `curso`.
+- `leer-preferencias(ruta)` → Retorna un struct `preferencias`.
+
+---
+
+#### `choques.rkt` — Consulta de choques entre grupos
+
+Consulta el campo `choca_con` que la Etapa 1 ya calculó para cada grupo. Un par curso-grupo se identifica por `(código del curso, id_grupo)`.
+
+Funciones principales:
+- `selecciones-chocan?` → Indica si dos pares curso-grupo chocan.
+- `choca-con-elegidos?` → Indica si una opcion candidata choca con alguna de las ya elegidas. Es la regla que usa el generador para podar.
+---
+
+#### `streams.rkt` — Núcleo perezoso
+
+Contiene lo que necesita `stream-cons`.
+
+Funciones principales :
+- `append-perezoso(primero, resto-thunk)` → Concatena dos streams sin calcular el segundo hasta que el primero se acabe. El segundo viene envuelto en una función sin parámetros (thunk).
+- `append-map-perezoso(f, lista)` → Aplica `f` (que devuelve un stream) a cada elemento de la lista y junta los resultados en un solo stream, de forma perezosa.
+---
+
+#### `combinaciones.rkt` — Generación de combinaciones
+
+Genera, con streams, las combinaciones de un grupo por curso. Recibe una lista donde cada elemento son las alternativas de un curso y va eligiendo un grupo de cada uno, descartando una rama apenas la candidata choca con lo ya elegido.
+
+Funciones principales:
+- `selecciones-de-opcion(opcion)` → Convierte un curso de interés en la lista de pares curso-grupo que se pueden probar.
+- `opciones->listas(opciones)` → Hace lo anterior para todas las opciones.
+- `generar-combinaciones(cursos, elegidos)` → Retorna el stream de combinaciones. Internamente usa `probar-candidata` (decide si una candidata se agrega o se descarta) y `combinacion-final` (cierra una combinación completa).
+
+---
+
+#### `filtros.rkt` — Opciones y reglas de filtrado
+
+Contiene la función con polimorfismo paramétrico del proyecto y las reglas con las que se filtran las combinaciones.
+
+Funciones principales:
+- `filtrar-con-todos(criterios, secuencia)` → Función polimórfica `(All (A) ...)`: deja pasar solo los elementos de un stream que cumplen todas las reglas de la lista.
+- `creditos-en-rango?(minimo, maximo)` → Devuelve una regla que indica si una combinación tiene los créditos dentro del rango.
+- `correquisitos-cubiertos?(catalogo)` → Devuelve una regla que indica si todos los correquisitos de una combinación están cubiertos.
+- `armar-opciones(catalogo, intereses)` → Busca cada curso de interés en el catálogo y se queda con los habilitados que tienen al menos uno de los grupos pedidos.
+
+---
+
+#### `exportar.rkt` — Generación del archivo de salida
+
+Serializa las combinaciones a JSON y las escribe a medida que el stream las produce, sin convertirlo antes a una lista. Al final escribe cuántas combinaciones fueron.
+
+Funciones principales:
+- `exportar-combinaciones(ruta, minimo, maximo, secuencia)` → Crea el archivo de salida y retorna el total de combinaciones escritas.
+- `seleccion->json(par)` y `combinacion->json(comb, id)` → Convierten los structs a objetos JSON.
+
+---
+
+## 2.2 Decisiones de diseño
+
+### 2.2.1 Justificación de decisiones propias y específicas de la implementación
+
+#### Se reutiliza `choca_con` de la Etapa 1 en lugar de recalcular los horarios
+
+El enunciado indica que la lógica de choques ya construida no debe modificarse, y la Etapa 1 deja calculado, para cada grupo, con cuáles grupos de otros cursos choca. Racket solo consulta esa información. Por ejemplo, `CE1101` grupo 001 se imparte martes y jueves de 7:30 a 9:20; cualquier grupo que coincida con ese horario aparece en su lista `choca_con`, y `choca-con-elegidos?` lo detecta sin interpretar ningún horario.
+
+Como el número de grupo se repite entre cursos, cada choque se identifica con el par `(código del curso, id_grupo)`, donde `id_grupo` es el identificador único dentro del curso que asigna la Etapa 1. La Etapa 1 registra cada choque en ambos grupos, por lo que basta con revisar uno de los dos lados.
+
+#### `streams.rkt` sin tipos, conectado con `require/typed`
+
+`stream-cons` no se puede usar directamente dentro de `#lang typed/racket`: el verificador de tipos falla con un error de identificador sin tipo (`missing type for identifier`). Por eso las funciones que construyen streams con `stream-cons` viven en `streams.rkt`, escrito en `#lang racket`, y los módulos tipados las importan declarando su tipo con `require/typed`:
+
+```racket
+(require/typed "streams.rkt"
+  [append-map-perezoso (All (A B) (-> (-> A (Sequenceof B)) (Listof A) (Sequenceof B)))])
+```
+
+Esa declaración también funciona como contrato en la frontera entre ambos archivos, de modo que los datos que cruzan se verifican en tiempo de ejecución.
+
+#### Poda de choques durante la generación
+
+`generar-combinaciones` no arma la combinación completa para descartarla después: en cuanto un grupo candidato choca con alguno de los ya elegidos (`choca-con-elegidos?`), devuelve un stream vacío y esa rama no se explora más. Por ejemplo, si el grupo 001 de `MA1403` choca con el grupo 001 de `CE1101`, ninguna combinación que contenga ambos se llega a generar.
+
+#### Los cursos de interés son opciones: cada combinación usa un subconjunto
+
+Cada combinación incluye un subconjunto de los cursos de interés, con un grupo por cada curso elegido, cuyo total de créditos cae en el rango pedido. Esta interpretación hace que el rango de créditos tenga sentido: si cada combinación incluyera siempre todos los cursos de interés, el total de créditos sería el mismo en todas y el filtro no discriminaría nada. Si todos los cursos juntos se pasan del máximo, igual se generan combinaciones con los subconjuntos que sí caben.
+
+Los créditos dependen del curso y no del grupo, así que `subconjuntos` poda antes de generar grupos: apenas un curso ya no cabe en los créditos disponibles, deja de explorar los subconjuntos que lo incluyen. Después, `construir-combinaciones` se queda solo con los subconjuntos no vacíos que alcanzan el mínimo y genera las combinaciones de grupos de cada uno.
+
+#### Filtros como reglas reutilizables
+
+`filtrar-con-todos` es la función con polimorfismo paramétrico: recibe una lista de reglas `(-> A Boolean)` y un stream de elementos de cualquier tipo `A`, y devuelve el stream con los elementos que cumplen todas las reglas. Funciona igual con combinaciones, cursos o números, porque no usa nada específico del tipo. Las reglas se construyen con funciones que devuelven funciones: `creditos-en-rango?` recibe el mínimo y el máximo y devuelve la regla que revisa los créditos de una combinación, y `correquisitos-cubiertos?` recibe el catálogo y devuelve la regla de correquisitos. Agregar un criterio nuevo es agregar una regla a la lista, sin modificar `filtrar-con-todos`.
+
+Un correquisito se considera cubierto si el curso ya está aprobado en el catálogo o si está dentro de la misma combinación.
+
+---
+
+### 2.2.2 Caso límite real encontrado y cómo se resolvió
+
+**Problema:** Cuando ningún curso de interés era válido, el programa exportaba una combinación vacía con 0 créditos en lugar de ninguna.
+
+Mientras probábamos el generador con una lista de cursos de interés vacía (por ejemplo, un código que no existe en el catálogo, o cursos que el estudiante no puede matricular), `armar-opciones` devolvía una lista vacía. Pero `generar-combinaciones` interpreta "no quedan cursos por elegir" como que ya hay una combinación completa, así que producía **una** combinación sin ningún curso y con 0 créditos. Si además el mínimo de créditos era 0, esa "combinación" pasaba el filtro y se habría exportado como si fuera un horario válido.
+
+**Solución:** En `construir-combinaciones` se excluyen los subconjuntos vacíos antes de generar las combinaciones, con un filtro perezoso que exige que el subconjunto no sea vacío y alcance el mínimo de créditos:
+
+```racket
+(lambda ([sub : (Listof opcion)])
+  (and (not (null? sub)) (>= (creditos-de-opciones sub) minimo)))
+```
+
+Con esto, una lista de intereses sin cursos válidos produce un archivo de salida con `"combinaciones": []` y `"total_combinaciones": 0`, y el programa avisa por consola qué cursos se omitieron.
+
+---
+
+### 2.2.3 Justificación del formato de salida
+
+**Formato elegido: JSON**
+
+Se mantuvo JSON porque es el formato de la entrada de esta etapa, y porque los datos son jerárquicos: una combinación contiene varios pares curso-grupo, y cada par lleva los datos de su curso, incluida una lista de carreras. Eso no se representa de forma limpia en CSV. Además, la Etapa 3 (Prolog) y la Etapa 4 (Java) tienen bibliotecas para leer JSON.
+
+**Estructura del archivo:**
+
+```json
+{
+  "creditos_minimos": 7,
+  "creditos_maximos": 10,
+  "combinaciones": [
+    {
+      "id": 1,
+      "creditos_totales": 7,
+      "selecciones": [
+        {
+          "curso": "MA1403",
+          "nombre": "matemática discreta",
+          "creditos": 4,
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "carreras": ["Ingeniería en Computadores"]
+        },
+        {
+          "curso": "CE1101",
+          "nombre": "introducción a la programación",
+          "creditos": 3,
+          "id_grupo": 2,
+          "numero_grupo": "002",
+          "carreras": ["Ingeniería en Computadores"]
+        }
+      ]
+    }
+  ],
+  "total_combinaciones": 1
+}
+```
+
+**Decisiones de diseño ligadas al formato:**
+
+1. **Escritura perezosa:** `escribir-combinaciones` escribe cada combinación apenas el stream la genera, sin armar antes una lista completa. Así la generación con streams no pierde su sentido.
+2. **`total_combinaciones` al final:** solo se conoce después de consumir el stream, por lo que lo lleva el acumulador del `for/fold` y se escribe al cerrar.
+3. **`id_grupo` y `numero_grupo`:** el primero es el que usa `choca_con`. El segundo es el número visible que mostrará en etapas posteriores.
+4. **`carreras` como lista:** hay cursos compartidos entre carreras (ej. `MA0101`), y una lista cubre ambos casos.
+5. **Datos listos para Prolog:** cada combinación lleva un `id` y sus `creditos_totales`, y el encabezado repite el rango de créditos, así que Prolog no recalcula nada.
+
+---
+
+## 2.3 Estructuras de datos desarrolladas
+
+Todas están definidas en `modelos.rkt` con `struct`, tipadas campo por campo y con `#:transparent`.
+
+### `choque`
+```racket
+(struct choque ([codigo-curso : String]
+                [id-grupo : Integer])
+  #:transparent)
+```
+Un choque de horario: identifica el grupo de otro curso con el que choca un grupo. Equivale a un elemento de `choca_con` en el JSON de la Etapa 1.
+
+---
+
+### `grupo`
+```racket
+(struct grupo ([id : Integer]
+               [numero : String]
+               [tipo : String]
+               [profesores : (Listof String)]
+               [bloques : (Listof String)]
+               [choques : (Listof choque)])
+  #:transparent)
+```
+Un grupo de un curso. `id` lo distingue de los demás grupos del mismo curso (el número visible se repite entre cursos, y hasta puede repetirse dentro de uno), `bloques` guarda los horarios como texto y `choques` trae los choques ya calculados por C.
+
+---
+
+### `curso`
+```racket
+(struct curso ([codigo : String]
+               [nombre : String]
+               [creditos : Integer]
+               [requisitos : (Listof String)]
+               [correquisitos : (Listof String)]
+               [carreras : (Listof String)]
+               [ya-aprobado : Boolean]
+               [puede-matricular : Boolean]
+               [grupos : (Listof grupo)])
+  #:transparent)
+```
+Refleja el curso tal como lo exporta la Etapa 1. `carreras` es una lista porque un curso puede pertenecer a más de una carrera, `ya-aprobado` permite saber si un correquisito ya se cumplió, y `puede-matricular` indica si el estudiante cumple los requisitos.
+
+---
+
+### `interes`
+```racket
+(struct interes ([codigo-curso : String]
+                 [ids-grupos : (Listof Integer)])
+  #:transparent)
+```
+Un curso que el estudiante quiere matricular, junto con los grupos que está dispuesto a tomar.
+
+---
+
+### `preferencias`
+```racket
+(struct preferencias ([creditos-minimos : Integer]
+                      [creditos-maximos : Integer]
+                      [intereses : (Listof interes)])
+  #:transparent)
+```
+El archivo de preferencias completo: el rango de créditos y la lista de intereses.
+
+---
+
+### `opcion`
+```racket
+(struct opcion ([curso : curso]
+                [grupos : (Listof grupo)])
+  #:transparent)
+```
+Un curso de interés ya validado (existe en el catálogo y se puede matricular), junto con solo los grupos pedidos que realmente existen en él. Es la entrada del generador.
+
+---
+
+### `seleccion`
+```racket
+(struct seleccion ([curso : curso]
+                   [grupo : grupo])
+  #:transparent)
+```
+Un par curso-grupo escogido dentro de una combinación. Es la unidad con la que trabaja el generador y la que se exporta.
+
+---
+
+### `combinacion`
+```racket
+(struct combinacion ([selecciones : (Listof seleccion)]
+                     [creditos : Integer])
+  #:transparent)
+```
+Una combinación de horario: varios pares curso-grupo sin choques y la suma de sus créditos. Es el elemento de los streams que se filtran y se exportan.
+
+---
+
+### Streams (secuencias perezosas)
+
+Además de los structs, la estructura central del programa es el stream: una secuencia cuyos elementos se calculan solo cuando alguien los pide, por lo que en memoria nunca existe la lista completa de combinaciones. Se construye con `stream-cons` en `streams.rkt` y se usa en todo el flujo:
+
+| Stream | Tipo de sus elementos | Quién lo produce |
+|---|---|---|
+| Subconjuntos de cursos | `(Listof opcion)` | `subconjuntos` (`main.rkt`) |
+| Combinaciones de un subconjunto | `(Listof seleccion)` | `generar-combinaciones` (`combinaciones.rkt`) |
+| Combinaciones con créditos | `combinacion` | `stream-map` en `construir-combinaciones` |
+| Combinaciones filtradas | `combinacion` | `filtrar-con-todos` (`filtros.rkt`) |
+
+Operaciones desarrolladas:
+- `append-perezoso(primero, resto-thunk)`: concatena dos streams. El segundo llega envuelto en un thunk, así que solo se calcula cuando el primero se acaba.
+- `append-map-perezoso(f, lista)`: aplica `f` a cada elemento y junta los streams resultantes en uno solo.
+
+---
+
+## Ejecución
+
+Requiere Racket instalado (el proyecto se probó con DrRacket 9.3). Las formas de ejecutarlo, con sus rutas de entrada y salida, están en la sección [Uso del ejecutable](#uso-del-ejecutable). No hay un paso de compilación aparte.
+
+---
