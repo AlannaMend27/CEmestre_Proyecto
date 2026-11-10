@@ -2196,7 +2196,7 @@
       "Lunes - 7:30:9:20"
     ],
     "profesores": [
-      "Vega Aguero Jorge"
+      "Mendez Solano Miguel"
     ],
     "tipo_grupo": "Regular"
   },
@@ -14349,7 +14349,759 @@
       "Viernes - 17:0:20:50"
     ],
     "profesores": [
-      "Zamora Zamora Cindy"
+      "Brenes Cerdas Miriam"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE1122",
+    "nombre": "Contabilidad I",
+    "grupo": "001",
+    "creditos": 4,
+    "bloques_horario": [
+      "Miercoles - 7:30:11:20"
+    ],
+    "profesores": [
+      "De La O Cordero Dyala"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE1122",
+    "nombre": "Contabilidad I",
+    "grupo": "003",
+    "creditos": 4,
+    "bloques_horario": [
+      "Viernes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Cervantes Meza Alberto"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE1122",
+    "nombre": "Contabilidad I",
+    "grupo": "004",
+    "creditos": 4,
+    "bloques_horario": [
+      "Martes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Sanchez Ramirez Vanessa"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE1205",
+    "nombre": "Habilidades gerenciales",
+    "grupo": "001",
+    "creditos": 4,
+    "bloques_horario": [
+      "Sabado - 13:0:15:50"
+    ],
+    "profesores": [
+      "Valverde Masis Eduardo"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2124",
+    "nombre": "Contabilidad Iii",
+    "grupo": "001",
+    "creditos": 4,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Nuñez Arguedas Evelyn"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2124",
+    "nombre": "Contabilidad Iii",
+    "grupo": "002",
+    "creditos": 4,
+    "bloques_horario": [
+      "Viernes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Arce Gutierrez Susan"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2124",
+    "nombre": "Contabilidad Iii",
+    "grupo": "003",
+    "creditos": 4,
+    "bloques_horario": [
+      "Martes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Martinez Villavicencio Jose"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2220",
+    "nombre": "Análisis administrativo",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Poveda Mora Jhonny"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2220",
+    "nombre": "Análisis administrativo",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 7:30:11:20"
+    ],
+    "profesores": [
+      "Brenes Sanchez Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2220",
+    "nombre": "Análisis administrativo",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 13:0:16:50"
+    ],
+    "profesores": [
+      "Brenes Sanchez Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2311",
+    "nombre": "Macroeconomía",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 7:30:11:20"
+    ],
+    "profesores": [
+      "Chavarria Hidalgo Carlos"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2311",
+    "nombre": "Macroeconomía",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 13:0:16:50"
+    ],
+    "profesores": [
+      "Tiffer Sotomayor Haydee Celina"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2506",
+    "nombre": "Estadística Ii",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Cortes Mixter Julio"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2506",
+    "nombre": "Estadística Ii",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 13:0:16:50"
+    ],
+    "profesores": [
+      "Ortiz Acuña Cindy"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2506",
+    "nombre": "Estadística Ii",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 7:30:11:20"
+    ],
+    "profesores": [
+      "Ortiz Acuña Cindy"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2705",
+    "nombre": "Análisis y gestión de datos empresariales",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Rojas Rodriguez Giovanny"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2705",
+    "nombre": "Análisis y gestión de datos empresariales",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 13:0:16:50"
+    ],
+    "profesores": [
+      "Valerin Castro Alexander"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE2705",
+    "nombre": "Análisis y gestión de datos empresariales",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 18:0:21:50"
+    ],
+    "profesores": [
+      "Artavia Delgado Randall"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3128",
+    "nombre": "Administración financiera Ii",
+    "grupo": "001",
+    "creditos": 4,
+    "bloques_horario": [
+      "Jueves - 7:30:11:20"
+    ],
+    "profesores": [
+      "Araya Leandro Arnoldo"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3128",
+    "nombre": "Administración financiera Ii",
+    "grupo": "002",
+    "creditos": 4,
+    "bloques_horario": [
+      "Viernes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Araya Leandro Arnoldo"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3128",
+    "nombre": "Administración financiera Ii",
+    "grupo": "003",
+    "creditos": 4,
+    "bloques_horario": [
+      "Jueves - 18:0:21:50"
+    ],
+    "profesores": [
+      "Perez Gutierrez Alexander"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3414",
+    "nombre": "Fundamentos de mercadeo",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Guzman Rivera Diego Andres"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3415",
+    "nombre": "Investigación de mercados",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 13:0:16:50"
+    ],
+    "profesores": [
+      "Martinez Mora Marco"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3415",
+    "nombre": "Investigación de mercados",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 7:30:11:20"
+    ],
+    "profesores": [
+      "Cubillo Salas Gustavo"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3415",
+    "nombre": "Investigación de mercados",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Viernes - 13:0:16:50"
+    ],
+    "profesores": [
+      "Guzman Rivera Diego Andres"
+    ],
+    "tipo_grupo": "Virtual"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3505",
+    "nombre": "Metodología de la investigación",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Brenes Sanchez Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3505",
+    "nombre": "Metodología de la investigación",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 13:0:16:50"
+    ],
+    "profesores": [
+      "Mora Cruz Alexandra"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3505",
+    "nombre": "Metodología de la investigación",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 7:30:11:20"
+    ],
+    "profesores": [
+      "Mora Esquivel Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3505",
+    "nombre": "Metodología de la investigación",
+    "grupo": "004",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 7:30:11:20"
+    ],
+    "profesores": [
+      "De La O Cordero Dyala"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE3552",
+    "nombre": "Métodos cuantitativos para administración",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 13:0:16:50"
+    ],
+    "profesores": [
+      "Leandro Elizondo Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "001",
+    "creditos": 4,
+    "bloques_horario": [
+      "Martes - 17:0:20:50"
+    ],
+    "profesores": [
+      "Brenes Cervantes Ivannia"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "002",
+    "creditos": 4,
+    "bloques_horario": [
+      "Miercoles - 17:0:20:50"
+    ],
+    "profesores": [
+      "Guerrero Vargas Ligia"
+    ],
+    "tipo_grupo": "Virtual"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "003",
+    "creditos": 4,
+    "bloques_horario": [
+      "Jueves - 17:0:20:50"
+    ],
+    "profesores": [
+      "Garita Granados Carla"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "004",
+    "creditos": 4,
+    "bloques_horario": [
+      "Viernes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Leandro Elizondo Ronald"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "005",
+    "creditos": 4,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Guillen Miranda Erick"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "006",
+    "creditos": 4,
+    "bloques_horario": [
+      "Jueves - 17:0:20:50"
+    ],
+    "profesores": [
+      "Guillen Miranda Erick"
+    ],
+    "tipo_grupo": "Virtual"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4208",
+    "nombre": "Desarrollo de emprendedores",
+    "grupo": "007",
+    "creditos": 4,
+    "bloques_horario": [
+      "Viernes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Thames Ramirez Karla"
+    ],
+    "tipo_grupo": "Virtual"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4228",
+    "nombre": "Gestión del talento humano Ii",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Lunes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Ferreto Gutierrez Eugenia"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4228",
+    "nombre": "Gestión del talento humano Ii",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Ferreto Gutierrez Eugenia"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4228",
+    "nombre": "Gestión del talento humano Ii",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 7:30:11:20"
+    ],
+    "profesores": [
+      "Maroto Calvo Oscar"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4312",
+    "nombre": "Macroeconomía",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 16:0:19:50"
+    ],
+    "profesores": [
+      "Sandoval Vasquez Jose Fulvio"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE4541",
+    "nombre": "Impuestos en Costa Rica",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 7:30:11:20"
+    ],
+    "profesores": [
+      "Duarte Nuñez Karen Melissa"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE5111",
+    "nombre": "Contabilidad y finanzas",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 13:0:16:50"
+    ],
+    "profesores": [
+      "Masis Arce Alejandro"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE5121",
+    "nombre": "Ingeniería económica",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Jueves - 7:30:10:20"
+    ],
+    "profesores": [
+      "Prado Arroyo Jose"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE5121",
+    "nombre": "Ingeniería económica",
+    "grupo": "002",
+    "creditos": 3,
+    "bloques_horario": [
+      "Martes - 17:0:19:50"
+    ],
+    "profesores": [
+      "Thames Ramirez Karla"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE5121",
+    "nombre": "Ingeniería económica",
+    "grupo": "003",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 16:0:18:50"
+    ],
+    "profesores": [
+      "Martinez Gutierrez Bernal"
+    ],
+    "tipo_grupo": "Regular"
+  },
+  {
+    "sede": "CA",
+    "carrera": "AE",
+    "periodo": "2026_S_2",
+    "codigo": "AE5122",
+    "nombre": "Ingeniería financiera",
+    "grupo": "001",
+    "creditos": 3,
+    "bloques_horario": [
+      "Miercoles - 7:30:11:20"
+    ],
+    "profesores": [
+      "Masis Arce Alejandro"
     ],
     "tipo_grupo": "Regular"
   }

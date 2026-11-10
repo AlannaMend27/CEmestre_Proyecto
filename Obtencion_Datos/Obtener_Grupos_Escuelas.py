@@ -28,6 +28,7 @@ CONSULTAS = [
     {"sede": "CA", "carrera": "PI", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "QU", "periodo": "2026_S_2"},
     {"sede": "CA", "carrera": "SHO", "periodo": "2026_S_2"},
+    {"sede": "CA", "carrera": "AE", "periodo": "2026_S_2"},
 ]
 
 # Archivo de salida

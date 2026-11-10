@@ -1516,7 +1516,7 @@
           "Lunes - 7:30:9:20"
         ],
         "profesores": [
-          "Vega Aguero Jorge"
+          "Mendez Solano Miguel"
         ],
         "tipo_grupo": "Regular"
       },
@@ -3266,7 +3266,7 @@
           "Lunes - 7:30:9:20"
         ],
         "profesores": [
-          "Vega Aguero Jorge"
+          "Mendez Solano Miguel"
         ],
         "tipo_grupo": "Regular"
       },
@@ -4339,7 +4339,8 @@
       },
       "Electronica": {
         "requisitos": [
-          "EL2113"
+          "EL2113",
+          "QU1106"
         ],
         "correquisitos": [
           "EL2114"
@@ -5009,6 +5010,850 @@
           "Jimenez Rodriguez Roxana"
         ],
         "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1111",
+    "nombre": "análisis numérico para la ingeniería",
+    "creditos": 3,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "MA2105"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Análisis numérico para la Ingeniería",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Soto Quiros Juan Pablo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1112",
+    "nombre": "taller de señales mixtas",
+    "creditos": 3,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1109",
+          "CE1110"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Taller de señales mixtas",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Chavarria Zamora Luis"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1116",
+    "nombre": "diseño y calidad en productos tecnológicos",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE3101",
+          "CE4301",
+          "PI5516"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Diseño y calidad en productos tecnológicos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 19:0:20:50",
+          "Jueves - 19:0:20:50"
+        ],
+        "profesores": [
+          "Madriz Huertas Daniel"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE4302",
+    "nombre": "arquitectura de computadores ii",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE4301"
+        ],
+        "correquisitos": [
+          "CE4303"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Arquitectura de computadores Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Barboza Artavia Luis"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Arquitectura de computadores Ii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Chavarria Zamora Luis"
+        ],
+        "tipo_grupo": "Tutoría"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE4303",
+    "nombre": "principios de sistemas operativos",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1108"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Principios de sistemas operativos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Barboza Artavia Luis"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "AE4208",
+    "nombre": "desarrollo de emprendedores",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CS2101"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Brenes Cervantes Ivannia"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 17:0:20:50"
+        ],
+        "profesores": [
+          "Guerrero Vargas Ligia"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Jueves - 17:0:20:50"
+        ],
+        "profesores": [
+          "Garita Granados Carla"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Leandro Elizondo Ronald"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Guillen Miranda Erick"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Jueves - 17:0:20:50"
+        ],
+        "profesores": [
+          "Guillen Miranda Erick"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Desarrollo de emprendedores",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Thames Ramirez Karla"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE1113",
+    "nombre": "sistemas empotrados",
+    "creditos": 3,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE4303"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Sistemas empotrados",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gonzalez Gomez Jeferson"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE5301",
+    "nombre": "redes de computadores",
+    "creditos": 4,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE1116",
+          "CE4303"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Redes de computadores",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Tacsan Chaves Rodolfo"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CE5701",
+    "nombre": "electiva i",
+    "creditos": 3,
+    "carreras": [
+      "Computadores"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CE4302",
+          "CI3203"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Soa41d: arquitectura orientada a servicios aplicada a sistemas emergentes",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 19:0:20:50",
+          "Viernes - 19:0:20:50"
+        ],
+        "profesores": [
+          "Vargas Rivera Andres"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Circuitos discretos",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Pinnock Chacon Mac Alfred"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Circuitos discretos",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Rodriguez Juan Jose"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Montero Zeledon Ernesto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Rojas Rojas Laura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Araya Solano Luis Alonso"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Font Cruz Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Segura Zarate Ana Yancy"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Oreamuno Madriz Rafael"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Rojas Perez Francisco"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Gutierrez Chaves Carlos Roberto"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Física general Iii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Lobo Zamora Juan Carlos"
+        ],
+        "tipo_grupo": "Grupo Rn"
+      },
+      {
+        "nombre": "Física de plasmas y sus aplicaciones I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Vargas Blanco Ivan"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Inteligencia artificial",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Obando Rodriguez Kenneth"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Inteligencia artificial",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 17:0:18:50",
+          "Jueves - 17:0:18:50"
+        ],
+        "profesores": [
+          "Pacheco Portuguez Steven"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Araya Carvajal Fabio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Salas Jimenez Juan Carlos"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Starbird Perez Ricardo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Araya Carvajal Fabio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Salas Jimenez Juan Carlos"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 7:30:9:20",
+          "Viernes - 7:30:9:20"
+        ],
+        "profesores": [
+          "Vargas Camareno Maricruz"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Arce Rojas Heilen"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Miercoles - 9:30:11:20",
+          "Viernes - 9:30:11:20"
+        ],
+        "profesores": [
+          "Vargas Camareno Maricruz"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Vargas Camareno Maricruz"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "012",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Starbird Perez Ricardo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "013",
+        "bloques_horario": [
+          "Miercoles - 15:0:16:50",
+          "Viernes - 15:0:16:50"
+        ],
+        "profesores": [
+          "Ledezma Espinoza Aura"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Química básica Ii",
+        "numero_grupo": "014",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Arce Rojas Heilen"
+        ],
+        "tipo_grupo": "Taller"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "CS3404",
+    "nombre": "seminario de ética para la ingeniería",
+    "creditos": 2,
+    "carreras": [
+      "Computadores",
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Computadores": {
+        "requisitos": [
+          "CS2101"
+        ],
+        "correquisitos": []
+      },
+      "Electronica": {
+        "requisitos": [
+          "CS2303"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Vargas Elizondo Celso"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Bojorge Murillo Alexander"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Martes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "004",
+        "bloques_horario": [
+          "Miercoles - 13:0:15:50"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "005",
+        "bloques_horario": [
+          "Miercoles - 9:30:12:20"
+        ],
+        "profesores": [
+          "Prendas Solano Jorge"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "006",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Cedeño Camacho Mauricio"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "007",
+        "bloques_horario": [
+          "Miercoles - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "008",
+        "bloques_horario": [
+          "Lunes - 18:0:20:50"
+        ],
+        "profesores": [
+          "Casasola Rivera Wilmer"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "009",
+        "bloques_horario": [
+          "Martes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Prendas Solano Jorge"
+        ],
+        "tipo_grupo": "Virtual"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "010",
+        "bloques_horario": [
+          "Martes - 13:0:15:50"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Seminario de ética para la ingeniería",
+        "numero_grupo": "011",
+        "bloques_horario": [
+          "Viernes - 9:30:12:20"
+        ],
+        "profesores": [
+          "Garro Reyes Mauricio"
+        ],
+        "tipo_grupo": "Semipresencial"
       }
     ],
     "choca_con": [],
@@ -5972,7 +6817,8 @@
     "requisitos_por_carrera": {
       "Electronica": {
         "requisitos": [
-          "FI1201"
+          "FI1201",
+          "QU1102"
         ],
         "correquisitos": [
           "EL2113"
@@ -6451,147 +7297,6 @@
     "estudiante_puede_matricular": false
   },
   {
-    "codigo": "CS3404",
-    "nombre": "seminario de ética para la ingeniería",
-    "creditos": 2,
-    "carreras": [
-      "Electronica"
-    ],
-    "requisitos_por_carrera": {
-      "Electronica": {
-        "requisitos": [
-          "CS2303"
-        ],
-        "correquisitos": []
-      }
-    },
-    "grupos": [
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "001",
-        "bloques_horario": [
-          "Martes - 9:30:12:20"
-        ],
-        "profesores": [
-          "Vargas Elizondo Celso"
-        ],
-        "tipo_grupo": "Virtual"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "002",
-        "bloques_horario": [
-          "Lunes - 18:0:20:50"
-        ],
-        "profesores": [
-          "Bojorge Murillo Alexander"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "003",
-        "bloques_horario": [
-          "Martes - 18:0:20:50"
-        ],
-        "profesores": [
-          "Casasola Rivera Wilmer"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "004",
-        "bloques_horario": [
-          "Miercoles - 13:0:15:50"
-        ],
-        "profesores": [
-          "Garro Reyes Mauricio"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "005",
-        "bloques_horario": [
-          "Miercoles - 9:30:12:20"
-        ],
-        "profesores": [
-          "Prendas Solano Jorge"
-        ],
-        "tipo_grupo": "Virtual"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "006",
-        "bloques_horario": [
-          "Miercoles - 18:0:20:50"
-        ],
-        "profesores": [
-          "Cedeño Camacho Mauricio"
-        ],
-        "tipo_grupo": "Virtual"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "007",
-        "bloques_horario": [
-          "Miercoles - 18:0:20:50"
-        ],
-        "profesores": [
-          "Casasola Rivera Wilmer"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "008",
-        "bloques_horario": [
-          "Lunes - 18:0:20:50"
-        ],
-        "profesores": [
-          "Casasola Rivera Wilmer"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "009",
-        "bloques_horario": [
-          "Martes - 9:30:12:20"
-        ],
-        "profesores": [
-          "Prendas Solano Jorge"
-        ],
-        "tipo_grupo": "Virtual"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "010",
-        "bloques_horario": [
-          "Martes - 13:0:15:50"
-        ],
-        "profesores": [
-          "Garro Reyes Mauricio"
-        ],
-        "tipo_grupo": "Semipresencial"
-      },
-      {
-        "nombre": "Seminario de ética para la ingeniería",
-        "numero_grupo": "011",
-        "bloques_horario": [
-          "Viernes - 9:30:12:20"
-        ],
-        "profesores": [
-          "Garro Reyes Mauricio"
-        ],
-        "tipo_grupo": "Semipresencial"
-      }
-    ],
-    "choca_con": [],
-    "estudiante_puede_matricular": false
-  },
-  {
     "codigo": "EL3212",
     "nombre": "circuitos discretos",
     "creditos": 4,
@@ -6887,6 +7592,434 @@
         ],
         "profesores": [
           "Alvarado Moya Jose Pablo"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3217",
+    "nombre": "taller de diseño analógico",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3215",
+          "EL3216"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Taller de diseño analógico",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Sabado - 7:30:11:20"
+        ],
+        "profesores": [
+          "Fonseca Cruz Jose"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Taller de diseño analógico",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Miercoles - 13:0:16:50"
+        ],
+        "profesores": [
+          "Navarro Henriquez Francisco"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL3313",
+    "nombre": "taller de diseño digital",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3215",
+          "EL3310"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Taller de diseño digital",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Gonzalez Gomez Jeferson"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Taller de diseño digital",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 17:0:18:50",
+          "Miercoles - 17:0:18:50"
+        ],
+        "profesores": [
+          "Coto Calderon Rolen Jesus"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4201",
+    "nombre": "procesamiento electrónico de potencia",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3216",
+          "EL4513"
+        ],
+        "correquisitos": [
+          "EL3217"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Procesamiento electrónico de potencia",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 9:30:11:20",
+          "Jueves - 9:30:11:20"
+        ],
+        "profesores": [
+          "Arias Esquivel Yeiner"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4419",
+    "nombre": "análisis y control de sistemas lineales",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL4703"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Análisis y control de sistemas lineales",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Guerrero Fernandez Juan Luis"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4514",
+    "nombre": "teoría electromagnética ii",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL4513",
+          "EL4702"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Teoría electromagnética Ii",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Quiros Solano William"
+        ],
+        "tipo_grupo": "Semipresencial"
+      },
+      {
+        "nombre": "Teoría electromagnética Ii",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Coto Cortes Anibal"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "PI4001",
+    "nombre": "dirección de personal",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "CS2303"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Dirección de personal",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Lunes - 17:0:20:50"
+        ],
+        "profesores": [
+          "Cordoba Gonzalez Carlos Manuel"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Dirección de personal",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Jueves - 17:0:20:50"
+        ],
+        "profesores": [
+          "Garcia Romero Sofia"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4314",
+    "nombre": "arquitectura de computadoras i",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3313"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Arquitectura de computadoras I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 15:0:16:50",
+          "Jueves - 15:0:16:50"
+        ],
+        "profesores": [
+          "Garcia Ramirez Ronny"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL4607",
+    "nombre": "normalización técnica (estándares industriales)",
+    "creditos": 3,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "PI5516",
+          "SO4604"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Normalización técnica (estándares industriales)",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Miercoles - 13:0:14:50",
+          "Viernes - 13:0:14:50"
+        ],
+        "profesores": [
+          "Chaves Noguera Juan Scott"
+        ],
+        "tipo_grupo": "Virtual"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL5408",
+    "nombre": "control automático",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL4419"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Control automático",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 7:30:9:20",
+          "Jueves - 7:30:9:20"
+        ],
+        "profesores": [
+          "Chaves Jimenez Adolfo",
+          "Sanchez Ortiz Hugo"
+        ],
+        "tipo_grupo": "Semipresencial"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL5409",
+    "nombre": "laboratorio de control automático",
+    "creditos": 2,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL3217"
+        ],
+        "correquisitos": [
+          "EL5408"
+        ]
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Laboratorio de control automático",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Viernes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Chaves Jimenez Adolfo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de control automático",
+        "numero_grupo": "002",
+        "bloques_horario": [
+          "Lunes - 7:30:11:20"
+        ],
+        "profesores": [
+          "Ruiz Barquero Anibal",
+          "Interiano Salguero Eduardo"
+        ],
+        "tipo_grupo": "Regular"
+      },
+      {
+        "nombre": "Laboratorio de control automático",
+        "numero_grupo": "003",
+        "bloques_horario": [
+          "Miercoles - 7:30:11:20"
+        ],
+        "profesores": [
+          "Guerrero Fernandez Juan Luis"
+        ],
+        "tipo_grupo": "Regular"
+      }
+    ],
+    "choca_con": [],
+    "estudiante_puede_matricular": false
+  },
+  {
+    "codigo": "EL5513",
+    "nombre": "comunicaciones eléctricas i",
+    "creditos": 4,
+    "carreras": [
+      "Electronica"
+    ],
+    "requisitos_por_carrera": {
+      "Electronica": {
+        "requisitos": [
+          "EL4514",
+          "EL4703"
+        ],
+        "correquisitos": []
+      }
+    },
+    "grupos": [
+      {
+        "nombre": "Comunicaciones eléctricas I",
+        "numero_grupo": "001",
+        "bloques_horario": [
+          "Martes - 13:0:14:50",
+          "Jueves - 13:0:14:50"
+        ],
+        "profesores": [
+          "Sandoval Cascante Leonardo"
         ],
         "tipo_grupo": "Regular"
       }

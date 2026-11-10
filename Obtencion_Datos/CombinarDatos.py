@@ -4,21 +4,23 @@
 import json
 
 #Ruta compu Dylan
-HORARIOS_FILE        = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
-PLAN_FILE_COMPUTADORES     = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
-PLAN_FILE_ELECTRONICA    = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
-SALIDA_FILE = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
+#HORARIOS_FILE        = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
+#PLAN_FILE_COMPUTADORES     = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
+#PLAN_FILE_ELECTRONICA    = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
+#SALIDA_FILE = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
+
 #Ruta compu Alanna
-#HORARIOS_FILE        = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
-#PLAN_FILE_COMPUTADORES = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
-#PLAN_FILE_ELECTRONICA  = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
-#SALIDA_FILE          = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
+HORARIOS_FILE        = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
+PLAN_FILE_COMPUTADORES = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
+PLAN_FILE_ELECTRONICA  = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
+SALIDA_FILE          = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
 
 
 SEMESTRES_MAX = 6
 SEMESTRES_INCLUIDOS = {
     "Semestre 0", "Semestre 1", "Semestre 2",
-    "Semestre 3", "Semestre 4", "Semestre 5", "Semestre 6"
+    "Semestre 3", "Semestre 4", "Semestre 5", 
+    "Semestre 6", "Semestre 7", "Semestre 8"
 }
 
 NOMBRE_COMPUTADORES = "Computadores"
