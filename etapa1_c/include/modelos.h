@@ -39,6 +39,7 @@ typedef struct {
 //Representa un curso completo con todos sus datos, requisitos y grupos disponibles
     char codigo[TAM_CODIGO_CURSO];
     char nombre[TAM_NOMBRE_CURSO];
+    char area[TAM_AREA];
     int creditos;
 
     char **requisitos; //Arreglo dinamico con los codigos de los requisitos

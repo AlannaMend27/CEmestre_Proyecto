@@ -4,16 +4,16 @@
 import json
 
 #Ruta compu Dylan
-#HORARIOS_FILE        = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
-#PLAN_FILE_COMPUTADORES     = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
-#PLAN_FILE_ELECTRONICA    = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
-#SALIDA_FILE = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
+HORARIOS_FILE        = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
+PLAN_FILE_COMPUTADORES     = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
+PLAN_FILE_ELECTRONICA    = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
+SALIDA_FILE = "C:/Users/Dylan/Desktop/Archivos de la U/Semestre II 2026/Paradigmas/Proyecto/Proyecto Parte 1/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
 
 #Ruta compu Alanna
-HORARIOS_FILE        = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
-PLAN_FILE_COMPUTADORES = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
-PLAN_FILE_ELECTRONICA  = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
-SALIDA_FILE          = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
+#HORARIOS_FILE        = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/horarios_raw.json"
+#PLAN_FILE_COMPUTADORES = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_computadores.json"
+#PLAN_FILE_ELECTRONICA  = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/plan_estudios_electronica.json"
+#SALIDA_FILE          = "C:/Documentos/ParadigmasDeProgramacion/CEmestre_Proyecto/Obtencion_Datos/catalogo_cursos.json"
 
 
 SEMESTRES_MAX = 6
@@ -25,6 +25,52 @@ SEMESTRES_INCLUIDOS = {
 
 NOMBRE_COMPUTADORES = "Computadores"
 NOMBRE_ELECTRONICA  = "Electronica"
+
+#  Áreas
+# Caso general, el prefijo del código dice el área
+AREA_POR_PREFIJO = {
+    "MA": "Matemática", "CM": "Matemática",
+    "FI": "Física", "QU": "Química",
+    "CI": "Comunicación e idiomas",
+    "CS": "Humanidades", "FH": "Humanidades", "SE": "Humanidades",
+    "PI": "Gestión e ingeniería general", "AE": "Gestión e ingeniería general",
+    "SO": "Gestión e ingeniería general", "MI": "Gestión e ingeniería general",
+    "CA": "Programación y software",
+    "EL": "Circuitos y electrónica",
+}
+
+# Excepciones, cursos cuyo prefijo no dice su área real.
+# CE no tiene área por defecto porque mezcla software, hardware y circuitos.
+AREA_POR_CODIGO = {
+    # Programación y software
+    "CE1101": "Programación y software", "CE1103": "Programación y software",
+    "CE2103": "Programación y software", "CE1106": "Programación y software",
+    "CE3101": "Programación y software", "CE1108": "Programación y software",
+    # Arquitectura y hardware
+    "CE1104": "Arquitectura y hardware", "CE1107": "Arquitectura y hardware",
+    "CE3201": "Arquitectura y hardware", "CE4301": "Arquitectura y hardware",
+    "CE4302": "Arquitectura y hardware", "CE4303": "Arquitectura y hardware",
+    "CE1113": "Arquitectura y hardware", "CE5301": "Arquitectura y hardware",
+    "EL3307": "Arquitectura y hardware", "EL3310": "Arquitectura y hardware",
+    "EL3313": "Arquitectura y hardware", "EL4314": "Arquitectura y hardware",
+    # Circuitos y electrónica
+    "CE2201": "Circuitos y electrónica", "CE1109": "Circuitos y electrónica",
+    # Señales y control
+    "CE1110": "Señales y control", "CE1112": "Señales y control",
+    "EL4703": "Señales y control", "EL4419": "Señales y control",
+    "EL5408": "Señales y control", "EL5409": "Señales y control",
+    "EL5513": "Señales y control",
+    # Matemática
+    "CE1111": "Matemática", "EL4702": "Matemática", "PI2609": "Matemática",
+    # Gestión e ingeniería general
+    "CE1105": "Gestión e ingeniería general", "CE1116": "Gestión e ingeniería general",
+    "CE5701": "Gestión e ingeniería general", "EL4607": "Gestión e ingeniería general",
+    "EL1100": "Gestión e ingeniería general",
+}
+
+def asignar_area(codigo: str) -> str:
+    """Primero busca la excepción por código; si no hay, usa el prefijo."""
+    return AREA_POR_CODIGO.get(codigo, AREA_POR_PREFIJO.get(codigo[:2], "Sin área"))
 
 #  Carga de datos 
 
@@ -91,6 +137,7 @@ def construir_entrada(curso_plan: dict, carrera: str) -> dict:
         "codigo":      codigo,
         "nombre":      curso_plan["name"],
         "creditos":    curso_plan["credits"],
+        "area":        asignar_area(codigo),
         "carreras":    [carrera],           # se expande si el curso aparece en ambas carreras
         "requisitos_por_carrera": {carrera: extraer_requisitos(curso_plan)},
         "grupos":      grupos,
@@ -144,3 +191,6 @@ print(f"    Total cursos únicos         : {total}")
 print(f"    Solo Computadores           : {solo_comp}")
 print(f"    Solo Electrónica            : {solo_elec}")
 print(f"    Compartidos por ambas       : {compartidos}")
+sin_area = [c["codigo"] for c in catalogo if c["area"] == "Sin área"]
+print(f"    Cursos sin área             : {sin_area}")
+

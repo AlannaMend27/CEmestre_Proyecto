@@ -48,6 +48,7 @@ static cJSON *cursoAJson(const Curso *curso) {
     cJSON_AddStringToObject(cursoJson, "codigo", curso->codigo);
     cJSON_AddStringToObject(cursoJson, "nombre", curso->nombre);
     cJSON_AddNumberToObject(cursoJson, "creditos",curso->creditos);
+    cJSON_AddStringToObject(cursoJson, "area", curso->area);
 
     //en este caso es un arreglo
     cJSON_AddItemToObject(cursoJson, "requisitos", arregloStringsAJson(curso->requisitos, curso->numRequisitos));

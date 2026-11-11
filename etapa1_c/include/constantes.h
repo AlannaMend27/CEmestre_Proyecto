@@ -9,6 +9,6 @@
 #define TAM_CODIGO_CURSO 16
 #define TAM_NOMBRE_CURSO 160
 #define TAM_LINEA_HISTORIAL 32
-
+#define TAM_AREA 40
 
 #endif
