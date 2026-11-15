@@ -3,9 +3,11 @@
 % Pruebas de razon.pl. Se ejecuta desde la carpeta src/:
 %   swipl -g correr_pruebas -t halt pruebas_razon.pl
 
-:- use_module(razon).
+:- use_module('../src/razon').
 
-:- initialization(consult('../ArchivosEntrada/politica.pl')).
+:- prolog_load_context(directory, Dir),
+   atom_concat(Dir, '/../ArchivosEntrada/politica.pl', Ruta),
+   consult(Ruta).
 
 % Combinaciones de prueba: curso_grupo(Codigo, IdGrupo, NumGrupo, Creditos, Carreras, Area)
 
