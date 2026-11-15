@@ -1,3 +1,4 @@
+:- encoding(utf8).
 % politica.pl
 % Parametros de la politica academica, escritos como hechos
 
@@ -21,11 +22,10 @@ max_cursos_area(2).
 % Quimica y elementos activos
 incompatibles('QU1106', 'EL2207').
 
-% Circuitos discretos y señales y sistemas
+% Circuitos discretos y senales y sistemas
 incompatibles('EL3212', 'EL4703').
 
 % deportivas y culturales
 incompatibles('SE1100', 'SE1200').
 incompatibles('SE1100', 'SE1400').
 incompatibles('SE1400', 'SE1200').
-
