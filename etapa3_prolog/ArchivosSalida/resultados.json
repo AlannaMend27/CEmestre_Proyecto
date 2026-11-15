@@ -1,0 +1,955 @@
+{
+  "combinaciones": [
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":1,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":2,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":3,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":4,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":5,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":6,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":7,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":8,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":9,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":10,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":11,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":14,
+      "cumple":true,
+      "id":12,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":13,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":14,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":15,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":16,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":17,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":18,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":19,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":20,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":21,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":22,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":23,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":24,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":25,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":26,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":27,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":28,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1201","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":29,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":30,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":31,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1201","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":32,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":33,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1201","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":34,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1201","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":35,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":36,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":37,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":38,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":39,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":40,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":41,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":42,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":43,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":44,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":45,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":46,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":false,
+      "id":47,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":48,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1106","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":49,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1106","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":50,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1106","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":51,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1106","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":52,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"QU1106","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":false,
+      "id":53,
+      "razon": {
+	"detalle": ["Computadores" ],
+	"regla":"balance",
+	"texto":"Balance entre carreras: Computadores supera su maximo"
+      },
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"QU1106","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"QU1102","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":54,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":55,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":56,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":57,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":58,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":59,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":60,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":11,
+      "cumple":true,
+      "id":61,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":62,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":63,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":64,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":65,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":66,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":1,"numero_grupo":"001"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":67,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"FI1101","id_grupo":3,"numero_grupo":"003"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":68,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":1,"numero_grupo":"001"}
+      ]
+    },
+    {
+      "creditos_totales":10,
+      "cumple":true,
+      "id":69,
+      "razon":null,
+      "selecciones": [
+	{"curso":"CE1105","id_grupo":2,"numero_grupo":"002"},
+	{"curso":"MA1103","id_grupo":3,"numero_grupo":"003"},
+	{"curso":"FI1101","id_grupo":2,"numero_grupo":"002"}
+      ]
+    }
+  ],
+  "resumen": {"cumplen":28,"rechazadas":41,"total":69}
+}
