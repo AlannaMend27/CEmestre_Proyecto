@@ -877,3 +877,643 @@ Operaciones desarrolladas:
 Requiere Racket instalado (el proyecto se probó con DrRacket 9.3). Las formas de ejecutarlo, con sus rutas de entrada y salida, están en la sección [Uso del ejecutable](#uso-del-ejecutable). No hay un paso de compilación aparte.
 
 ---
+
+# CEmestre : Constructor de Horarios · Etapa 3
+
+## Descripción general
+
+CEmestre es un sistema que ayuda a un estudiante del TEC a armar su horario de matrícula. Esta tercera etapa, implementada en Prolog bajo el paradigma lógico, recibe las combinaciones de horario que generó la Etapa 2 en Racket y un archivo de política académica escrito como hechos. Evalúa cada combinación contra tres reglas (balance entre carreras, límite de cursos por área e incompatibilidad entre cursos) y exporta, para cada una, si cumple y, en caso contrario, cuál es la **primera** regla que viola. El resultado se escribe en un archivo JSON que la Etapa 4 (Java) va a consumir.
+
+---
+
+## Uso del ejecutable
+
+El programa se ejecuta con `swipl` desde la línea de comandos, estando sobre la carpeta `etapa3_prolog/src/`. Recibe las rutas de tres archivos: las combinaciones de la Etapa 2 (JSON), el archivo de política (`.pl`) y el archivo de salida (JSON).
+
+```bash
+swipl main.pl <combinaciones.json> <politica.pl> <resultados.json>
+```
+
+**Ejemplo:**
+```bash
+swipl main.pl ../ArchivosEntrada/combinaciones_salida.json ../ArchivosEntrada/politica.pl ../ArchivosSalida/resultados.json
+```
+
+Si se ejecuta sin argumentos se usan las rutas por defecto, definidas en `ruta_defecto/3` de `main.pl`:
+
+| Archivo | Ruta por defecto |
+|---|---|
+| Combinaciones | `../ArchivosEntrada/combinaciones_salida.json` |
+| Política | `../ArchivosEntrada/politica.pl` |
+| Salida | `../ArchivosSalida/resultados.json` |
+
+Si se pasa una cantidad de argumentos distinta de 0 o 3, el programa imprime el uso correcto y termina con código 1. Si el archivo de combinaciones o el de política no existen, imprime `No existe el archivo: <ruta>` y termina con código 1, sin escribir salida.
+
+### Mensajes del programa
+
+Al terminar, imprime la ruta del archivo escrito y un resumen:
+
+```
+Resultados escritos en ../ArchivosSalida/resultados.json
+Total: 69, cumplen: 28, rechazadas: 41
+```
+
+### Archivos de entrada
+
+**1. Combinaciones (salida de la Etapa 2).** Esta etapa lee de cada combinación su `id`, sus `creditos_totales` y la lista `selecciones`. De cada selección usa `curso`, `id_grupo`, `numero_grupo`, `creditos`, `carreras` y `area`. El campo `area` es el nuevo que se agregó en C y se propagó por Racket. Los demás (como `nombre`) se ignoran. El ejemplo muestra una combinación con solo su primer curso.
+
+```json
+{
+  "id": 13,
+  "creditos_totales": 11,
+  "selecciones": [
+    {
+      "curso": "CE1103",
+      "nombre": "algoritmos y estructuras de datos i",
+      "creditos": 4,
+      "id_grupo": 1,
+      "numero_grupo": "001",
+      "carreras": ["Computadores"],
+      "area": "Programación y software"
+    }
+  ]
+}
+```
+
+**2. Política (`politica.pl`).** Los parámetros de la política son hechos de Prolog, de modo que cambiarlos es editar el archivo, sin tocar el código:
+
+```prolog
+max_carrera('Computadores', 80).
+max_carrera('Electronica', 80).
+max_cursos_area(2).
+
+incompatibles('QU1106', 'EL2207').
+incompatibles('EL3212', 'EL4703').
+incompatibles('SE1100', 'SE1200').
+incompatibles('SE1100', 'SE1400').
+incompatibles('SE1400', 'SE1200').
+```
+
+
+---
+
+## 2.1 Arquitectura del proyecto
+
+### Estructura de carpetas
+
+```
+etapa3_prolog/
+├── ArchivosEntrada/
+│   ├── combinaciones_salida.json    # Combinaciones de la Etapa 2 (Racket)
+│   └── politica.pl                  # Política académica como hechos
+├── ArchivosSalida/
+│   └── resultados.json              # Archivo generado por el programa
+└── src/
+    ├── main.pl                      # Punto de entrada y coordinador
+    ├── carga.pl                     # JSON -> hechos
+    ├── reglas.pl                    # Las tres reglas de política
+    ├── razon.pl                     # Primera regla violada y veredicto
+    ├── consultas.pl                 # Predicado usable en varios modos
+    └── exportar.pl                  # Evaluación de todas las combinaciones y JSON de salida
+```
+
+---
+
+### Flujo de ejecución
+
+```mermaid
+flowchart TD
+    A([Argumentos CLI]) --> B
+
+    B["verificar_existe\n Verifica que el JSON y la política existen"]
+    B --> C
+
+    C["cargar_politica La política queda como hechos"]
+    C --> D
+
+    D["cargar_combinaciones\n JSON de combinaciones como hechos"]
+    D --> E
+
+    E["evaluar_todas\nfindall recorre combinacion por backtracking"]
+    E --> F
+
+    F["veredicto / primera_violacion\n verifica balance, área, incompatibilidad (con corte)"]
+    F --> G
+
+    G["exportar_resultados\nResumen y JSON de salida"]
+    G --> H(resultados.json)
+
+    style A fill:#1B3F72,color:#fff,stroke:none
+    style H fill:#1A2F4E,color:#cdd8e8,stroke:none
+    style B fill:#1E3A5F,stroke:#4A7FB5,color:#A8C4E0
+    style C fill:#1A3550,stroke:#3A6D9E,color:#A8C4E0
+    style D fill:#162E47,stroke:#2E5F8A,color:#8AB4D4
+    style E fill:#112640,stroke:#245278,color:#7DAAC8
+    style F fill:#0D1F35,stroke:#1C4568,color:#6D9EBE
+    style G fill:#0A1828,stroke:#183A58,color:#5D8EAE
+    linkStyle default stroke:#F472B6,stroke-width:2px
+```
+---
+
+### Descripción de módulos
+
+Cada módulo es un archivo de Prolog con su propio `:- module(...)` y solo exporta lo que otros módulos necesitan.
+
+#### `main.pl` — Punto de entrada y coordinador principal
+
+Lee los argumentos de la línea de comandos, verifica que existan los archivos de entrada, carga la política y las combinaciones, exporta los resultados y muestra el resumen.
+
+Predicados principales:
+- `main(Argv)` → Punto de entrada. Si los argumentos no son válidos muestra el uso y termina con código 1.
+- `argumentos(Argv, Combinaciones, Politica, Salida)` → Acepta cero argumentos (rutas por defecto) o exactamente tres.
+- `ejecutar(Combinaciones, Politica, Salida)` → Corre todo el proceso.
+- `verificar_existe(Ruta)` → Termina el programa con un mensaje si el archivo no existe.
+- `mostrar_resumen(Salida, Resumen)` → Imprime la ruta escrita y los totales.
+
+---
+
+#### `carga.pl` — Carga de datos
+
+Lee el JSON de la Etapa 2 y lo convierte en hechos `combinacion(Id, CreditosTotales, Cursos)`.
+
+Predicados principales:
+- `cargar_politica(Ruta)` → Carga `politica.pl` como un archivo de hechos normal, con `consult`.
+- `cargar_combinaciones(Ruta)` → Abre el JSON con `json_read_dict`, borra las combinaciones anteriores y registra las nuevas.
+- `registrar_combinaciones(Lista)` → Recorre la lista por recursión y guarda un hecho por combinación.
+- `convertir_cursos(CursosJson, Cursos)` y `crear_curso_grupo(Dict, CursoGrupo)` → Convierten cada selección del JSON en un término `curso_grupo/6`.
+
+El JSON se lee con `value_string_as(atom)`, de manera que los textos (`'Computadores'`, `'CE1103'`) quedan como átomos, igual que los de la política.
+
+---
+
+#### `politica.pl` — Parámetros de la política
+
+Contiene los hechos `max_carrera/2`, `max_cursos_area/1` e `incompatibles/2`.
+
+---
+
+#### `reglas.pl` — Las tres reglas de política
+
+Cada regla trabaja sobre la lista de cursos de **una** combinación y consulta los límites en los hechos de la política. Cada regla tiene un predicado `viola_*` que encuentra las violaciones y un `cumple_*` definido por negación por falla.
+
+Predicados principales:
+- `viola_balance(+Cursos, ?Carrera)` → Tiene éxito si `Carrera` aporta más de su porcentaje máximo de los créditos de la combinación. Con `Carrera` sin instanciar enumera las carreras que se pasan.
+- `viola_area(+Cursos, ?Area)` → Tiene éxito si `Area` tiene más cursos que `max_cursos_area/1`.
+- `viola_incompatibilidad(+Cursos, ?A, ?B)` → Tiene éxito si la combinación contiene los dos cursos de un par incompatible. Exige `A @< B` para que cada par se reporte una sola vez.
+- `cumple_balance/1`, `cumple_area/1`, `cumple_incompatibilidad/1` → Éxito si no existe ninguna violación de su regla.
+- `incompatible(?A, ?B)` → Relación simétrica sobre los hechos `incompatibles/2`.
+- Auxiliares internos: `total_creditos/2`, `aporte_carrera/3` y `cursos_en_area/3`.
+
+---
+
+#### `razon.pl` — Primera regla violada
+
+No revisa las reglas por sí mismo: le pregunta a `reglas.pl` si hay una violación y decide cuál reportar primero según el orden de las reglas (balance, área, incompatibilidad).
+
+Predicados principales:
+- `primera_violacion(+Cursos, -Razon)` → Devuelve `balance(Carrera)`, `area(Area)` o `incompatibilidad(A, B)`. Falla si la combinación es válida.
+- `razon_rechazo(+Cursos, -Razon)` → Alias de `primera_violacion/2`: tiene éxito solo si la combinación es rechazada.
+- `cumple_todo(+Cursos)` → Éxito si no hay ninguna violación.
+- `veredicto(+Cursos, -Cumple, -Razon)` → Da `true`/`ninguna` si cumple o `false`/`Razon` si no. Es el que usa `exportar.pl`.
+- `razon_texto(+Razon, -Texto)` → Convierte la razón en un texto legible para el JSON.
+
+---
+
+#### `consultas.pl` — Predicado usable en varios modos
+
+Contiene `curso_en_combinacion(?Codigo, ?Id)`, que relaciona un curso con las combinaciones en las que aparece y se puede consultar en los cuatro modos.
+
+---
+
+#### `exportar.pl` — Evaluación y archivo de salida
+
+Recorre todas las combinaciones cargadas por backtracking, las evalúa y escribe el archivo JSON.
+
+Predicados principales:
+- `evaluar_combinacion(+Id, +Creditos, +Cursos, -Resultado)` → Arma el diccionario de resultado de una combinación.
+- `evaluar_todas(-Resultados)` → Recorre `combinacion/3` con `findall` y evalúa cada una.
+- `exportar_resultados(+Ruta, -Resumen)` → Escribe el JSON (creando la carpeta de salida si hace falta) y devuelve el resumen.
+- Auxiliares internos: `selecciones_json/2`, `razon_json/2` y `resumen/2`.
+
+---
+
+## 2.2 Decisiones de diseño
+
+### 2.2.1 Justificación de decisiones propias y específicas de la implementación
+
+#### Cómo se modelaron las combinaciones
+
+Cada combinación del JSON pasa a ser un hecho `combinacion/3 y cada curso de su lista pasa a ser un término compuesto `curso_grupo/6`:
+
+```prolog
+combinacion(Id, CreditosTotales, Cursos).
+
+curso_grupo(Codigo, IdGrupo, NumeroGrupo, Creditos, Carreras, Area).
+```
+
+Por ejemplo, el curso JSON `CE1103` de la sección anterior queda así en Prolog:
+
+```prolog
+curso_grupo('CE1103', 1, '001', 4, ['Computadores'], 'Programación y software')
+```
+
+Decisiones detrás de este modelo:
+
+- **Las reglas reciben una lista de términos, no consultan la base de datos.** El hecho `combinacion/3` solo sirve para recorrer las combinaciones. Las tres reglas y la razón de rechazo son predicados sobre la lista `Cursos`, por lo que se pueden probar con listas escritas a mano, sin cargar ningún JSON.
+- **`Carreras` es una lista**, porque hay cursos compartidos entre las dos carreras (por ejemplo `MA1103`, con `['Computadores', 'Electronica']`).
+- **Cada `curso_grupo` es un par curso-grupo completo.** Lleva `IdGrupo` y `NumeroGrupo` para poder exportar los pares curso-grupo que pide el enunciado, y `Creditos`, `Carreras` y `Area` porque son los datos que las reglas necesitan.
+- **No se guarda el nombre del curso**, porque ninguna regla lo usa. Sigue en el catálogo de la Etapa 1.
+- **Los créditos por curso ya venían en la salida de Racket**, así que no fue necesario ajustar la exportación de la Etapa 2 más allá del campo `area`.
+
+#### Cómo se asignó el área
+
+El área la asigna el script de recolección de datos en Python (`Obtencion_Datos/CombinarDatos.py`), con la función `asignar_area(codigo)`. Primero busca el código en un diccionario de excepciones y, si no está, usa las dos letras del prefijo (El cual utiliza la Guía de horarios del tec digital para presentar los cursos en la pagina web), si tampoco hay prefijo registrado devuelve `"Sin área"`.
+
+Las áreas se definieron por **similitud temática** de los cursos. El criterio es:
+
+- **Si un prefijo es homogéneo, el prefijo define el área.** `MA` y `CM` son Matemática, `FI` es Física, `QU` es Química, `CI` es Comunicación e idiomas, `CS`, `FH` y `SE` son Humanidades, `PI`, `AE`, `SO` y `MI` son Gestión e ingeniería general, `CA` es Programación y software y `EL` es Circuitos y electrónica.
+- **Si un prefijo mezcla temas, se asigna por código.** `CE` y `EL` aparecen en ambas carreras, pero agrupan cursos muy distintos: `CE` mezcla software, hardware y circuitos, y `EL` mezcla circuitos, arquitectura y control. `CE` no tiene área por defecto, y los cursos `EL` que no son de circuitos están en el diccionario de excepciones.
+
+Ejemplos de los planes:
+
+| Curso | Prefijo | Área asignada | Por qué |
+|---|---|---|---|
+| `MA1403` matemática discreta | `MA` | Matemática | Prefijo homogéneo |
+| `FI1101` física general i | `FI` | Física | Prefijo homogéneo |
+| `SE1100` actividad cultural i, `SE1200` actividad deportiva i | `SE` | Humanidades | Prefijo homogéneo |
+| `CE1103` algoritmos y estructuras de datos i, `CE1106` paradigmas de programación | `CE` | Programación y software | Excepción por código |
+| `CE1107` fundamentos de arquitectura de computadores (Computadores), `EL3310` diseño de sistemas digitales (Electrónica) | `CE` y `EL` | Arquitectura y hardware | Prefijos distintos, mismo tema |
+| `CE1110` análisis de señales mixtas (Computadores), `EL4703` señales y sistemas (Electrónica) | `CE` y `EL` | Señales y control | Prefijos distintos, mismo tema |
+| `PI2609` probabilidad y estadística | `PI` | Matemática | Excepción: el prefijo `PI` daría Gestión e ingeniería general |
+
+
+**Cómo se propagó el campo sin tocar la lógica de las etapas anteriores.** En C y en Racket solo se agregó el campo `area` y se copia de una etapa a la siguiente:
+
+- **Etapa 1 (C):** se agregó `area` al `struct` del curso. `catalogo.c` lo lee del JSON y `exportar.c` lo escribe.
+
+```c
+// catalogo.c: se lee el area para asignarlo al struct
+copiarStr(curso->area, sizeof(curso->area),
+    cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(cursoJson, "area")));
+
+// exportar.c: se escribe el area en el JSON de salida
+cJSON_AddStringToObject(cursoJson, "area", curso->area);
+```
+
+- **Etapa 2 (Racket):** se agregó el campo al `struct` de curso en `modelos.rkt`, se lee en `leer-curso` de `lectura.rkt` y se escribe en `seleccion->json` de `exportar.rkt`.
+
+```racket
+; modelos.rkt (en el struct de curso)
+[carreras : (Listof String)]
+[area : String]
+
+; lectura.rkt (en leer-curso)
+(como-texto (campo json 'area))
+
+; exportar.rkt (en seleccion->json)
+'area (curso-area c)
+```
+
+#### Los cursos compartidos dividen sus créditos entre las carreras
+
+La regla 1 limita el porcentaje de los créditos de una combinación que puede aportar cada carrera. El problema es que hay cursos que llevan ambas carreras (por ejemplo, Cálculo y Álgebra Lineal) y no es claro a cuál carrera se le suman sus créditos.
+
+**Decisión:** si un curso lo llevan N carreras, sus créditos se dividen entre ellas. Un curso de 4 créditos compartido por dos carreras suma 2 a cada una, y uno de 3 suma 1.5 a cada una. La suma de los aportes de todas las carreras sigue siendo el total de créditos de la combinación. Es una decisión tomada por el grupo y se puede cambiar modificando solo `aporte_carrera/3`.
+
+```prolog
+aporte_carrera(Carrera, Cursos, Aporte) :-
+    findall(Parte,
+            ( member(curso_grupo(_, _, _, Cred, Carreras, _), Cursos),
+              member(Carrera, Carreras),
+              length(Carreras, N),
+              Parte is Cred / N ),
+            Partes),
+    sum_list(Partes, Aporte).
+```
+
+#### Valores de la política
+
+- **`max_carrera`: 80 % para ambas carreras.** Con un máximo de 80 %, una combinación no puede ser casi toda de una sola carrera: el estudiante tiene que llevar también cursos de otro tipo (complementarios, culturales o compartidos) para que sea válida.
+- **`max_cursos_area(2)`.** Los cursos de una misma área suelen ser pesados y llevar más de dos a la vez no es recomendable para el estudiante.
+
+Ambos valores son solo hechos en `politica.pl` y se pueden cambiar sin tocar el código.
+
+#### Pares incompatibles
+
+Se declararon cursos que, aunque pertenecen a semestres distintos, un estudiante podría intentar matricular juntos (por ejemplo, si arrastra o adelanta cursos) y que conviene evitar. Se eligieron cursos muy pesados o actividades que el sistema de matrícula ya limita.
+
+| Par | Plan | Por qué |
+|---|---|---|
+| `QU1106` química básica i, `EL2207` elementos activos | Compartidos por ambas carreras | Aunque en planes como el de Computadores, el curso de química no es un requisito formal directo de Elementos Activos, el estudio de semiconductores (como el silicio y los procesos de dopaje con impurezas) requiere una base analítica de materiales, la cual se obtiene en el curso de química. |
+| `EL3212` circuitos discretos, `EL4703` señales y sistemas | Electrónica | Circuitos Discretos consume la mayor parte del tiempo práctico en laboratorios de electrónica analógica y el curso de Señales y Sistemas exige un dominio fuerte de matemática aplicada (convolución, transformadas). Juntos requieren muchas horas de estudio, lo cual puede ser frustrante para el  estudiante. |
+| `SE1100` actividad cultural i, `SE1200` actividad deportiva i, `SE1400` actividad cultural-deportiva | Compartidos por ambas carreras | El sistema de matrícula no deja matricular más de una actividad de este tipo por periodo. Hay tres cursos porque existen la actividad deportiva, la cultural y la cultural-deportiva, así que se declaran los tres pares posibles. |
+
+```prolog
+% Química y elementos activos
+incompatibles('QU1106', 'EL2207').
+
+% Circuitos discretos y señales y sistemas
+incompatibles('EL3212', 'EL4703').
+
+% Deportivas y culturales
+incompatibles('SE1100', 'SE1200').
+incompatibles('SE1100', 'SE1400').
+incompatibles('SE1400', 'SE1200').
+```
+
+**La relación es simétrica.** Cada par se escribe una sola vez en `politica.pl` y `incompatible/2` lo consulta en ambos órdenes:
+
+```prolog
+incompatible(A, B) :- incompatibles(A, B).
+incompatible(A, B) :- incompatibles(B, A).
+```
+
+#### Violaciones como generadores y `cumple` por negación
+
+Cada regla se escribió primero como un predicado que **encuentra** la violación (`viola_balance/2`, `viola_area/2`, `viola_incompatibilidad/3`), y el `cumple_*` correspondiente se define como su negación:
+
+```prolog
+cumple_balance(Cursos) :- \+ viola_balance(Cursos, _).
+```
+
+Así la lógica de cada regla existe una sola vez: el mismo predicado sirve para saber **si** se viola y para saber **qué** se viola, que es lo que necesita la razón de rechazo.
+
+#### Orden de las reglas, corte y negación por falla
+
+El orden de las reglas es: **1. balance, 2. área, 3. incompatibilidad**. Cuando una combinación rompe varias reglas a la vez, solo se reporta la primera.
+
+```prolog
+primera_violacion(Cursos, Razon) :-
+    viola_balance(Cursos, Carrera), !,
+    Razon = balance(Carrera).
+primera_violacion(Cursos, Razon) :-
+    viola_area(Cursos, Area), !,
+    Razon = area(Area).
+primera_violacion(Cursos, Razon) :-
+    viola_incompatibilidad(Cursos, A, B), !,
+    Razon = incompatibilidad(A, B).
+```
+
+El **corte** hace dos cosas:
+- **(a)** Descarta los otros puntos de backtracking de esa misma regla, así solo se reporta una violación.
+- **(b)** Impide caer a las cláusulas siguientes, así una regla posterior nunca reemplaza a una anterior.
+
+La unificación `Razon = ...` se hace **después** del corte y no en la cabeza de la cláusula. Si estuviera en la cabeza y `Razon` llegara ya instanciada (por ejemplo `area(X)`), Prolog saltaría la primera cláusula y reportaría el área aunque el balance también se viole. Hay una prueba que verifica esto.
+
+La **negación por falla** define cuándo una combinación cumple, reutilizando `primera_violacion` sin duplicar la lógica:
+
+```prolog
+cumple_todo(Cursos) :-
+    \+ primera_violacion(Cursos, _).
+
+veredicto(Cursos, false, Razon) :-
+    primera_violacion(Cursos, Razon), !.
+veredicto(_, true, ninguna).
+```
+
+El corte de la primera cláusula de `veredicto/3` evita que, después de un rechazo, se pruebe la segunda; esta solo se alcanza cuando no hay ninguna violación.
+
+#### Caso donde el orden de las reglas cambia la razón reportada
+
+Se toma una combinación con tres cursos de Computadores del catálogo real, todos del área Programación y software: `CE1101` (3 créditos), `CE1103` (4) y `CE1106` (3).
+
+```prolog
+?- Cursos = [curso_grupo('CE1101', 1, '001', 3, ['Computadores'], 'Programación y software'),
+             curso_grupo('CE1103', 1, '001', 4, ['Computadores'], 'Programación y software'),
+             curso_grupo('CE1106', 1, '001', 3, ['Computadores'], 'Programación y software')],
+   primera_violacion(Cursos, R).
+
+R = balance('Computadores').
+```
+
+Esta combinación rompe **dos reglas a la vez**: Computadores aporta el 100 % de los 10 créditos (máximo 80 %) y hay 3 cursos de la misma área (máximo 2). Se reporta el balance porque su cláusula va primero.
+
+Si se invierten las cláusulas de balance y área en `razon.pl`, la misma combinación pasa a reportar:
+
+```prolog
+R = area('Programación y software').
+```
+
+Y gracias al corte, la combinación nunca devuelve las dos razones.
+
+---
+
+### 2.2.2 Caso límite real encontrado y cómo se resolvió
+
+**Problema:** Con los datos de la Etapa 2, el veredicto de la regla de balance depende de cómo se cuentan los cursos compartidos y las combinaciones quedan muy cerca del límite del 80 %.
+
+Dos combinaciones reales de la salida de Racket lo muestran. La combinación 13 tiene `CE1103` (4 créditos, Computadores), `CE1105` (3, Computadores) y `MA1103` (4, compartido): 11 créditos en total. Como `MA1103` se divide, Computadores aporta 4 + 3 + 2 = **9** créditos, es decir 81.8 %, y la combinación se rechaza con poco margen sobre el límite. La combinación 1 es la misma más `FI1101` (3 créditos, compartido): 14 créditos en total, Computadores aporta 4 + 3 + 2 + 1.5 = **10.5**, es decir 75 %, y cumple. Un solo curso compartido más cambia el veredicto.
+
+Esto trae tres problemas que hubo que resolver:
+
+1. **Aportes fraccionarios.** Un curso de 3 créditos compartido entre dos carreras aporta 1.5. Se resolvió con la división de `aporte_carrera/3`, que con dos carreras produce mitades exactas.
+2. **Comparar sin dividir por el total.** Calcular `Aporte / Total * 100` para compararlo con el máximo exigiría dividir por el total y arrastrar redondeos. En su lugar se multiplican ambos lados de la desigualdad:
+
+```prolog
+viola_balance(Cursos, Carrera) :-
+    total_creditos(Cursos, Total),
+    max_carrera(Carrera, Max),
+    aporte_carrera(Carrera, Cursos, Aporte),
+    Aporte * 100 > Max * Total.
+```
+
+3. **El límite exacto.** La comparación es estricta (`>`), así que una carrera con exactamente el 80 % cumple. Por la misma razón, una combinación vacía cumple (`0 > 0` es falso) y una combinación solo de actividades de 0 créditos (como `SE1100` y `SE1400`) no se rechaza por balance.
+
+**Otros casos límite cubiertos por las pruebas:**
+- Exactamente 2 cursos de una misma área cumple (la comparación es `Cantidad > Maximo`).
+- Una combinación de una sola carrera es válida mientras no supere su máximo.
+- Los nombres de carrera en la política deben coincidir con los del JSON: con `'Electronica'` escrito con tilde, la regla no se aplicaría y no habría ningún error.
+
+---
+
+### 2.2.3 Justificación del formato de salida
+
+**Formato elegido: JSON**
+
+Se mantuvo JSON porque es el formato de entrada de esta etapa y el que usan las etapas anteriores, y porque los datos son jerárquicos: una combinación contiene varios pares curso-grupo, y un rechazo lleva una razón con su detalle. Eso no se representa de forma limpia en un archivo CSV o de otro tipo.
+
+**Estructura del archivo.** Combinación rechazada:
+
+```json
+{
+  "id": 13,
+  "creditos_totales": 11,
+  "cumple": false,
+  "razon": {
+    "regla": "balance",
+    "detalle": ["Computadores"],
+    "texto": "Balance entre carreras: Computadores supera su maximo"
+  },
+  "selecciones": [
+    {"curso": "CE1103", "id_grupo": 1, "numero_grupo": "001"},
+    {"curso": "CE1105", "id_grupo": 1, "numero_grupo": "001"},
+    {"curso": "MA1103", "id_grupo": 1, "numero_grupo": "001"}
+  ]
+}
+```
+
+Combinación que cumple: lleva `"cumple": true` y `"razon": null`. El archivo completo tiene la forma:
+
+```json
+{
+  "combinaciones": [ ... ],
+  "resumen": {"cumplen": 28, "rechazadas": 41, "total": 69}
+}
+```
+
+**Decisiones de diseño ligadas al formato:**
+
+1. **`cumple` es un booleano de JSON** (`true`/`false`), no un texto, para que Java lo lea directamente.
+2. **`razon` es `null` cuando la combinación cumple.** Así un solo campo indica si hay motivo de rechazo.
+3. **`detalle` siempre es una lista:** `["Computadores"]` para balance, `["Matemática"]` para área y `["SE1100", "SE1400"]` para incompatibilidad. Java no necesita tratar de forma distinta cada regla.
+4. **`regla` y `texto`:** `regla` identifica la regla violada (`balance`, `area` o `incompatibilidad`) y `texto` es un mensaje ya legible para mostrar al usuario en la Etapa 4.
+5. **`selecciones` son pares curso-grupo mínimos** (`curso`, `id_grupo`, `numero_grupo`). El nombre del curso y demás datos siguen en el catálogo de la Etapa 1, y el `id` de la combinación es el mismo que asignó la Etapa 2, así que se puede cruzar con su salida.
+6. **`creditos_totales` se propaga desde Racket**, para que la Etapa 4 no tenga que recalcularlo.
+7. **`resumen`** (total, cumplen, rechazadas) es información agregada que no pedía el enunciado; se agregó porque el programa la necesita para mostrarla por consola y evita que Java tenga que contar.
+
+El archivo se escribe con `json_write_dict` y la carpeta de salida se crea si no existe.
+
+---
+
+## 2.3 Representación de datos y predicados principales
+
+### Hechos y términos
+
+| Término | Dónde se define | Qué representa |
+|---|---|---|
+| `combinacion(Id, CreditosTotales, Cursos)` | `carga.pl` (hechos cargados del JSON) | Una combinación de la Etapa 2 |
+| `curso_grupo(Codigo, IdGrupo, NumeroGrupo, Creditos, Carreras, Area)` | `carga.pl` | Un par curso-grupo dentro de una combinación. `Cursos` es una lista de estos términos |
+| `max_carrera(Carrera, Porcentaje)` | `politica.pl` | Porcentaje máximo de créditos por carrera |
+| `max_cursos_area(N)` | `politica.pl` | Máximo de cursos de una misma área |
+| `incompatibles(CursoA, CursoB)` | `politica.pl` | Un par incompatible (se escribe una sola vez) |
+| `balance(Carrera)`, `area(Area)`, `incompatibilidad(A, B)`, `ninguna` | `razon.pl` | Términos que representan la razón de rechazo |
+
+### Predicados principales
+
+| Predicado | Modos | Qué hace |
+|---|---|---|
+| `curso_en_combinacion(?Codigo, ?Id)` | `(+,+)`, `(+,-)`, `(-,+)`, `(-,-)` | Relaciona un curso con una combinación que lo contiene |
+| `incompatible(?A, ?B)` | `(+,+)`, `(+,-)`, `(-,+)`, `(-,-)` | Relación simétrica de incompatibilidad |
+| `viola_balance(+Cursos, ?Carrera)` | `(+,+)`, `(+,-)` | Verifica o enumera las carreras que superan su máximo |
+| `viola_area(+Cursos, ?Area)` | `(+,+)`, `(+,-)` | Verifica o enumera las áreas que superan su máximo |
+| `viola_incompatibilidad(+Cursos, ?A, ?B)` | `(+,+,+)`, `(+,-,-)` | Verifica o enumera los pares incompatibles presentes |
+| `primera_violacion(+Cursos, -Razon)` | `(+,-)`, `(+,+)` | Primera regla violada |
+| `veredicto(+Cursos, -Cumple, -Razon)` | `(+,-,-)` | Veredicto completo de una combinación |
+| `evaluar_todas(-Resultados)` | `(-)` | Evalúa todas las combinaciones por backtracking |
+
+### Ejemplos de consulta
+
+Para probar los predicados de forma interactiva, se abre `swipl` en `src/` y se cargan los módulos, la política y las combinaciones:
+
+```prolog
+?- use_module(carga), use_module(reglas), use_module(razon), use_module(consultas).
+?- cargar_politica('../ArchivosEntrada/politica.pl').
+?- cargar_combinaciones('../ArchivosEntrada/combinaciones_salida.json').
+```
+
+#### `curso_en_combinacion/2` en sus cuatro modos
+
+```prolog
+% (+,+) Verificar: ¿CE1103 y FI1101 están en la combinación?
+?- curso_en_combinacion('CE1103', 13).
+true.
+
+?- curso_en_combinacion('FI1101', 13).
+false.
+
+% (+,-) Buscar: ¿en cuáles combinaciones aparece FI1101?
+?- curso_en_combinacion('FI1101', Id).
+Id = 1 ;
+Id = 2 ;
+Id = 3 ;
+...
+
+% (-,+) Listar: ¿qué cursos tiene la combinación?
+?- curso_en_combinacion(C, 13).
+C = 'CE1103' ;
+C = 'CE1105' ;
+C = 'MA1103'.
+
+% (-,-) Enumerar todos los pares curso-combinación (234 con los datos reales)
+?- curso_en_combinacion(C, Id).
+C = 'CE1103', Id = 1 ;
+C = 'CE1105', Id = 1 ;
+...
+```
+
+#### `incompatible/2`, simétrico y en varios modos
+
+```prolog
+% (+,+) Funciona en ambos órdenes aunque el hecho se escribió una sola vez
+?- incompatible('EL3212', 'EL4703').
+true.
+
+?- incompatible('EL4703', 'EL3212').
+true.
+
+% (+,-) ¿Con qué cursos es incompatible SE1200?
+?- incompatible('SE1200', X).
+X = 'SE1100' ;
+X = 'SE1400'.
+
+% (-,-) Enumera todos los pares, en los dos órdenes (10 respuestas)
+?- incompatible(A, B).
+A = 'QU1106', B = 'EL2207' ;
+...
+```
+
+#### `viola_balance/2`, `primera_violacion/2` y `veredicto/3` sobre datos reales
+
+```prolog
+% Verificar o enumerar la carrera que se pasa en la combinación 13
+?- combinacion(13, _, Cursos), viola_balance(Cursos, Carrera).
+Carrera = 'Computadores'.
+
+?- combinacion(13, _, Cursos), viola_balance(Cursos, 'Electronica').
+false.
+
+% primera_violacion con la razón sin instanciar: genera la razón
+?- combinacion(13, _, Cursos), primera_violacion(Cursos, R).
+R = balance('Computadores').
+
+% primera_violacion con la razón instanciada: verifica la razón
+?- combinacion(13, _, Cursos), primera_violacion(Cursos, balance('Computadores')).
+true.
+
+?- combinacion(13, _, Cursos), primera_violacion(Cursos, area(_)).
+false.
+
+% Veredicto de una combinación que cumple y de una que no
+?- combinacion(1, _, Cursos), veredicto(Cursos, Cumple, Razon).
+Cumple = true,
+Razon = ninguna.
+
+?- combinacion(13, _, Cursos), veredicto(Cursos, Cumple, Razon).
+Cumple = false,
+Razon = balance('Computadores').
+```
+
+Nótese que `primera_violacion(Cursos, area(_))` **falla** para la combinación 13, porque su primera (y única) violación es el balance. Lo mismo ocurriría con una combinación que violara balance y área a la vez: `area` no sería la *primera* regla violada. Esto es consecuencia de unificar `Razon` después del corte.
+
+#### Una incompatibilidad
+
+```prolog
+?- primera_violacion([curso_grupo('SE1400', 2, '001', 0, ['Computadores','Electronica'], 'Humanidades'),
+                      curso_grupo('SE1100', 1, '001', 0, ['Computadores','Electronica'], 'Humanidades')], R).
+
+R = incompatibilidad('SE1100', 'SE1400').
+```
+
+#### Convertir la razón en texto
+
+```prolog
+?- razon_texto(area('Matemática'), T).
+T = 'Limite por area: demasiados cursos de Matemática'.
+```
+
+
+## Ejecución
+
+Requiere SWI-Prolog instalado (`swipl`). No hay un paso de compilación aparte. Las formas de ejecutarlo, con sus rutas de entrada y salida, están en la sección [Uso del ejecutable](#uso-del-ejecutable-2).
+
+---

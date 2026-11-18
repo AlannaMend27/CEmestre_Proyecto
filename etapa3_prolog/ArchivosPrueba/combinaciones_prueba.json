@@ -1,0 +1,197 @@
+{
+  "combinaciones": [
+    {
+      "id": 1,
+      "creditos_totales": 10,
+      "selecciones": [
+        {
+          "curso": "CE1101",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "MA1102",
+          "id_grupo": 2,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Matemática"
+        },
+        {
+          "curso": "CI1106",
+          "id_grupo": 3,
+          "numero_grupo": "001",
+          "creditos": 2,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Comunicación e idiomas"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "creditos_totales": 4,
+      "selecciones": [
+        {
+          "curso": "CE1101",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "creditos_totales": 12,
+      "selecciones": [
+        {
+          "curso": "CE1101",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "CE1103",
+          "id_grupo": 2,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "CE1106",
+          "id_grupo": 3,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Programación y software"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "creditos_totales": 4,
+      "selecciones": [
+        {
+          "curso": "SE1100",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 2,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Humanidades"
+        },
+        {
+          "curso": "SE1400",
+          "id_grupo": 2,
+          "numero_grupo": "001",
+          "creditos": 2,
+          "carreras": [
+            "Computadores",
+            "Electronica"
+          ],
+          "area": "Humanidades"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "creditos_totales": 12,
+      "selecciones": [
+        {
+          "curso": "CE1101",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "CE1103",
+          "id_grupo": 2,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "CE1106",
+          "id_grupo": 3,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "creditos_totales": 10,
+      "selecciones": [
+        {
+          "curso": "CE1101",
+          "id_grupo": 1,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Programación y software"
+        },
+        {
+          "curso": "MA1102",
+          "id_grupo": 2,
+          "numero_grupo": "001",
+          "creditos": 4,
+          "carreras": [
+            "Computadores"
+          ],
+          "area": "Matemática"
+        },
+        {
+          "curso": "FI1101",
+          "id_grupo": 3,
+          "numero_grupo": "001",
+          "creditos": 2,
+          "carreras": [
+            "Electronica"
+          ],
+          "area": "Física"
+        }
+      ]
+    }
+  ]
+}

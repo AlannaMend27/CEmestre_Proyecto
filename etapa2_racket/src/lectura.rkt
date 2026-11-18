@@ -81,6 +81,7 @@
          (lista-de-textos (campo json 'requisitos))
          (lista-de-textos (campo json 'correquisitos))
          (lista-de-textos (campo json 'carreras))
+         (como-texto (campo json 'area))
          (como-booleano (campo json 'ya_aprobado))
          (como-booleano (campo json 'estudiante_puede_matricular))
          (map leer-grupo (como-arreglo (campo json 'grupos)))))

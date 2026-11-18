@@ -34,7 +34,9 @@
                'creditos (curso-creditos c)
                'id_grupo (grupo-id g)
                'numero_grupo (grupo-numero g)
-               'carreras (curso-carreras c))
+               'carreras (curso-carreras c)
+               'area (curso-area c))
+       
        (HashTable Symbol JSExpr)))
 
 ;; Convierte una combinacion completa a un objeto JSON.

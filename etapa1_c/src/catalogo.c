@@ -46,6 +46,10 @@ static void parsearCurso(const cJSON *cursoJson, Curso *curso, const char *carre
     copiarStr(curso->nombre, sizeof(curso->nombre),
     cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(cursoJson, "nombre")));
 
+    // se lee el area para asignarlo al struct
+    copiarStr(curso->area, sizeof(curso->area),
+    cJSON_GetStringValue(cJSON_GetObjectItemCaseSensitive(cursoJson, "area")));
+
     //Para el numero de creditos tenemos que verificar que sea un numero
     const cJSON *creditosJson = cJSON_GetObjectItemCaseSensitive(cursoJson, "creditos");
     

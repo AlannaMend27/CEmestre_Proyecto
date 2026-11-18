@@ -26,6 +26,7 @@
                [requisitos : (Listof String)]
                [correquisitos : (Listof String)]
                [carreras : (Listof String)]
+               [area : String]
                [ya-aprobado : Boolean]
                [puede-matricular : Boolean]
                [grupos : (Listof grupo)])
